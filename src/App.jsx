@@ -1,10 +1,17 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './App.css'
 import userPhoto from './assets/user.png'
 import aboutPhoto from './assets/pic2.jpeg'
 import aboutPhoto2 from './assets/pic3.jpg'
 import aboutPhoto3 from './assets/pic4.jpg'
 import aboutPhoto4 from './assets/pic5.jpeg'
+import shopifyIcon from './assets/selfhst_shopify.png'
+import afterEffectsIcon from './assets/skill-icons_aftereffects.png'
+import figmaIcon from './assets/devicon_figma.png'
+import illustratorIcon from './assets/devicon_illustrator.png'
+import photoshopIcon from './assets/devicon_photoshop.png'
+import claudeIcon from './assets/logos_claude-icon.png'
+import wordpressIcon from './assets/selfhst_wordpress-dark.png'
 
 const ABOUT_PHOTOS = [aboutPhoto, aboutPhoto2, aboutPhoto3, aboutPhoto4]
 
@@ -47,6 +54,34 @@ function ContactFooter() {
         <p className="copyright">2026 Janina Sabeva. All rights reserved.</p>
       </div>
     </footer>
+  )
+}
+
+function ContactPage() {
+  return (
+    <section className="contact-page" id="contact-page">
+      <div className="contact-page-inner">
+        <div className="contact-page-copy">
+          <h1>Have I caught your attention? Let&apos;s start creating together!</h1>
+          <div className="contact-links">
+            <a href="tel:+4552681177"><span className="contact-icon" aria-hidden="true">☎</span>+45 52 68 11 77</a>
+            <a href="mailto:zhaninasabeva8@gmail.com"><span className="contact-icon" aria-hidden="true">✉</span>zhaninasabeva8@gmail.com</a>
+            <a href="https://www.linkedin.com/in/janina-sabeva-1b666a339" target="_blank" rel="noreferrer"><span className="contact-icon linkedin-icon" aria-hidden="true">in</span>Janina Sabeva</a>
+            <a href="/resume.pdf" target="_blank" rel="noreferrer"><span className="contact-icon" aria-hidden="true">⤓</span>Resume</a>
+          </div>
+        </div>
+        <a className="quick-chat-button" href="mailto:zhaninasabeva8@gmail.com?subject=Quick%20chat">
+          <span className="quick-chat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <rect x="2.5" y="5" width="19" height="14" rx="2.5" />
+              <path d="M3 6.5 12 13 21 6.5" />
+            </svg>
+          </span>
+          Quick chat
+        </a>
+      </div>
+      <p className="copyright">2026 Janina Sabeva. All rights reserved.</p>
+    </section>
   )
 }
 
@@ -98,13 +133,13 @@ function AboutPage() {
         <section className="toolkit-reference">
           <h2>my creative toolkit</h2>
           <div className="toolkit-reference-list">
-            <span><img src="https://cdn.simpleicons.org/shopify/ffffff.svg" alt="" /><small>Shopify</small></span>
-            <span><img src="https://cdn.simpleicons.org/adobeaftereffects/ffffff.svg" alt="" /><small>After Effects</small></span>
-            <span><img src="https://cdn.simpleicons.org/figma/ffffff.svg" alt="" /><small>Figma</small></span>
-            <span><img src="https://cdn.simpleicons.org/adobeillustrator/ffffff.svg" alt="" /><small>Illustrator</small></span>
-            <span><img src="https://cdn.simpleicons.org/adobephotoshop/ffffff.svg" alt="" /><small>Photoshop</small></span>
-            <span><img src="https://cdn.simpleicons.org/openai/c86845.svg" alt="" /><small>AI Workflows</small></span>
-            <span><img src="https://cdn.simpleicons.org/wordpress/252525.svg" alt="" /><small>WordPress</small></span>
+            <span><img src={shopifyIcon} alt="" /><small>Shopify</small></span>
+            <span><img src={afterEffectsIcon} alt="" /><small>After Effects</small></span>
+            <span><img src={figmaIcon} alt="" /><small>Figma</small></span>
+            <span><img src={illustratorIcon} alt="" /><small>Illustrator</small></span>
+            <span><img src={photoshopIcon} alt="" /><small>Photoshop</small></span>
+            <span><img src={claudeIcon} alt="" /><small>AI Workflows</small></span>
+            <span><img src={wordpressIcon} alt="" /><small>WordPress</small></span>
           </div>
         </section>
       </section>
@@ -169,36 +204,73 @@ function HomePage() {
   )
 }
 
+function getPageFromHash() {
+  const hash = window.location.hash
+  if (hash === '#about') return 'about'
+  if (hash === '#contact') return 'contact'
+  return 'home'
+}
+
 function App() {
-  const [isAboutPage, setIsAboutPage] = useState(window.location.hash === '#about')
+  const [page, setPage] = useState(getPageFromHash())
+  const [menuOpen, setMenuOpen] = useState(false)
+  const navRef = useRef(null)
 
   useEffect(() => {
     window.history.scrollRestoration = 'manual'
     window.scrollTo(0, 0)
-    const handleHashChange = () => setIsAboutPage(window.location.hash === '#about')
+    const handleHashChange = () => {
+      setPage(getPageFromHash())
+      setMenuOpen(false)
+    }
     window.addEventListener('hashchange', handleHashChange)
     return () => window.removeEventListener('hashchange', handleHashChange)
   }, [])
 
   useEffect(() => {
-    if (isAboutPage) {
+    if (page !== 'home') {
       window.scrollTo(0, 0)
     } else if (window.location.hash === '#projects') {
       requestAnimationFrame(() => document.getElementById('projects')?.scrollIntoView())
     }
-  }, [isAboutPage])
+  }, [page])
+
+  useEffect(() => {
+    if (!menuOpen) return
+    const handlePointerDown = e => {
+      if (navRef.current && !navRef.current.contains(e.target)) setMenuOpen(false)
+    }
+    const handleKeyDown = e => {
+      if (e.key === 'Escape') setMenuOpen(false)
+    }
+    document.addEventListener('pointerdown', handlePointerDown)
+    document.addEventListener('keydown', handleKeyDown)
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown)
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [menuOpen])
 
   return (
     <main className="portfolio">
-      <nav className="navigation" aria-label="Main navigation">
+      <nav className="navigation" aria-label="Main navigation" ref={navRef}>
         <a className="monogram" href="#top" aria-label="Home">JS</a>
-        <div className="nav-links">
+        <button
+          type="button"
+          className={`menu-toggle${menuOpen ? ' is-open' : ''}`}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen(o => !o)}
+        >
+          <span /><span /><span />
+        </button>
+        <div className={`nav-links${menuOpen ? ' is-open' : ''}`}>
           <a href="#projects">projects</a>
           <a href="#about">about me</a>
           <a href="#contact">contact</a>
         </div>
       </nav>
-      {isAboutPage ? <AboutPage /> : <HomePage />}
+      {page === 'about' ? <AboutPage /> : page === 'contact' ? <ContactPage /> : <HomePage />}
     </main>
   )
 }
