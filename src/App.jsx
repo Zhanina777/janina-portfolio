@@ -62,14 +62,11 @@ function AboutPortraitStack() {
       onFocus={advance}
       tabIndex={0}
     >
-      {ABOUT_PHOTOS.map((src, i) => (
-        <img
-          key={src}
-          className={`about-portrait${i === index ? ' is-active' : ''}`}
-          src={src}
-          alt="Photo of Janina"
-        />
-      ))}
+      {ABOUT_PHOTOS.map((src, i) => {
+        const distance = (i - index + ABOUT_PHOTOS.length) % ABOUT_PHOTOS.length
+        const state = distance === 0 ? ' is-active' : distance === 1 ? ' is-next' : ''
+        return <img key={src} className={`about-portrait${state}`} src={src} alt="Photo of Janina" />
+      })}
     </div>
   )
 }
