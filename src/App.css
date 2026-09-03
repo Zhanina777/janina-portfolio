@@ -94,7 +94,7 @@ h2, h3, p { font-weight: normal; }
 .project .button { padding: 15px 34px; font-size: 25px; }
 
 .projects { display: flex; flex-direction: column; justify-content: center; min-height: calc(100svh - 100px); padding-top: 17px; padding-bottom: 76px; scroll-margin-top: 100px; }
-.projects-title { margin: 0 0 58px; text-align: center; font-size: 80px; line-height: .95; }
+.projects-title { margin: 0 0 58px; text-align: center; font-size: 50px; line-height: .95; }
 .project { display: flex; align-items: center; justify-content: center; gap: 24px; margin-bottom: 110px; transition: transform .35s ease; }
 .project:hover { transform: translateY(-6px); }
 .project-copy { width: min(700px, calc(100vw - 260px)); }
