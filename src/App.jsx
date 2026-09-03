@@ -14,6 +14,7 @@ function getPageFromHash() {
 
 function App() {
   const [page, setPage] = useState(getPageFromHash())
+  const [homeAnimKey, setHomeAnimKey] = useState(0)
 
   useEffect(() => {
     window.history.scrollRestoration = 'manual'
@@ -33,8 +34,8 @@ function App() {
 
   return (
     <main className="portfolio">
-      <Navigation />
-      {page === 'about' ? <AboutPage /> : page === 'contact' ? <ContactPage /> : <HomePage />}
+      <Navigation onLogoClick={() => setHomeAnimKey(k => k + 1)} />
+      {page === 'about' ? <AboutPage /> : page === 'contact' ? <ContactPage /> : <HomePage key={homeAnimKey} />}
     </main>
   )
 }

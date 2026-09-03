@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-function Navigation() {
+function Navigation({ onLogoClick }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const navRef = useRef(null)
 
@@ -28,7 +28,7 @@ function Navigation() {
 
   return (
     <nav className="navigation" aria-label="Main navigation" ref={navRef}>
-      <a className="monogram" href="#top" aria-label="Home">JS</a>
+      <a className="monogram" href="#top" aria-label="Home" onClick={onLogoClick}>JS</a>
       <button
         type="button"
         className={`menu-toggle${menuOpen ? ' is-open' : ''}`}

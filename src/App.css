@@ -74,10 +74,19 @@ a { color: inherit; }
 }
 
 .hero-copy { position: relative; z-index: 1; width: min(100%, 920px); margin: 0 auto; }
-.eyebrow { margin: 0; font-size: clamp(28px, 8vw, 75px); line-height: .95; }
-.hero h1 { margin: 18px 0 0 clamp(0px, 12vw, 210px); font-size: clamp(40px, 12.5vw, 140px); font-weight: normal; line-height: .82; letter-spacing: clamp(-7px, -0.5vw, -2px); white-space: nowrap; }
+.eyebrow { margin: 0; font-size: clamp(28px, 8vw, 75px); line-height: .95; animation: hero-reveal .8s cubic-bezier(.22, 1, .36, 1) both; }
+.hero h1 { margin: 18px 0 0 clamp(0px, 12vw, 210px); font-size: clamp(40px, 12.5vw, 140px); font-weight: normal; line-height: .82; letter-spacing: clamp(-7px, -0.5vw, -2px); white-space: nowrap; animation: hero-reveal .8s cubic-bezier(.22, 1, .36, 1) .14s both; }
 .portfolio-f { display: inline-block; margin: 0 -3px; font-family: 'Charmonman', cursive; font-size: 1.38em; font-weight: 400; line-height: .55; transform: translateY(6px) rotate(-5deg); }
-.signature { margin: 18px 0 0 auto; width: max-content; max-width: 100%; font-size: clamp(16px, 5vw, 59px); line-height: .95; }
+.signature { margin: 18px 0 0 auto; width: max-content; max-width: 100%; font-size: clamp(16px, 5vw, 59px); line-height: .95; animation: hero-reveal .8s cubic-bezier(.22, 1, .36, 1) .28s both; }
+
+@keyframes hero-reveal {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eyebrow, .hero h1, .signature { animation: none; }
+}
 
 .section { width: 100%; margin-right: auto; margin-left: auto; padding-left: clamp(30px, 11vw, 132px); padding-right: clamp(30px, 11vw, 132px); }
 .about { display: flex; align-items: flex-start; justify-content: center; gap: clamp(16px, 3vw, 28px); min-height: calc(100svh - 100px); margin-top: 80px; margin-bottom: 100px; padding-top: 88px; padding-bottom: 52px; }
