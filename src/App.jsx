@@ -34,7 +34,12 @@ function App() {
 
   return (
     <main className="portfolio">
-      <Navigation onLogoClick={() => setHomeAnimKey(k => k + 1)} />
+      <Navigation onLogoClick={() => {
+        if (window.location.hash !== '#top') window.location.hash = 'top'
+        else setPage('home')
+        window.scrollTo(0, 0)
+        setHomeAnimKey(k => k + 1)
+      }} />
       {page === 'about' ? <AboutPage /> : page === 'contact' ? <ContactPage /> : <HomePage key={homeAnimKey} />}
     </main>
   )
