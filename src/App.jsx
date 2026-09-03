@@ -12,13 +12,16 @@ import illustratorIcon from './assets/devicon_illustrator.png'
 import photoshopIcon from './assets/devicon_photoshop.png'
 import claudeIcon from './assets/logos_claude-icon.png'
 import wordpressIcon from './assets/selfhst_wordpress-dark.png'
+import travelPhoto1 from './assets/travel1.png'
+import travelPhoto2 from './assets/travel2.jpeg'
+import travelPhoto3 from './assets/travel3.jpeg'
 
 const ABOUT_PHOTOS = [aboutPhoto, aboutPhoto2, aboutPhoto3, aboutPhoto4]
 
 const INTEREST_PHOTOS = {
   swimming: [null, null, null],
   photography: [null, null, null],
-  travelling: [null, null, null],
+  travelling: [travelPhoto1, travelPhoto2, travelPhoto3],
 }
 
 function PhonePreview({ variant = 'festival' }) {
