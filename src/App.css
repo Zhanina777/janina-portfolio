@@ -85,7 +85,7 @@ a { color: inherit; }
 h2, h3, p { font-weight: normal; }
 .about h2 { margin: 0 0 14px; font-size: clamp(24px, 5vw, 50px); line-height: .95; }
 .body-copy { margin: 20px 0 0; color: var(--muted); font-size: clamp(15px, 2.6vw, 32px); line-height: 1.2; }
-.project p { margin: 0; color: var(--muted); font-size: 30px; line-height: 1.2; }
+.project p { margin: 0; color: var(--muted); font-size: 18px; line-height: 1.4; }
 .portrait { width: min(440px, 34vw); height: min(560px, 43vw); flex: 0 0 min(440px, 34vw); object-fit: cover; object-position: center; transform: translateX(24px); transition: transform .35s ease, box-shadow .35s ease; }
 .portrait:hover { transform: translateX(24px) translateY(-10px) rotate(-2deg); box-shadow: 10px 14px 0 rgba(82, 24, 44, .14); }
 .button { display: inline-block; margin-top: 22px; padding: 8px 19px; border-radius: 20px; background: var(--ink); color: var(--light-ink); font-size: 12px; text-decoration: none; transition: background .25s ease, transform .25s ease, box-shadow .25s ease; }
