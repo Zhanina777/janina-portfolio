@@ -113,24 +113,13 @@ function AboutPortraitStack() {
 }
 
 function InterestPhotoStack({ photos, label }) {
-  const [index, setIndex] = useState(0)
-
-  const advance = () => setIndex(i => (i + 1) % photos.length)
-
   return (
-    <div
-      className="interest-photo-stack"
-      onMouseEnter={advance}
-      onFocus={advance}
-      tabIndex={0}
-    >
+    <div className="interest-photo-stack" tabIndex={0}>
       {photos.map((src, i) => {
-        const distance = (i - index + photos.length) % photos.length
-        const state = distance === 0 ? ' is-active' : distance === 1 ? ' is-next' : ''
         return src ? (
-          <img key={i} className={`interest-photo${state}`} src={src} alt={`${label} photo ${i + 1}`} />
+          <img key={i} className="interest-photo" src={src} alt={`${label} photo ${i + 1}`} />
         ) : (
-          <div key={i} className={`interest-photo interest-photo-placeholder${state}`}>{label} image {i + 1}</div>
+          <div key={i} className="interest-photo interest-photo-placeholder">{label} image {i + 1}</div>
         )
       })}
     </div>
