@@ -12,17 +12,8 @@ import illustratorIcon from './assets/devicon_illustrator.png'
 import photoshopIcon from './assets/devicon_photoshop.png'
 import claudeIcon from './assets/logos_claude-icon.png'
 import wordpressIcon from './assets/selfhst_wordpress-dark.png'
-import travelPhoto1 from './assets/travel1.png'
-import travelPhoto2 from './assets/travel2.jpeg'
-import travelPhoto3 from './assets/travel3.jpeg'
 
 const ABOUT_PHOTOS = [aboutPhoto, aboutPhoto2, aboutPhoto3, aboutPhoto4]
-
-const INTEREST_PHOTOS = {
-  swimming: [null, null, null],
-  photography: [null, null, null],
-  travelling: [travelPhoto1, travelPhoto2, travelPhoto3],
-}
 
 function PhonePreview({ variant = 'festival' }) {
   return (
@@ -115,17 +106,31 @@ function AboutPortraitStack() {
   )
 }
 
-function InterestPhotoStack({ photos, label }) {
+function SwimmingIcon() {
   return (
-    <div className="interest-photo-stack" tabIndex={0}>
-      {photos.map((src, i) => {
-        return src ? (
-          <img key={i} className="interest-photo" src={src} alt={`${label} photo ${i + 1}`} />
-        ) : (
-          <div key={i} className="interest-photo interest-photo-placeholder">{label} image {i + 1}</div>
-        )
-      })}
-    </div>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M2 8.5c1.4-1.4 2.9-1.4 4.3 0s2.9 1.4 4.3 0 2.9-1.4 4.3 0 2.9 1.4 4.3 0" />
+      <path d="M2 14.5c1.4-1.4 2.9-1.4 4.3 0s2.9 1.4 4.3 0 2.9-1.4 4.3 0 2.9 1.4 4.3 0" />
+      <circle cx="16" cy="5" r="1.6" />
+    </svg>
+  )
+}
+
+function CameraIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 8h3.2L8.7 5.5h6.6L16.8 8H20a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z" />
+      <circle cx="12" cy="13.2" r="3.4" />
+    </svg>
+  )
+}
+
+function CompassIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M15.2 8.8 13 13l-4.2 2.2L11 11l4.2-2.2Z" />
+    </svg>
   )
 }
 
@@ -147,9 +152,9 @@ function AboutPage() {
         <section className="interests-reference">
           <h2>interests that shape me</h2>
           <div className="interests-reference-grid">
-            <article><InterestPhotoStack photos={INTEREST_PHOTOS.swimming} label="swimming" /><h3>swimming</h3><p>Swimming has been a big part of my life and has shaped the way I approach challenges. Years of training taught me discipline, consistency, and the importance of being organised to achieve long-term goals. It strengthened my ability to plan, track progress, and continuously improve.</p></article>
-            <article><InterestPhotoStack photos={INTEREST_PHOTOS.photography} label="photography" /><h3>photography</h3><p>Photography is a hobby I enjoy mainly while travelling and exploring new places. I like capturing everyday moments, especially how people interact with their surroundings and experience different environments. Through photography, I have learned to slow down, notice details that are often overlooked, and explore different perspectives.</p></article>
-            <article><InterestPhotoStack photos={INTEREST_PHOTOS.travelling} label="travelling" /><h3>travelling</h3><p>Traveling and exploring new places inspires my curiosity and helps me understand different perspectives. I enjoy noticing how people interact with spaces, services, and cultures - something that influences the way I think about creating user-centred experiences.</p></article>
+            <article className="interest-card" tabIndex={0}><span className="interest-icon"><SwimmingIcon /></span><h3>swimming</h3><p>Swimming has been a big part of my life and has shaped the way I approach challenges. Years of training taught me discipline, consistency, and the importance of being organised to achieve long-term goals. It strengthened my ability to plan, track progress, and continuously improve.</p></article>
+            <article className="interest-card" tabIndex={0}><span className="interest-icon"><CameraIcon /></span><h3>photography</h3><p>Photography is a hobby I enjoy mainly while travelling and exploring new places. I like capturing everyday moments, especially how people interact with their surroundings and experience different environments. Through photography, I have learned to slow down, notice details that are often overlooked, and explore different perspectives.</p></article>
+            <article className="interest-card" tabIndex={0}><span className="interest-icon"><CompassIcon /></span><h3>travelling</h3><p>Traveling and exploring new places inspires my curiosity and helps me understand different perspectives. I enjoy noticing how people interact with spaces, services, and cultures - something that influences the way I think about creating user-centred experiences.</p></article>
           </div>
         </section>
 
