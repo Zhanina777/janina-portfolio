@@ -15,6 +15,12 @@ import wordpressIcon from './assets/selfhst_wordpress-dark.png'
 
 const ABOUT_PHOTOS = [aboutPhoto, aboutPhoto2, aboutPhoto3, aboutPhoto4]
 
+const INTEREST_PHOTOS = {
+  swimming: [null, null, null],
+  photography: [null, null, null],
+  travelling: [null, null, null],
+}
+
 function PhonePreview({ variant = 'festival' }) {
   return (
     <div className={`phone-preview ${variant}`} aria-hidden="true">
@@ -106,6 +112,31 @@ function AboutPortraitStack() {
   )
 }
 
+function InterestPhotoStack({ photos, label }) {
+  const [index, setIndex] = useState(0)
+
+  const advance = () => setIndex(i => (i + 1) % photos.length)
+
+  return (
+    <div
+      className="interest-photo-stack"
+      onMouseEnter={advance}
+      onFocus={advance}
+      tabIndex={0}
+    >
+      {photos.map((src, i) => {
+        const distance = (i - index + photos.length) % photos.length
+        const state = distance === 0 ? ' is-active' : distance === 1 ? ' is-next' : ''
+        return src ? (
+          <img key={i} className={`interest-photo${state}`} src={src} alt={`${label} photo ${i + 1}`} />
+        ) : (
+          <div key={i} className={`interest-photo interest-photo-placeholder${state}`}>{label} image {i + 1}</div>
+        )
+      })}
+    </div>
+  )
+}
+
 function AboutPage() {
   return (
     <>
@@ -124,9 +155,9 @@ function AboutPage() {
         <section className="interests-reference">
           <h2>interests that shape me</h2>
           <div className="interests-reference-grid">
-            <article><div className="interest-image-placeholder">swimming image</div><h3>swimming</h3><p>Swimming has been a big part of my life and has shaped the way I approach challenges. Years of training taught me discipline, consistency, and the importance of being organised to achieve long-term goals. It strengthened my ability to plan, track progress, and continuously improve.</p></article>
-            <article><div className="interest-image-placeholder">photography image</div><h3>photography</h3><p>Photography is a hobby I enjoy mainly while travelling and exploring new places. I like capturing everyday moments, especially how people interact with their surroundings and experience different environments. Through photography, I have learned to slow down, notice details that are often overlooked, and explore different perspectives.</p></article>
-            <article><div className="interest-image-placeholder">travelling image</div><h3>travelling</h3><p>Traveling and exploring new places inspires my curiosity and helps me understand different perspectives. I enjoy noticing how people interact with spaces, services, and cultures - something that influences the way I think about creating user-centred experiences.</p></article>
+            <article><InterestPhotoStack photos={INTEREST_PHOTOS.swimming} label="swimming" /><h3>swimming</h3><p>Swimming has been a big part of my life and has shaped the way I approach challenges. Years of training taught me discipline, consistency, and the importance of being organised to achieve long-term goals. It strengthened my ability to plan, track progress, and continuously improve.</p></article>
+            <article><InterestPhotoStack photos={INTEREST_PHOTOS.photography} label="photography" /><h3>photography</h3><p>Photography is a hobby I enjoy mainly while travelling and exploring new places. I like capturing everyday moments, especially how people interact with their surroundings and experience different environments. Through photography, I have learned to slow down, notice details that are often overlooked, and explore different perspectives.</p></article>
+            <article><InterestPhotoStack photos={INTEREST_PHOTOS.travelling} label="travelling" /><h3>travelling</h3><p>Traveling and exploring new places inspires my curiosity and helps me understand different perspectives. I enjoy noticing how people interact with spaces, services, and cultures - something that influences the way I think about creating user-centred experiences.</p></article>
           </div>
         </section>
 
