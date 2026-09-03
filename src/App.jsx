@@ -5,6 +5,7 @@ import aboutPhoto from './assets/pic2.jpeg'
 import aboutPhoto2 from './assets/pic3.jpg'
 import aboutPhoto3 from './assets/pic4.jpg'
 import aboutPhoto4 from './assets/pic5.jpeg'
+import aboutPhoto5 from './assets/travel1.png'
 import shopifyIcon from './assets/selfhst_shopify.png'
 import afterEffectsIcon from './assets/skill-icons_aftereffects.png'
 import figmaIcon from './assets/devicon_figma.png'
@@ -13,7 +14,7 @@ import photoshopIcon from './assets/devicon_photoshop.png'
 import claudeIcon from './assets/logos_claude-icon.png'
 import wordpressIcon from './assets/selfhst_wordpress-dark.png'
 
-const ABOUT_PHOTOS = [aboutPhoto, aboutPhoto2, aboutPhoto3, aboutPhoto4]
+const ABOUT_PHOTOS = [aboutPhoto, aboutPhoto2, aboutPhoto3, aboutPhoto4, aboutPhoto5]
 
 function PhonePreview({ variant = 'festival' }) {
   return (
