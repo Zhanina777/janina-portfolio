@@ -23,8 +23,8 @@ const TOC_GROUPS = [
   { phase: '02 define', items: [
     { label: '02.1 user persona', id: 'persona' },
     { label: '02.2 values', id: 'values' },
-    { label: '02.3 how might we', id: null },
-    { label: '02.4 value proposition canvas', id: null },
+    { label: '02.3 how might we', id: 'how-might-we' },
+    { label: '02.4 value proposition canvas', id: 'value-proposition-canvas' },
   ] },
   { phase: '03 develop', items: [
     { label: '03.1 sketches', id: null },
@@ -99,6 +99,25 @@ function BlaSolProjectPage() {
             <h3 id="values">Values</h3>
             <p>To guide the direction of our solution, we defined four core values that reflect the identity and atmosphere of BLÅ SOL.</p>
             <CaseStudyImagePlaceholder label="List of values" className="case-study-image-banner" />
+
+            <h3 id="how-might-we">How Might We</h3>
+            <p>After going through our research, we turned some of the main problems into How Might We questions. This helped us look at the problems from a different perspective and start thinking about possible solutions.</p>
+            <CaseStudyImagePlaceholder label="How Might We questions" className="case-study-image-banner" />
+
+            <h3 id="value-proposition-canvas">Value Proposition Canvas</h3>
+            <p>We used the Value Proposition Canvas to connect what we learned from our research with what our solution could offer. We looked at what festival-goers are trying to do, what frustrates them, and what would make their experience easier and more enjoyable.</p>
+
+            <h4>Customer Jobs</h4>
+            <p>We found that staying connected with friends was one of the main things people wanted to achieve. They wanted to find each other when separated, decide what to do together, and enjoy the festival as a group without having to constantly communicate.</p>
+
+            <h4>Pains</h4>
+            <p>One of the biggest frustrations was losing friends in crowded areas. Participants also mentioned confusing locations, delayed messages and calls, and the feeling that existing festival apps can be too complicated for what they actually need.</p>
+
+            <h4>Gains</h4>
+            <p>People wanted a simple way to find their friends, spend more time together, and move around the festival without unnecessary stress. They also valued being able to stay spontaneous instead of constantly making plans.</p>
+
+            <h4>Products and Services</h4>
+            <p>Based on our findings, we developed a lightweight festival tool with a social map, approximate friend locations, group coordination, and smart meeting points.</p>
           </div>
         </div>
       </section>
