@@ -59,6 +59,19 @@ function BlaSolProjectPage() {
               <CaseStudyImagePlaceholder label="Relevant articles" className="case-study-image-tall" />
             </div>
             <CaseStudyImagePlaceholder label="Ideals and cultural identity" className="case-study-image-banner" />
+
+            <h3>Observations</h3>
+            <p>Since we could not observe BLÅ SOL directly, we used visual material from similar Danish festivals as a reference. We paid attention to how people navigated the festival environment, interacted with their friends, and used their phones throughout the day.</p>
+
+            <h3>Interviews</h3>
+            <p>After gathering our initial findings, we developed an interview guide to help us explore the topics in more depth. The questions focused on how people plan, communicate, and stay connected with friends during festivals.</p>
+            <p>We conducted 18 interviews with people aged 18–34 who regularly attend festivals with friends. The interviews allowed us to hear about their experiences in their own words and helped us uncover behaviours and challenges that were not visible through our previous research methods.</p>
+            <CaseStudyImagePlaceholder label="Interview main insights" className="case-study-image-banner" />
+
+            <h3>The Problem</h3>
+            <p>Young adults attending the Blå Sol festival experience difficulties staying connected with their friends during the event. While festivals are highly social environments, the crowded and dynamic setting makes it easy to lose track of one another.</p>
+            <p>Visitors currently rely on fragmented communication tools such as messaging apps, which are not designed for real-time coordination in a festival context.</p>
+            <p>As a result, this creates stress, reduces spontaneity, and negatively impacts the overall festival experience.</p>
           </div>
         </div>
       </section>
