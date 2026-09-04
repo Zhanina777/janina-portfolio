@@ -72,6 +72,15 @@ function BlaSolProjectPage() {
             <p>Young adults attending the Blå Sol festival experience difficulties staying connected with their friends during the event. While festivals are highly social environments, the crowded and dynamic setting makes it easy to lose track of one another.</p>
             <p>Visitors currently rely on fragmented communication tools such as messaging apps, which are not designed for real-time coordination in a festival context.</p>
             <p>As a result, this creates stress, reduces spontaneity, and negatively impacts the overall festival experience.</p>
+
+            <h3>Persona</h3>
+            <p>To turn our research findings into a more relatable user perspective, we created a persona based on patterns and behaviours identified across our interviews.</p>
+            <p>The persona represents our target user and highlights their goals, motivations, frustrations, and behavior when attending festivals with friends. This helped us keep the user&apos;s perspective at the centre of the project throughout the design decisions.</p>
+            <CaseStudyImagePlaceholder label="Festival-goer persona" className="case-study-image-portrait" />
+
+            <h3>Values</h3>
+            <p>To guide the direction of our solution, we defined four core values that reflect the identity and atmosphere of BLÅ SOL.</p>
+            <CaseStudyImagePlaceholder label="List of values" className="case-study-image-banner" />
           </div>
         </div>
       </section>

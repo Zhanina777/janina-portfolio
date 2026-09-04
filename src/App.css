@@ -214,6 +214,7 @@ h2, h3, p { font-weight: normal; }
 .case-study-image-wide { flex: 1.6; aspect-ratio: 1.3; }
 .case-study-image-tall { flex: 1; aspect-ratio: .62; }
 .case-study-image-banner { width: 100%; margin-top: 20px; aspect-ratio: 2; }
+.case-study-image-portrait { width: min(400px, 100%); margin: 30px auto 0; aspect-ratio: .67; }
 
 @media (max-width: 560px) {
   .portfolio { padding-top: 52px; }
