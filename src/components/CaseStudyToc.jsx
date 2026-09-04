@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
 const TOP_OFFSET = 120
+const RELEASE_MARGIN = 24
 const MOBILE_BREAKPOINT = 560
 
 function CaseStudyToc({ groups }) {
@@ -31,10 +32,10 @@ function CaseStudyToc({ groups }) {
 
       if (wrapRect.top > TOP_OFFSET) {
         setNavStyle({})
-      } else if (releaseThreshold < TOP_OFFSET) {
+      } else if (releaseThreshold < TOP_OFFSET + RELEASE_MARGIN) {
         setNavStyle({ position: 'absolute', bottom: containerPaddingBottom, left: wrap.offsetLeft, width: wrap.offsetWidth })
       } else {
-        setNavStyle({ position: 'fixed', top: TOP_OFFSET, left: wrapRect.left, width: wrapRect.width })
+        setNavStyle({ position: 'fixed', top: TOP_OFFSET, left: wrapRect.left, width: wrapRect.width, zIndex: 5 })
       }
     }
 
