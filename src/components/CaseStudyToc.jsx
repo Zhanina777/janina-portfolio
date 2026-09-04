@@ -3,6 +3,14 @@ import { useEffect, useRef, useState } from 'react'
 const TOP_OFFSET = 120
 const RELEASE_MARGIN = 24
 const MOBILE_BREAKPOINT = 560
+const SCROLL_PADDING = 20
+
+function scrollToSection(id) {
+  const el = document.getElementById(id)
+  if (!el) return
+  const top = el.getBoundingClientRect().top + window.scrollY - TOP_OFFSET - SCROLL_PADDING
+  window.scrollTo({ top, behavior: 'smooth' })
+}
 
 function CaseStudyToc({ groups }) {
   const wrapRef = useRef(null)
@@ -55,7 +63,13 @@ function CaseStudyToc({ groups }) {
           <div className="case-study-toc-group" key={group.phase}>
             <p className="case-study-toc-phase">{group.phase}</p>
             <ul>
-              {group.items.map(item => <li key={item}>{item}</li>)}
+              {group.items.map(item => (
+                <li key={item.label} className={item.id ? '' : 'is-disabled'}>
+                  {item.id
+                    ? <button type="button" onClick={() => scrollToSection(item.id)}>{item.label}</button>
+                    : item.label}
+                </li>
+              ))}
             </ul>
           </div>
         ))}
