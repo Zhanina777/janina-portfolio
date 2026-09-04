@@ -1,4 +1,4 @@
-import planningImage from '../assets/planning.png'
+import planningImage from '../assets/plan.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
