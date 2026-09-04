@@ -4,11 +4,19 @@ import Navigation from './components/Navigation'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
+import BlaSolProjectPage from './pages/BlaSolProjectPage'
+
+const ROUTED_PAGES = {
+  about: AboutPage,
+  contact: ContactPage,
+  'project-bla-sol': BlaSolProjectPage,
+}
 
 function getPageFromHash() {
   const hash = window.location.hash
   if (hash === '#about') return 'about'
   if (hash === '#contact') return 'contact'
+  if (hash === '#project-bla-sol') return 'project-bla-sol'
   return 'home'
 }
 
@@ -32,6 +40,8 @@ function App() {
     }
   }, [page])
 
+  const RoutedPage = ROUTED_PAGES[page]
+
   return (
     <main className="portfolio">
       <Navigation onLogoClick={() => {
@@ -40,7 +50,7 @@ function App() {
         window.scrollTo(0, 0)
         setHomeAnimKey(k => k + 1)
       }} />
-      {page === 'about' ? <AboutPage /> : page === 'contact' ? <ContactPage /> : <HomePage key={homeAnimKey} />}
+      {RoutedPage ? <RoutedPage /> : <HomePage key={homeAnimKey} />}
     </main>
   )
 }

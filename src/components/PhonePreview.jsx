@@ -1,6 +1,6 @@
-function PhonePreview({ variant = 'festival' }) {
+function PhonePreview({ variant = 'festival', className = '' }) {
   return (
-    <div className={`phone-preview ${variant}`} aria-hidden="true">
+    <div className={`phone-preview ${variant} ${className}`.trim()} aria-hidden="true">
       <div className="phone-speaker" />
       <div className="phone-screen">
         {variant === 'festival' ? (

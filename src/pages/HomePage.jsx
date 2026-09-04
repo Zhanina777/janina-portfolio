@@ -31,7 +31,7 @@ function HomePage() {
           <div className="project-copy">
             <h3>BLÅ SOL FESTIVAL</h3>
             <p>Mobile app focused on improving the festival experience by supporting seamless communication and enriching between friends.</p>
-            <a className="button" href="#contact">see more</a>
+            <a className="button" href="#project-bla-sol">see more</a>
           </div>
           <PhonePreview />
         </article>
