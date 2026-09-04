@@ -12,7 +12,8 @@ function CaseStudyToc({ groups }) {
     const update = () => {
       const wrap = wrapRef.current
       const nav = navRef.current
-      if (!wrap || !nav) return
+      const container = wrap?.parentElement
+      if (!wrap || !nav || !container) return
 
       if (window.innerWidth <= MOBILE_BREAKPOINT) {
         wrap.style.height = ''
@@ -24,11 +25,14 @@ function CaseStudyToc({ groups }) {
       wrap.style.height = `${navHeight}px`
 
       const wrapRect = wrap.getBoundingClientRect()
+      const containerRect = container.getBoundingClientRect()
+      const containerPaddingBottom = parseFloat(getComputedStyle(container).paddingBottom) || 0
+      const releaseThreshold = containerRect.bottom - containerPaddingBottom - navHeight
 
       if (wrapRect.top > TOP_OFFSET) {
         setNavStyle({})
-      } else if (wrapRect.top + navHeight < TOP_OFFSET) {
-        setNavStyle({ position: 'absolute', bottom: 0, left: 0, width: wrap.offsetWidth })
+      } else if (releaseThreshold < TOP_OFFSET) {
+        setNavStyle({ position: 'absolute', bottom: containerPaddingBottom, left: wrap.offsetLeft, width: wrap.offsetWidth })
       } else {
         setNavStyle({ position: 'fixed', top: TOP_OFFSET, left: wrapRect.left, width: wrapRect.width })
       }

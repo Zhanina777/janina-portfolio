@@ -198,8 +198,7 @@ h2, h3, p { font-weight: normal; }
 .case-study-section-body p:last-child { margin-bottom: 0; }
 .case-study-planning-image { display: block; width: 100%; margin: 26px 0; border-radius: 12px; box-shadow: 0 10px 24px rgba(82, 24, 44, .15); }
 
-.case-study-process { display: grid; grid-template-columns: 200px 1fr; align-items: start; gap: 60px; padding: 10px clamp(30px, 8vw, 100px) 70px; }
-.case-study-toc-wrap { position: relative; }
+.case-study-process { display: grid; grid-template-columns: 200px 1fr; align-items: start; gap: 60px; padding: 10px clamp(30px, 8vw, 100px) 70px; position: relative; }
 .case-study-toc { display: flex; flex-direction: column; gap: 20px; }
 .case-study-toc-group { display: flex; flex-direction: column; gap: 4px; }
 .case-study-toc-phase { margin: 0; font-weight: 700; font-size: 14px; }
