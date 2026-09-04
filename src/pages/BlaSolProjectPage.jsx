@@ -1,5 +1,15 @@
-import PhonePreview from '../components/PhonePreview'
+import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
+import CaseStudyDetails from '../components/CaseStudyDetails'
 import ContactFooter from '../components/ContactFooter'
+
+const DETAILS = [
+  { label: 'Client', value: 'BLÅ SOL' },
+  { label: 'Product', value: 'Additional features in an established app' },
+  { label: 'Duration', value: '4 weeks' },
+  { label: 'Role', value: 'UX/UI Designer (user research, ideation, wireframing, prototyping, and usability testing)' },
+  { label: 'Tools', value: 'Figma, Figjam, VS Code' },
+  { label: 'Methodology', value: 'Double Diamond' },
+]
 
 function BlaSolProjectPage() {
   return (
@@ -10,21 +20,10 @@ function BlaSolProjectPage() {
             <h1>BLÅ SOL FESTIVAL MOBILE APP</h1>
             <p>Helping festival-goers stay connected with their friends throughout the event.</p>
           </div>
-          <div className="case-study-phones">
-            <PhonePreview className="case-phone case-phone-left" />
-            <PhonePreview className="case-phone case-phone-center" />
-            <PhonePreview className="case-phone case-phone-right" />
-          </div>
+          <CaseStudyPhoneCollage />
         </div>
 
-        <dl className="case-study-details">
-          <div className="detail-row"><dt>Client</dt><dd>BLÅ SOL</dd></div>
-          <div className="detail-row"><dt>Product</dt><dd>Additional features in an established app</dd></div>
-          <div className="detail-row"><dt>Duration</dt><dd>4 weeks</dd></div>
-          <div className="detail-row"><dt>Role</dt><dd>UX/UI Designer (user research, ideation, wireframing, prototyping, and usability testing)</dd></div>
-          <div className="detail-row"><dt>Tools</dt><dd>Figma, Figjam, VS Code</dd></div>
-          <div className="detail-row"><dt>Methodology</dt><dd>Double Diamond</dd></div>
-        </dl>
+        <CaseStudyDetails items={DETAILS} />
 
         <section className="case-study-section">
           <h2>Planning</h2>
