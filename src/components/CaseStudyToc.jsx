@@ -8,7 +8,9 @@ const SCROLL_PADDING = 20
 function scrollToSection(id) {
   const el = document.getElementById(id)
   if (!el) return
-  const top = el.getBoundingClientRect().top + window.scrollY - TOP_OFFSET - SCROLL_PADDING
+  const navEl = document.querySelector('.navigation')
+  const navHeight = navEl ? navEl.offsetHeight : TOP_OFFSET
+  const top = el.getBoundingClientRect().top + window.scrollY - navHeight - SCROLL_PADDING
   window.scrollTo({ top, behavior: 'smooth' })
 }
 
@@ -16,6 +18,11 @@ function CaseStudyToc({ groups }) {
   const wrapRef = useRef(null)
   const navRef = useRef(null)
   const [navStyle, setNavStyle] = useState({})
+  const [mobileOpen, setMobileOpen] = useState(false)
+
+  const handleItemClick = id => {
+    scrollToSection(id)
+  }
 
   useEffect(() => {
     const update = () => {
@@ -59,20 +66,31 @@ function CaseStudyToc({ groups }) {
   return (
     <div className="case-study-toc-wrap" ref={wrapRef}>
       <nav className="case-study-toc" ref={navRef} style={navStyle} aria-label="Case study outline">
-        {groups.map(group => (
-          <div className="case-study-toc-group" key={group.phase}>
-            <p className="case-study-toc-phase">{group.phase}</p>
-            <ul>
-              {group.items.map(item => (
-                <li key={item.label} className={item.id ? '' : 'is-disabled'}>
-                  {item.id
-                    ? <button type="button" onClick={() => scrollToSection(item.id)}>{item.label}</button>
-                    : item.label}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <button
+          type="button"
+          className="case-study-toc-toggle"
+          onClick={() => setMobileOpen(o => !o)}
+          aria-expanded={mobileOpen}
+        >
+          Contents
+          <span className={`case-study-toc-chevron${mobileOpen ? ' is-open' : ''}`} aria-hidden="true" />
+        </button>
+        <div className={`case-study-toc-groups${mobileOpen ? ' is-open' : ''}`}>
+          {groups.map(group => (
+            <div className="case-study-toc-group" key={group.phase}>
+              <p className="case-study-toc-phase">{group.phase}</p>
+              <ul>
+                {group.items.map(item => (
+                  <li key={item.label} className={item.id ? '' : 'is-disabled'}>
+                    {item.id
+                      ? <button type="button" onClick={() => handleItemClick(item.id)}>{item.label}</button>
+                      : item.label}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </nav>
     </div>
   )
