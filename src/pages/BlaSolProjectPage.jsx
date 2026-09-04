@@ -2,6 +2,7 @@ import planningImage from '../assets/plan.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
+import CaseStudyImagePlaceholder from '../components/CaseStudyImagePlaceholder'
 import ContactFooter from '../components/ContactFooter'
 
 const DETAILS = [
@@ -52,6 +53,12 @@ function BlaSolProjectPage() {
             <p>We began by researching music festivals, existing festival apps, and digital solutions already available. This helped us understand how festivals currently support their visitors, which features are commonly used, and where there might be opportunities for improvement.</p>
             <p>We also looked into BLÅ SOL itself, including its target audience, identity, communication, and overall concept. This gave us a better understanding of what we were designing for and how our solution could fit into its existing identity.</p>
             <p>Alongside this, we explored content and discussions shared by festival-goers on social media. Looking at comments, posts, and user-generated content gave us insight into people&apos;s expectations, frustrations, and behaviours when attending festivals.</p>
+
+            <div className="case-study-image-row">
+              <CaseStudyImagePlaceholder label="Competitor Analysis / netnography" className="case-study-image-wide" />
+              <CaseStudyImagePlaceholder label="Relevant articles" className="case-study-image-tall" />
+            </div>
+            <CaseStudyImagePlaceholder label="Ideals and cultural identity" className="case-study-image-banner" />
           </div>
         </div>
       </section>
