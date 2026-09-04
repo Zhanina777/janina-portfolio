@@ -193,7 +193,21 @@ h2, h3, p { font-weight: normal; }
 .detail-row dd { margin: 0; color: var(--muted); line-height: 1.4; }
 .case-study-section { display: flex; gap: 40px; flex-wrap: wrap; padding: 60px clamp(30px, 8vw, 100px); }
 .case-study-section h2 { flex: 0 0 200px; margin: 0; font-size: 32px; font-weight: normal; }
-.case-study-section p { flex: 1 1 320px; margin: 0; max-width: 600px; color: var(--muted); font-size: 17px; line-height: 1.55; }
+.case-study-section-body { flex: 1 1 320px; min-width: 0; max-width: 600px; }
+.case-study-section-body p { margin: 0 0 18px; color: var(--muted); font-size: 17px; line-height: 1.55; }
+.case-study-section-body p:last-child { margin-bottom: 0; }
+.case-study-planning-image { display: block; width: 100%; margin: 26px 0; border-radius: 12px; box-shadow: 0 10px 24px rgba(82, 24, 44, .15); }
+
+.case-study-process { display: flex; gap: 60px; align-items: flex-start; padding: 10px clamp(30px, 8vw, 100px) 70px; }
+.case-study-toc { position: sticky; top: 120px; flex: 0 0 200px; display: flex; flex-direction: column; gap: 20px; }
+.case-study-toc-group { display: flex; flex-direction: column; gap: 4px; }
+.case-study-toc-phase { margin: 0; font-weight: 700; font-size: 14px; }
+.case-study-toc ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.case-study-toc li { color: var(--muted); font-size: 13px; line-height: 1.4; }
+.case-study-content { flex: 1; min-width: 0; }
+.case-study-content h3 { margin: 0 0 18px; font-size: 28px; font-weight: normal; }
+.case-study-content p { margin: 0 0 18px; color: var(--muted); font-size: 16px; line-height: 1.6; }
+.case-study-content p:last-child { margin-bottom: 0; }
 
 @media (max-width: 560px) {
   .portfolio { padding-top: 52px; }
@@ -252,5 +266,10 @@ h2, h3, p { font-weight: normal; }
   .detail-row { grid-template-columns: 1fr; gap: 4px; padding: 14px 0; }
   .case-study-section { flex-direction: column; gap: 14px; padding: 36px 24px; }
   .case-study-section h2 { flex: none; font-size: 24px; }
-  .case-study-section p { font-size: 15px; }
+  .case-study-section-body p { font-size: 15px; }
+  .case-study-planning-image { margin: 18px 0; }
+  .case-study-process { flex-direction: column; gap: 30px; padding: 10px 24px 50px; }
+  .case-study-toc { position: static; flex: none; width: 100%; }
+  .case-study-content h3 { font-size: 22px; }
+  .case-study-content p { font-size: 15px; }
 }
