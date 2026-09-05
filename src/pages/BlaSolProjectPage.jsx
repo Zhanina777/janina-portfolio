@@ -27,9 +27,9 @@ const TOC_GROUPS = [
     { label: '02.4 value proposition canvas', id: 'value-proposition-canvas' },
   ] },
   { phase: '03 develop', items: [
-    { label: '03.1 sketches', id: null },
-    { label: '03.2 user flow', id: null },
-    { label: '03.3 moodboard', id: null },
+    { label: '03.1 sketches', id: 'sketches' },
+    { label: '03.2 user flow', id: 'user-flow' },
+    { label: '03.3 moodboard', id: 'moodboard' },
     { label: '03.4 style tile', id: null },
     { label: '03.5 low fidelity wireframes and testing', id: null },
     { label: '03.6 final product', id: null },
@@ -118,6 +118,33 @@ function BlaSolProjectPage() {
 
             <h4>Products and Services</h4>
             <p>Based on our findings, we developed a lightweight festival tool with a social map, approximate friend locations, group coordination, and smart meeting points.</p>
+
+            <h4>Pain Relievers</h4>
+            <p>Our concept aims to reduce frustrations by making finding friends quicker and easier. Approximate friend locations and smart meeting points help with coordination, while a simple interface reduces the need for constant messaging and avoids the complexity of traditional festival apps.</p>
+
+            <h4>Gain Creators</h4>
+            <p>The solution is designed to make the festival experience feel more connected and effortless. By making it easier to meet up and coordinate with friends, users can spend less time organising and more time enjoying the festival together.</p>
+
+            <h3 id="sketches">Sketches</h3>
+            <p>We started with quick sketches to explore different ideas and layouts. This helped us try out different solutions without focusing too much on the details.</p>
+            <div className="case-study-image-grid">
+              <CaseStudyImagePlaceholder label="Sketch 1" />
+              <CaseStudyImagePlaceholder label="Sketch 2" />
+              <CaseStudyImagePlaceholder label="Sketch 3" />
+              <CaseStudyImagePlaceholder label="Sketch 4" />
+            </div>
+
+            <h3 id="user-flow">User Flow</h3>
+            <p>We created a user flow to map out how users would move through the app and interact with its main features. This helped us understand the steps users would take to complete key tasks and make sure the experience felt simple and logical.</p>
+            <p>It also helped us identify unnecessary steps and improve the overall navigation before developing the final design.</p>
+
+            <h3 id="moodboard">Moodboard</h3>
+            <p>We made a moodboard to explore the overall look and feel we wanted for the app. We collected colours, typography, images, and other visual references that matched the energy and atmosphere of BLÅ SOL.</p>
+            <div className="case-study-image-grid">
+              <CaseStudyImagePlaceholder label="Moodboard 1" />
+              <CaseStudyImagePlaceholder label="Moodboard 2" />
+              <CaseStudyImagePlaceholder label="Moodboard 3" />
+            </div>
           </div>
         </div>
       </section>
