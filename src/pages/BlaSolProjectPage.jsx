@@ -35,7 +35,7 @@ const TOC_GROUPS = [
     { label: '03.6 final product', id: 'final-product' },
   ] },
   { phase: '04 deliver', items: [
-    { label: '04.1 coded solution', id: null },
+    { label: '04.1 coded solution', id: 'final-product' },
   ] },
 ]
 
