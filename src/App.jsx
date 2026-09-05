@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Navigation from './components/Navigation'
+import CustomCursor from './components/CustomCursor'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <main className="portfolio">
+      <CustomCursor />
       <Navigation onLogoClick={() => {
         if (window.location.hash !== '#top') window.location.hash = 'top'
         else setPage('home')
