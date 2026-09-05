@@ -30,8 +30,8 @@ const TOC_GROUPS = [
     { label: '03.1 sketches', id: 'sketches' },
     { label: '03.2 user flow', id: 'user-flow' },
     { label: '03.3 moodboard', id: 'moodboard' },
-    { label: '03.4 style tile', id: null },
-    { label: '03.5 low fidelity wireframes and testing', id: null },
+    { label: '03.4 style tile', id: 'style-tile' },
+    { label: '03.5 low fidelity wireframes and testing', id: 'lofi-wireframes' },
     { label: '03.6 final product', id: null },
   ] },
   { phase: '04 deliver', items: [
@@ -144,6 +144,21 @@ function BlaSolProjectPage() {
               <CaseStudyImagePlaceholder label="Moodboard 1" />
               <CaseStudyImagePlaceholder label="Moodboard 2" />
               <CaseStudyImagePlaceholder label="Moodboard 3" />
+            </div>
+
+            <h3 id="style-tile">Styletile</h3>
+            <p>For the visual identity of our project, we build on the already existing design of the festival rather than creating a completely new style. We kept the primary and secondary color palettes which reflect the vibrant and youthful atmosphere of the festival. We also followed the existing typography for heading and body text and reused the logo variations.</p>
+            <CaseStudyImagePlaceholder label="Style tile" className="case-study-image-banner" />
+
+            <h3 id="lofi-wireframes">Lo-fi wireframes and Usability testing</h3>
+            <p>Once we established the user flow and after understanding how users would navigate through the app we moved on to low-fidelity wireframes. This allowed us to quickly visualise the layout of each screen before focusing on visual identity.</p>
+            <div className="case-study-image-grid case-study-image-grid-phones">
+              <CaseStudyImagePlaceholder label="Wireframe 1" />
+              <CaseStudyImagePlaceholder label="Wireframe 2" />
+              <CaseStudyImagePlaceholder label="Wireframe 3" />
+              <CaseStudyImagePlaceholder label="Wireframe 4" />
+              <CaseStudyImagePlaceholder label="Wireframe 5" />
+              <CaseStudyImagePlaceholder label="Wireframe 6" />
             </div>
           </div>
         </div>
