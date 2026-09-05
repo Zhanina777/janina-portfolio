@@ -10,7 +10,6 @@ const DETAILS = [
   { label: 'Client', value: 'BLÅ SOL' },
   { label: 'Product', value: 'Additional features in an established app' },
   { label: 'Duration', value: '4 weeks' },
-  { label: 'Role', value: 'UX/UI Designer (user research, ideation, wireframing, prototyping, and usability testing)' },
   { label: 'Tools', value: 'Figma, Figjam, VS Code' },
   { label: 'Methodology', value: 'Double Diamond' },
 ]
