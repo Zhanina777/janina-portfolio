@@ -226,6 +226,8 @@ h2, h3, p { font-weight: normal; }
 .case-study-image-grid .case-study-image, .case-study-image-grid .case-study-image-placeholder { aspect-ratio: 1; font-size: 12px; padding: 8px; }
 .case-study-image-grid-phones { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); }
 .case-study-image-grid-phones .case-study-image, .case-study-image-grid-phones .case-study-image-placeholder { aspect-ratio: .5; }
+.case-study-cta { margin-top: 32px; }
+.case-study-cta .button { margin-top: 0; padding: 14px 30px; font-size: 18px; }
 
 @media (max-width: 560px) {
   .portfolio { padding-top: 52px; }

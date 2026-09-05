@@ -32,7 +32,7 @@ const TOC_GROUPS = [
     { label: '03.3 moodboard', id: 'moodboard' },
     { label: '03.4 style tile', id: 'style-tile' },
     { label: '03.5 low fidelity wireframes and testing', id: 'lofi-wireframes' },
-    { label: '03.6 final product', id: null },
+    { label: '03.6 final product', id: 'final-product' },
   ] },
   { phase: '04 deliver', items: [
     { label: '04.1 coded solution', id: null },
@@ -159,6 +159,19 @@ function BlaSolProjectPage() {
               <CaseStudyImagePlaceholder label="Wireframe 4" />
               <CaseStudyImagePlaceholder label="Wireframe 5" />
               <CaseStudyImagePlaceholder label="Wireframe 6" />
+            </div>
+            <p>After finishing the low-fidelity wireframes we conducted usability testing to see if users could easily navigate and complete tasks. We conducted think aloud testing on 6 users, giving them 7 scenarios and see how they would complete them. We sorted the feedback in a feedback capture grid.</p>
+            <CaseStudyImagePlaceholder label="Feedback capture grid" className="case-study-image-portrait" />
+
+            <h3 id="final-product">Final product</h3>
+            <div className="case-study-image-grid case-study-image-grid-phones">
+              <CaseStudyImagePlaceholder label="Final product screen 1" />
+              <CaseStudyImagePlaceholder label="Final product screen 2" />
+              <CaseStudyImagePlaceholder label="Final product screen 3" />
+              <CaseStudyImagePlaceholder label="Final product screen 4" />
+            </div>
+            <div className="case-study-cta">
+              <a className="button" href="https://eaa25.github.io/" target="_blank" rel="noopener noreferrer">See final prototype</a>
             </div>
           </div>
         </div>
