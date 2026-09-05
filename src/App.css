@@ -238,6 +238,18 @@ h2, h3, p { font-weight: normal; }
 .case-study-cta { margin-top: 32px; }
 .case-study-cta .button { margin-top: 0; padding: 14px 30px; font-size: 18px; }
 
+.vpc-canvas { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin: 36px 0; }
+.vpc-panel-title { margin: 0 0 16px; padding-bottom: 10px; border-bottom: 2px solid var(--ink); font-size: 20px; font-weight: 700; }
+.vpc-panel-map .vpc-panel-title { border-bottom-color: #c47a3a; }
+.vpc-card { display: flex; flex-direction: column; gap: 8px; padding: 20px; margin-bottom: 16px; border-radius: 14px; background: rgba(82, 24, 44, .04); border: 1px solid rgba(82, 24, 44, .12); transition: transform .2s ease, box-shadow .2s ease; }
+.vpc-card:last-child { margin-bottom: 0; }
+.vpc-card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(82, 24, 44, .12); }
+.vpc-panel-map .vpc-card { background: rgba(199, 122, 58, .08); border-color: rgba(199, 122, 58, .25); }
+.vpc-panel-map .vpc-card:hover { box-shadow: 0 10px 20px rgba(199, 122, 58, .16); }
+.vpc-card-label { display: block; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--ink); }
+.vpc-panel-map .vpc-card-label { color: #a85a1f; }
+.case-study-content .vpc-card p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); }
+
 @media (max-width: 560px) {
   .portfolio { padding-top: 52px; }
   .navigation { height: 52px; padding: 0 20px; }
@@ -311,6 +323,9 @@ h2, h3, p { font-weight: normal; }
   .case-study-content h3 { margin-top: 44px; font-size: 20px; }
   .case-study-content h4 { margin-top: 24px; font-size: 16px; }
   .case-study-content p { font-size: 14px; }
+  .vpc-canvas { grid-template-columns: 1fr; gap: 20px; margin: 26px 0; }
+  .vpc-card { padding: 16px; }
+  .case-study-content .vpc-card p { font-size: 14px; }
   .case-study-image-row { flex-direction: column; margin: 26px 0; }
   .case-study-image-wide, .case-study-image-tall { flex: none; width: 100%; aspect-ratio: 1.3; }
   .case-study-image-banner, .case-study-image-portrait { margin: 26px auto; }

@@ -107,23 +107,38 @@ function BlaSolProjectPage() {
             <h3 id="value-proposition-canvas">Value Proposition Canvas</h3>
             <p>We used the Value Proposition Canvas to connect what we learned from our research with what our solution could offer. We looked at what festival-goers are trying to do, what frustrates them, and what would make their experience easier and more enjoyable.</p>
 
-            <h4>Customer Jobs</h4>
-            <p>We found that staying connected with friends was one of the main things people wanted to achieve. They wanted to find each other when separated, decide what to do together, and enjoy the festival as a group without having to constantly communicate.</p>
-
-            <h4>Pains</h4>
-            <p>One of the biggest frustrations was losing friends in crowded areas. Participants also mentioned confusing locations, delayed messages and calls, and the feeling that existing festival apps can be too complicated for what they actually need.</p>
-
-            <h4>Gains</h4>
-            <p>People wanted a simple way to find their friends, spend more time together, and move around the festival without unnecessary stress. They also valued being able to stay spontaneous instead of constantly making plans.</p>
-
-            <h4>Products and Services</h4>
-            <p>Based on our findings, we developed a lightweight festival tool with a social map, approximate friend locations, group coordination, and smart meeting points.</p>
-
-            <h4>Pain Relievers</h4>
-            <p>Our concept aims to reduce frustrations by making finding friends quicker and easier. Approximate friend locations and smart meeting points help with coordination, while a simple interface reduces the need for constant messaging and avoids the complexity of traditional festival apps.</p>
-
-            <h4>Gain Creators</h4>
-            <p>The solution is designed to make the festival experience feel more connected and effortless. By making it easier to meet up and coordinate with friends, users can spend less time organising and more time enjoying the festival together.</p>
+            <div className="vpc-canvas">
+              <div className="vpc-panel vpc-panel-profile">
+                <h4 className="vpc-panel-title">Customer Profile</h4>
+                <div className="vpc-card">
+                  <span className="vpc-card-label">Customer Jobs</span>
+                  <p>We found that staying connected with friends was one of the main things people wanted to achieve. They wanted to find each other when separated, decide what to do together, and enjoy the festival as a group without having to constantly communicate.</p>
+                </div>
+                <div className="vpc-card">
+                  <span className="vpc-card-label">Pains</span>
+                  <p>One of the biggest frustrations was losing friends in crowded areas. Participants also mentioned confusing locations, delayed messages and calls, and the feeling that existing festival apps can be too complicated for what they actually need.</p>
+                </div>
+                <div className="vpc-card">
+                  <span className="vpc-card-label">Gains</span>
+                  <p>People wanted a simple way to find their friends, spend more time together, and move around the festival without unnecessary stress. They also valued being able to stay spontaneous instead of constantly making plans.</p>
+                </div>
+              </div>
+              <div className="vpc-panel vpc-panel-map">
+                <h4 className="vpc-panel-title">Value Map</h4>
+                <div className="vpc-card">
+                  <span className="vpc-card-label">Products and Services</span>
+                  <p>Based on our findings, we developed a lightweight festival tool with a social map, approximate friend locations, group coordination, and smart meeting points.</p>
+                </div>
+                <div className="vpc-card">
+                  <span className="vpc-card-label">Pain Relievers</span>
+                  <p>Our concept aims to reduce frustrations by making finding friends quicker and easier. Approximate friend locations and smart meeting points help with coordination, while a simple interface reduces the need for constant messaging and avoids the complexity of traditional festival apps.</p>
+                </div>
+                <div className="vpc-card">
+                  <span className="vpc-card-label">Gain Creators</span>
+                  <p>The solution is designed to make the festival experience feel more connected and effortless. By making it easier to meet up and coordinate with friends, users can spend less time organising and more time enjoying the festival together.</p>
+                </div>
+              </div>
+            </div>
 
             <h3 id="sketches">Sketches</h3>
             <p>We started with quick sketches to explore different ideas and layouts. This helped us try out different solutions without focusing too much on the details.</p>
