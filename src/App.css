@@ -13,11 +13,9 @@
   body.has-custom-cursor, body.has-custom-cursor a, body.has-custom-cursor button { cursor: none; }
 }
 
-.custom-cursor-dot, .custom-cursor-ring { position: fixed; top: 0; left: 0; z-index: 9999; pointer-events: none; border-radius: 50%; will-change: transform; }
-.custom-cursor-dot { width: 8px; height: 8px; background: var(--ink); transition: opacity .2s ease; }
-.custom-cursor-ring { width: 36px; height: 36px; border: 1.5px solid var(--ink); transition: width .25s ease, height .25s ease, background .25s ease, opacity .25s ease, border-color .25s ease; }
-.custom-cursor-ring.is-hover { width: 56px; height: 56px; background: rgba(82, 24, 44, .08); }
-.custom-cursor-ring.is-active { width: 28px; height: 28px; background: rgba(82, 24, 44, .15); }
+.custom-cursor { position: fixed; top: 0; left: 0; width: 18px; height: 18px; z-index: 9999; pointer-events: none; border-radius: 50%; background: var(--ink); will-change: transform; transition: width .18s ease, height .18s ease, background .18s ease; }
+.custom-cursor.is-hover { width: 30px; height: 30px; background: #7a2a45; }
+.custom-cursor.is-active { width: 14px; height: 14px; }
 
 html { scroll-behavior: smooth; }
 
