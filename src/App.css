@@ -191,6 +191,7 @@ h2, h3, p { font-weight: normal; }
 .case-study-hero-copy h1 { margin: 0 0 22px; font-size: 50px; line-height: 1.05; font-weight: 700; }
 .case-study-hero-copy p { margin: 0; color: var(--muted); font-size: 30px; line-height: 1.4; }
 .case-study-phones { position: relative; width: min(440px, 90vw); height: 520px; }
+.case-study-hero .case-study-hero-placeholder { width: min(440px, 90vw); height: 520px; }
 .phone-preview.case-phone { position: absolute; }
 .phone-preview.case-phone-left { left: 0; top: 78px; transform: rotate(-9deg) scale(1.05); z-index: 1; opacity: .85; }
 .phone-preview.case-phone-right { right: 0; top: 78px; transform: rotate(9deg) scale(1.05); z-index: 1; opacity: .85; }
@@ -307,6 +308,7 @@ h2, h3, p { font-weight: normal; }
   .case-study-hero-copy h1 { font-size: 30px; }
   .case-study-hero-copy p { font-size: 15px; }
   .case-study-phones { width: min(280px, 80vw); height: 320px; }
+  .case-study-hero .case-study-hero-placeholder { width: min(280px, 80vw); height: 320px; }
   .case-study-details { padding: 28px 24px 6px; }
   .detail-row { grid-template-columns: 1fr; gap: 4px; padding: 14px 0; }
   .case-study-section { flex-direction: column; gap: 14px; padding: 36px 24px; }

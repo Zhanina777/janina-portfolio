@@ -40,14 +40,14 @@ function HomePage() {
           <div className="project-copy">
             <h3>BOTANICAL GARDEN<br />DIGITAL EXPERIENCE</h3>
             <p>Digital experience designed to engage botanical garden visitors with plant identification, stories, and easy access to the garden.</p>
-            <a className="button" href="#contact">see more</a>
+            <a className="button" href="#project-botanical-garden">see more</a>
           </div>
         </article>
         <article className="project project-third">
           <div className="project-copy">
             <h3>CREATIVE STUDIO<br />BRAND IDENTITY</h3>
             <p>Visual identity and digital direction for a creative studio built around bold ideas, clear storytelling, and human connections.</p>
-            <a className="button" href="#contact">see more</a>
+            <a className="button" href="#project-creative-studio">see more</a>
           </div>
           <PhonePreview />
         </article>

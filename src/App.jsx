@@ -6,11 +6,15 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import BlaSolProjectPage from './pages/BlaSolProjectPage'
+import BotanicalGardenProjectPage from './pages/BotanicalGardenProjectPage'
+import CreativeStudioProjectPage from './pages/CreativeStudioProjectPage'
 
 const ROUTED_PAGES = {
   about: AboutPage,
   contact: ContactPage,
   'project-bla-sol': BlaSolProjectPage,
+  'project-botanical-garden': BotanicalGardenProjectPage,
+  'project-creative-studio': CreativeStudioProjectPage,
 }
 
 function getPageFromHash() {
@@ -18,6 +22,8 @@ function getPageFromHash() {
   if (hash === '#about') return 'about'
   if (hash === '#contact') return 'contact'
   if (hash === '#project-bla-sol') return 'project-bla-sol'
+  if (hash === '#project-botanical-garden') return 'project-botanical-garden'
+  if (hash === '#project-creative-studio') return 'project-creative-studio'
   return 'home'
 }
 
