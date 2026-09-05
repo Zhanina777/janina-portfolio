@@ -1,3 +1,6 @@
+import garden1 from '../assets/garden1.png'
+import garden2 from '../assets/garden2.png'
+import garden3 from '../assets/garden3.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -47,7 +50,7 @@ function BotanicalGardenProjectPage() {
             <h1>BOTANICAL GARDEN DIGITAL EXPERIENCE</h1>
             <p>Helping visitors discover, identify, and connect with the plants around them.</p>
           </div>
-          <CaseStudyPhoneCollage variant="garden" />
+          <CaseStudyPhoneCollage images={[garden1, garden2, garden3]} />
         </div>
 
         <CaseStudyDetails items={DETAILS} />

@@ -1,6 +1,16 @@
 import PhonePreview from './PhonePreview'
 
-function CaseStudyPhoneCollage({ variant = 'festival' }) {
+function CaseStudyPhoneCollage({ variant = 'festival', images }) {
+  if (images) {
+    return (
+      <div className="case-study-phones case-study-phones-real">
+        <img src={images[0]} alt="" className="case-phone-img case-phone-img-left" />
+        <img src={images[1]} alt="" className="case-phone-img case-phone-img-center" />
+        <img src={images[2]} alt="" className="case-phone-img case-phone-img-right" />
+      </div>
+    )
+  }
+
   return (
     <div className="case-study-phones">
       <PhonePreview variant={variant} className="case-phone case-phone-left" />
