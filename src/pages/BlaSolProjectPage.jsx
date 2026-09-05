@@ -2,6 +2,7 @@ import planningImage from '../assets/plan.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
+import StickySectionTitle from '../components/StickySectionTitle'
 import CaseStudyImagePlaceholder from '../components/CaseStudyImagePlaceholder'
 import ContactFooter from '../components/ContactFooter'
 
@@ -54,7 +55,7 @@ function BlaSolProjectPage() {
         <CaseStudyDetails items={DETAILS} />
 
         <section className="case-study-section">
-          <h2>Planning</h2>
+          <StickySectionTitle>Planning</StickySectionTitle>
           <div className="case-study-section-body">
             <p>Before starting the design process, we organized our workflow as a team by creating a clear timeline with milestones and internal deadlines. This helped us stay on track and leave enough time for testing, iterations, and final refinements.</p>
             <img className="case-study-planning-image" src={planningImage} alt="Weekly deadlines overview for the BLÅ SOL project" />
