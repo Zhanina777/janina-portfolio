@@ -189,7 +189,7 @@ h2, h3, p { font-weight: normal; }
 .case-study-hero { display: flex; align-items: flex-start; justify-content: space-between; gap: clamp(30px, 5vw, 70px); flex-wrap: wrap; padding: 70px clamp(30px, 8vw, 100px) 60px; }
 .case-study-hero-copy { max-width: 480px; }
 .case-study-hero-copy h1 { margin: 0 0 22px; font-size: 50px; line-height: 1.05; font-weight: 700; }
-.case-study-hero-copy p { margin: 0; color: var(--muted); font-size: 36px; line-height: 1.4; }
+.case-study-hero-copy p { margin: 0; color: var(--muted); font-size: 30px; line-height: 1.4; }
 .case-study-phones { position: relative; width: min(440px, 90vw); height: 520px; }
 .phone-preview.case-phone { position: absolute; }
 .phone-preview.case-phone-left { left: 0; top: 78px; transform: rotate(-9deg) scale(1.05); z-index: 1; opacity: .85; }
