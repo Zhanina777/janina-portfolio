@@ -213,7 +213,7 @@ h2, h3, p { font-weight: normal; }
 .case-study-content h3 { margin: 56px 0 18px; font-size: 24px; font-weight: normal; }
 .case-study-content h3:first-child { margin-top: 0; }
 .case-study-content h4 { margin: 28px 0 8px; font-size: 17px; font-weight: 700; }
-.case-study-content p { margin: 0 0 16px; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.case-study-content p { margin: 0 0 16px; color: var(--muted); font-size: 27px; line-height: 1.6; }
 .case-study-content p:last-child { margin-bottom: 0; }
 .case-study-image-row { display: flex; gap: 20px; align-items: stretch; margin: 36px 0; }
 .case-study-image { display: block; width: 100%; object-fit: cover; border-radius: 8px; }
