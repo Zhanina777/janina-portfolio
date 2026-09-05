@@ -186,15 +186,15 @@ h2, h3, p { font-weight: normal; }
 .toolkit-reference-list span:hover img { transform: translateY(-4px); box-shadow: 0 8px 18px rgba(82, 24, 44, .2); }
 
 .case-study { padding-top: 100px; background: var(--paper); }
-.case-study-hero { display: flex; align-items: center; justify-content: space-between; gap: clamp(30px, 5vw, 70px); flex-wrap: wrap; padding: 70px clamp(30px, 8vw, 100px) 60px; }
+.case-study-hero { display: flex; align-items: flex-start; justify-content: space-between; gap: clamp(30px, 5vw, 70px); flex-wrap: wrap; padding: 70px clamp(30px, 8vw, 100px) 60px; }
 .case-study-hero-copy { max-width: 480px; }
-.case-study-hero-copy h1 { margin: 0 0 22px; font-size: clamp(34px, 5vw, 58px); line-height: 1.05; font-weight: 700; }
+.case-study-hero-copy h1 { margin: 0 0 22px; font-size: 46px; line-height: 1.05; font-weight: 700; }
 .case-study-hero-copy p { margin: 0; color: var(--muted); font-size: 18px; line-height: 1.4; }
-.case-study-phones { position: relative; width: min(340px, 90vw); height: 400px; }
+.case-study-phones { position: relative; width: min(440px, 90vw); height: 520px; }
 .phone-preview.case-phone { position: absolute; }
-.phone-preview.case-phone-left { left: 0; top: 60px; transform: rotate(-9deg) scale(.82); z-index: 1; opacity: .85; }
-.phone-preview.case-phone-right { right: 0; top: 60px; transform: rotate(9deg) scale(.82); z-index: 1; opacity: .85; }
-.phone-preview.case-phone-center { left: 50%; top: 0; transform: translateX(-50%) scale(1.1); z-index: 2; box-shadow: 0 22px 40px rgba(0, 0, 0, .22); }
+.phone-preview.case-phone-left { left: 0; top: 78px; transform: rotate(-9deg) scale(1.05); z-index: 1; opacity: .85; }
+.phone-preview.case-phone-right { right: 0; top: 78px; transform: rotate(9deg) scale(1.05); z-index: 1; opacity: .85; }
+.phone-preview.case-phone-center { left: 50%; top: 0; transform: translateX(-50%) scale(1.4); z-index: 2; box-shadow: 0 22px 40px rgba(0, 0, 0, .22); }
 .case-study-details { display: grid; gap: 0; max-width: 760px; margin: 0 auto; padding: 40px clamp(30px, 8vw, 100px) 10px; border-top: 1px solid rgba(82, 24, 44, .15); }
 .detail-row { display: grid; grid-template-columns: 160px 1fr; gap: 24px; padding: 20px 0; border-bottom: 1px solid rgba(82, 24, 44, .12); }
 .detail-row dt { margin: 0; font-weight: 700; }
@@ -289,6 +289,7 @@ h2, h3, p { font-weight: normal; }
   .toolkit-reference-list img { width: 64px; height: 64px; padding: 12px; }
   .case-study { padding-top: 52px; }
   .case-study-hero { flex-direction: column; align-items: center; text-align: center; padding: 40px 24px 30px; gap: 30px; }
+  .case-study-hero-copy h1 { font-size: 30px; }
   .case-study-hero-copy p { font-size: 15px; }
   .case-study-phones { width: min(280px, 80vw); height: 320px; }
   .case-study-details { padding: 28px 24px 6px; }
