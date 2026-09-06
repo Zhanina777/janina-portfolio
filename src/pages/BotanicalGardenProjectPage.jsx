@@ -18,7 +18,7 @@ const DETAILS = [
   { label: 'Product', value: 'Companion app for garden visitors' },
   { label: 'Duration', value: '4 weeks' },
   { label: 'Tools', value: 'Figma, Figjam, VS Code' },
-  { label: 'Methodology', value: 'Double Diamond' },
+  { label: 'Methodology', value: 'Design Thinking & Iterative Design' },
 ]
 
 const TOC_GROUPS = [
@@ -86,6 +86,21 @@ function BotanicalGardenProjectPage() {
 
             <h3 id="observations">Observations</h3>
             <p>We visited similar public gardens to observe how visitors moved through the space, where they paused, and how they interacted, or struggled to interact, with existing signage and information points.</p>
+            <ul className="case-study-list">
+              <li>Working with volunteers</li>
+              <li>Little name boards at multiple plants, but not all of them → some even have a QR-code</li>
+              <li>The QR-code leads to a page where they give information about the plants on a boring page (name and information)</li>
+              <li>There is a table with a flower before entering that tells you what a flower is</li>
+              <li>There was a brochure available with a map of the place</li>
+              <li>Site shows a lot more than just things about the Botanical Garden, such as things about plants</li>
+            </ul>
+            <div className="case-study-image-row-5">
+              <CaseStudyImagePlaceholder label="Observation photo 1" />
+              <CaseStudyImagePlaceholder label="Observation photo 2" />
+              <CaseStudyImagePlaceholder label="Observation photo 3" />
+              <CaseStudyImagePlaceholder label="Observation photo 4" />
+              <CaseStudyImagePlaceholder label="Observation photo 5" />
+            </div>
 
             <h3 id="interviews">Interviews</h3>
             <p>After gathering our initial findings, we developed an interview guide to explore visitor habits and expectations in more depth.</p>
