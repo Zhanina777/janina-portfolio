@@ -1,6 +1,7 @@
 import garden1 from '../assets/garden1.png'
 import garden2 from '../assets/garden2.png'
 import garden3 from '../assets/garden3.png'
+import gardenPersona from '../assets/gardenpersona.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -94,7 +95,7 @@ function BotanicalGardenProjectPage() {
             <h3 id="persona">Persona</h3>
             <p>To turn our research into a more relatable user perspective, we created a persona based on patterns identified across our interviews and observations.</p>
             <p>The persona represents our target visitor and highlights their goals, motivations, and frustrations when exploring the garden. This helped us keep their perspective at the centre of our design decisions.</p>
-            <CaseStudyImagePlaceholder label="Garden visitor persona" className="case-study-image-portrait" />
+            <CaseStudyImagePlaceholder src={gardenPersona} alt="Garden visitor persona: Victor, 13 years old" label="Garden visitor persona" className="case-study-image-natural" />
 
             <h3 id="values">Values</h3>
             <p>To guide the direction of our solution, we defined a set of core values that reflect the spirit of the botanical garden experience.</p>
