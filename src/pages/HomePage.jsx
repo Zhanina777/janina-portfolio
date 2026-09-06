@@ -45,9 +45,9 @@ function HomePage() {
         </article>
         <article className="project project-third">
           <div className="project-copy">
-            <h3>CREATIVE STUDIO<br />BRAND IDENTITY</h3>
-            <p>Visual identity and digital direction for a creative studio built around bold ideas, clear storytelling, and human connections.</p>
-            <a className="button" href="#project-creative-studio">see more</a>
+            <h3>HIDDEN WORKSHOPS</h3>
+            <p>A website that helps people discover local workshops in their hometown and book a class in just a few clicks.</p>
+            <a className="button" href="#project-hidden-workshops">see more</a>
           </div>
           <PhonePreview />
         </article>
