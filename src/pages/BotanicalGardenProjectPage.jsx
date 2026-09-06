@@ -2,6 +2,10 @@ import garden1 from '../assets/garden1.png'
 import garden2 from '../assets/garden2.png'
 import garden3 from '../assets/garden3.png'
 import gardenPersona from '../assets/gardenpersona.png'
+import sc1 from '../assets/sc1.png'
+import sc2 from '../assets/sc2.png'
+import sc3 from '../assets/sc3.png'
+import sc4 from '../assets/sc4.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -144,10 +148,10 @@ function BotanicalGardenProjectPage() {
             <h3 id="sketches">Sketches</h3>
             <p>We started with quick sketches to explore different ideas and layouts. This helped us try out different solutions without focusing too much on the details.</p>
             <div className="case-study-image-grid">
-              <CaseStudyImagePlaceholder label="Sketch 1" />
-              <CaseStudyImagePlaceholder label="Sketch 2" />
-              <CaseStudyImagePlaceholder label="Sketch 3" />
-              <CaseStudyImagePlaceholder label="Sketch 4" />
+              <CaseStudyImagePlaceholder src={sc1} label="Sketch 1" />
+              <CaseStudyImagePlaceholder src={sc2} label="Sketch 2" />
+              <CaseStudyImagePlaceholder src={sc3} label="Sketch 3" />
+              <CaseStudyImagePlaceholder src={sc4} label="Sketch 4" />
             </div>
 
             <h3 id="user-flow">User Flow</h3>
