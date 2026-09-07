@@ -14,7 +14,7 @@
 }
 
 .custom-cursor-pos { position: fixed; top: 0; left: 0; z-index: 9999; pointer-events: none; will-change: transform; transition: opacity .15s ease; }
-.custom-cursor-icon { display: block; transform-origin: 9.1px 7.7px; filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .35)); transition: transform .15s ease; }
+.custom-cursor-icon { display: block; transform-origin: 11.5px 9.7px; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, .45)); transition: transform .15s ease; }
 .custom-cursor-icon.is-hover { transform: scale(1.2); }
 .custom-cursor-icon.is-active { transform: scale(.85); }
 
