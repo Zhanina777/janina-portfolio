@@ -14,9 +14,10 @@
 }
 
 .custom-cursor-pos { position: fixed; top: 0; left: 0; z-index: 9999; pointer-events: none; will-change: transform; transition: opacity .15s ease; }
-.custom-cursor-img { display: block; transform-origin: 12.4px 8.1px; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, .4)); transition: transform .15s ease; }
+.custom-cursor-img { display: block; transform-origin: 12.4px 8.1px; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, .4)); transition: transform .15s ease, filter .15s ease; }
 .custom-cursor-pos.is-hover .custom-cursor-img { transform: scale(1.15); }
 .custom-cursor-pos.is-active .custom-cursor-img { transform: scale(.85); }
+.custom-cursor-pos.is-on-dark .custom-cursor-img { filter: invert(1) drop-shadow(0 1px 2px rgba(0, 0, 0, .5)); }
 
 html { scroll-behavior: smooth; }
 

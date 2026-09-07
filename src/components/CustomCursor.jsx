@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import cursorImage from '../assets/cursor-transparent.png'
 
 const HOVER_SELECTOR = 'a, button, input, textarea, select, [role="button"], label'
+const DARK_BG_SELECTOR = '.hero, .contact, .contact-page, .interests-reference'
 const HOTSPOT_X = 12.4
 const HOTSPOT_Y = 8.1
 
@@ -20,6 +21,8 @@ function CustomCursor() {
     const handleMove = e => {
       pos.style.opacity = '1'
       pos.style.transform = `translate3d(${e.clientX - HOTSPOT_X}px, ${e.clientY - HOTSPOT_Y}px, 0)`
+      const under = document.elementFromPoint(e.clientX, e.clientY)
+      pos.classList.toggle('is-on-dark', !!under?.closest?.(DARK_BG_SELECTOR))
     }
     const handleLeave = () => {
       pos.style.opacity = '0'
