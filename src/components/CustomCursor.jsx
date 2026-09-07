@@ -1,6 +1,9 @@
 import { useEffect, useRef } from 'react'
+import cursorImage from '../assets/cursor-transparent.png'
 
 const HOVER_SELECTOR = 'a, button, input, textarea, select, [role="button"], label'
+const HOTSPOT_X = 12.4
+const HOTSPOT_Y = 8.1
 
 function CustomCursor() {
   const posRef = useRef(null)
@@ -16,7 +19,7 @@ function CustomCursor() {
 
     const handleMove = e => {
       pos.style.opacity = '1'
-      pos.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`
+      pos.style.transform = `translate3d(${e.clientX - HOTSPOT_X}px, ${e.clientY - HOTSPOT_Y}px, 0)`
     }
     const handleLeave = () => {
       pos.style.opacity = '0'
@@ -52,8 +55,7 @@ function CustomCursor() {
 
   return (
     <div className="custom-cursor-pos" ref={posRef} style={{ opacity: 0 }}>
-      <span className="custom-cursor-ring" />
-      <span className="custom-cursor-dot" />
+      <img className="custom-cursor-img" src={cursorImage} alt="" width="34" height="37.3" />
     </div>
   )
 }
