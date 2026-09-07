@@ -17,12 +17,22 @@ function CustomCursor() {
     document.body.classList.add('has-custom-cursor')
 
     const pos = posRef.current
+    let lastX = window.innerWidth / 2
+    let lastY = window.innerHeight / 2
 
+    const updateDarkState = (x, y) => {
+      const under = document.elementFromPoint(x, y)
+      pos.classList.toggle('is-on-dark', !!under?.closest?.(DARK_BG_SELECTOR))
+    }
     const handleMove = e => {
+      lastX = e.clientX
+      lastY = e.clientY
       pos.style.opacity = '1'
       pos.style.transform = `translate3d(${e.clientX - HOTSPOT_X}px, ${e.clientY - HOTSPOT_Y}px, 0)`
-      const under = document.elementFromPoint(e.clientX, e.clientY)
-      pos.classList.toggle('is-on-dark', !!under?.closest?.(DARK_BG_SELECTOR))
+      updateDarkState(e.clientX, e.clientY)
+    }
+    const handleScroll = () => {
+      updateDarkState(lastX, lastY)
     }
     const handleLeave = () => {
       pos.style.opacity = '0'
@@ -37,6 +47,7 @@ function CustomCursor() {
     const handleUp = () => pos.classList.remove('is-active')
 
     window.addEventListener('mousemove', handleMove)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     document.documentElement.addEventListener('mouseleave', handleLeave)
     document.addEventListener('mouseover', handleOver)
     document.addEventListener('mouseout', handleOut)
@@ -47,6 +58,7 @@ function CustomCursor() {
     return () => {
       document.body.classList.remove('has-custom-cursor')
       window.removeEventListener('mousemove', handleMove)
+      window.removeEventListener('scroll', handleScroll)
       document.documentElement.removeEventListener('mouseleave', handleLeave)
       document.removeEventListener('mouseover', handleOver)
       document.removeEventListener('mouseout', handleOut)
