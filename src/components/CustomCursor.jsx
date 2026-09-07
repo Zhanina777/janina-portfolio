@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react'
 
 const HOVER_SELECTOR = 'a, button, input, textarea, select, [role="button"], label'
-const HOTSPOT_X = 4
-const HOTSPOT_Y = 1
+const HOTSPOT_X = 9.1
+const HOTSPOT_Y = 7.7
 
 function CustomCursor() {
   const posRef = useRef(null)
@@ -56,16 +56,25 @@ function CustomCursor() {
 
   return (
     <div className="custom-cursor-pos" ref={posRef} style={{ opacity: 0 }}>
-      <svg className="custom-cursor-icon" ref={iconRef} width="26" height="30" viewBox="0 0 26 30">
-        <g stroke="#111" strokeWidth="1.6" strokeLinecap="round">
-          <line x1="8" y1="0" x2="5" y2="4.5" />
-          <line x1="14" y1="2" x2="9" y2="5.5" />
+      <svg className="custom-cursor-icon" ref={iconRef} width="27" height="34.8" viewBox="0 0 225 290">
+        <g stroke="#111" strokeWidth="15" strokeLinecap="round">
+          <line x1="11" y1="107" x2="46" y2="87" />
+          <line x1="36" y1="11" x2="58" y2="45" />
+          <line x1="98" y1="56" x2="133" y2="36" />
         </g>
-        <g fill="#111">
-          <path d="M4 1 L19 16 L10 16 Z" />
-          <circle cx="10.5" cy="19" r="5" />
-          <circle cx="17" cy="22.5" r="7" />
-        </g>
+        <path
+          fill="#111"
+          d="M76,64
+             C100,90 175,130 214,164
+             C213,190 210,216 207,240
+             C204,262 188,278 167,278
+             C148,278 135,255 125,239
+             C118,248 108,247 101,247
+             C78,247 62,230 59,211
+             C57,175 58,110 64,80
+             C68,72 72,66 76,64
+             Z"
+        />
       </svg>
     </div>
   )
