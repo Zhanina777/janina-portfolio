@@ -19,7 +19,7 @@ function HomePage() {
       <section className="about section">
         <div className="about-copy">
           <h2>HEY, I&apos;M JANINA</h2>
-          <p className="body-copy">-an aspiring UI/UX designer currently studying Multimedia Design, driven by curiosity, creativity, and human-centered design.</p>
+          <p className="body-copy">An aspiring UI/UX designer currently studying Multimedia Design, driven by curiosity, creativity, and human-centered design.</p>
           <a className="button" href="#about">more about me</a>
         </div>
         <img className="portrait" src={userPhoto} alt="Portrait of Janina" />
