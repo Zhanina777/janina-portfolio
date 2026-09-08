@@ -109,7 +109,7 @@ h2, h3, p { font-weight: normal; }
 .portrait:hover { transform: translateX(24px) translateY(-10px) rotate(-2deg); box-shadow: 10px 14px 0 rgba(82, 24, 44, .14); }
 .button { display: inline-block; margin-top: 22px; padding: 8px 19px; border-radius: 20px; background: var(--ink); color: var(--light-ink); font-size: 12px; text-decoration: none; transition: background .25s ease, transform .25s ease, box-shadow .25s ease; }
 .button:hover { background: #683049; transform: scale(1.05); box-shadow: 0 6px 12px rgba(82, 24, 44, .18); }
-.about-copy .button { align-self: center; margin-top: 24px; margin-bottom: 0; padding: 12px 28px; font-size: 25px; }
+.about-copy .button { align-self: flex-start; margin-top: 24px; margin-bottom: 0; padding: 12px 28px; font-size: 25px; }
 .project .button { padding: 15px 34px; font-size: 25px; }
 
 .projects { display: flex; flex-direction: column; justify-content: center; min-height: calc(100svh - 100px); padding-top: 17px; padding-bottom: 76px; scroll-margin-top: 100px; }
