@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import cursorImage from '../assets/cursor-transparent.png'
+import cursorImage from '../assets/cursor-outline.png'
 
 const HOVER_SELECTOR = 'a, button, input, textarea, select, [role="button"], label'
 const DARK_BG_SELECTOR = '.hero, .contact, .contact-page, .interests-reference'
