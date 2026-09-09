@@ -4,7 +4,6 @@ import bsm2 from '../assets/bsm2.png'
 import bsm3 from '../assets/bsm3-transparent.png'
 import competitorAnalysis from '../assets/r.png'
 import culturalIdentity from '../assets/r1.png'
-import relevantArticles from '../assets/r2.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -79,7 +78,6 @@ function BlaSolProjectPage() {
             <p>Alongside this, we explored content and discussions shared by festival-goers on social media. Looking at comments, posts, and user-generated content gave us insight into people&apos;s expectations, frustrations, and behaviours when attending festivals.</p>
 
             <CaseStudyImagePlaceholder src={competitorAnalysis} alt="Competitor analysis and netnography of similar festivals" label="Competitor Analysis / netnography" className="case-study-image-natural" />
-            <CaseStudyImagePlaceholder src={relevantArticles} alt="Relevant articles about BLÅ SOL festival" label="Relevant articles" className="case-study-image-natural" />
             <CaseStudyImagePlaceholder src={culturalIdentity} alt="BLÅ SOL music and cultural identity moodboard" label="Ideals and cultural identity" className="case-study-image-natural" />
 
             <h3 id="observations">Observations</h3>
