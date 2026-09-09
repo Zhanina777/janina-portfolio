@@ -1,6 +1,6 @@
 import planningImage from '../assets/plan.png'
 import bsm1 from '../assets/bsm1-transparent.png'
-import bsm2 from '../assets/bsm2.png'
+import bsm2 from '../assets/bsm2-framed.png'
 import bsm3 from '../assets/bsm3-transparent.png'
 import competitorAnalysis from '../assets/r.png'
 import culturalIdentity from '../assets/r1.png'
