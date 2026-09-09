@@ -53,7 +53,7 @@ function BlaSolProjectPage() {
             <h1>BLÅ SOL FESTIVAL MOBILE APP</h1>
             <p>Helping festival-goers stay connected with their friends throughout the event.</p>
           </div>
-          <CaseStudyPhoneCollage images={[bsm1, bsm2, bsm3]} />
+          <CaseStudyPhoneCollage images={[bsm1, bsm2, bsm3]} layout="row" />
         </div>
 
         <CaseStudyDetails items={DETAILS} />

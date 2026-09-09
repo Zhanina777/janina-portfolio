@@ -1,6 +1,16 @@
 import PhonePreview from './PhonePreview'
 
-function CaseStudyPhoneCollage({ variant = 'festival', images }) {
+function CaseStudyPhoneCollage({ variant = 'festival', images, layout = 'fan' }) {
+  if (images && layout === 'row') {
+    return (
+      <div className="case-study-phones-row">
+        {images.map((src, i) => (
+          <img key={i} src={src} alt="" className="case-phone-img-row" />
+        ))}
+      </div>
+    )
+  }
+
   if (images) {
     return (
       <div className="case-study-phones case-study-phones-real">
