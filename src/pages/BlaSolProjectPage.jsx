@@ -2,6 +2,9 @@ import planningImage from '../assets/plan.png'
 import bsm1 from '../assets/bsm1-transparent.png'
 import bsm2 from '../assets/bsm2.png'
 import bsm3 from '../assets/bsm3-transparent.png'
+import competitorAnalysis from '../assets/r.png'
+import culturalIdentity from '../assets/r1.png'
+import relevantArticles from '../assets/r2.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -75,11 +78,9 @@ function BlaSolProjectPage() {
             <p>We also looked into BLÅ SOL itself, including its target audience, identity, communication, and overall concept. This gave us a better understanding of what we were designing for and how our solution could fit into its existing identity.</p>
             <p>Alongside this, we explored content and discussions shared by festival-goers on social media. Looking at comments, posts, and user-generated content gave us insight into people&apos;s expectations, frustrations, and behaviours when attending festivals.</p>
 
-            <div className="case-study-image-row">
-              <CaseStudyImagePlaceholder label="Competitor Analysis / netnography" className="case-study-image-wide" />
-              <CaseStudyImagePlaceholder label="Relevant articles" className="case-study-image-tall" />
-            </div>
-            <CaseStudyImagePlaceholder label="Ideals and cultural identity" className="case-study-image-banner" />
+            <CaseStudyImagePlaceholder src={competitorAnalysis} alt="Competitor analysis and netnography of similar festivals" label="Competitor Analysis / netnography" className="case-study-image-natural" />
+            <CaseStudyImagePlaceholder src={relevantArticles} alt="Relevant articles about BLÅ SOL festival" label="Relevant articles" className="case-study-image-natural" />
+            <CaseStudyImagePlaceholder src={culturalIdentity} alt="BLÅ SOL music and cultural identity moodboard" label="Ideals and cultural identity" className="case-study-image-natural" />
 
             <h3 id="observations">Observations</h3>
             <p>Since we could not observe BLÅ SOL directly, we used visual material from similar Danish festivals as a reference. We paid attention to how people navigated the festival environment, interacted with their friends, and used their phones throughout the day.</p>
