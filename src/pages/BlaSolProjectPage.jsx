@@ -1,4 +1,7 @@
 import planningImage from '../assets/plan.png'
+import bsm1 from '../assets/bsm1-transparent.png'
+import bsm2 from '../assets/bsm2.png'
+import bsm3 from '../assets/bsm3-transparent.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -48,7 +51,7 @@ function BlaSolProjectPage() {
             <h1>BLÅ SOL FESTIVAL MOBILE APP</h1>
             <p>Helping festival-goers stay connected with their friends throughout the event.</p>
           </div>
-          <CaseStudyPhoneCollage />
+          <CaseStudyPhoneCollage images={[bsm1, bsm2, bsm3]} />
         </div>
 
         <CaseStudyDetails items={DETAILS} />
