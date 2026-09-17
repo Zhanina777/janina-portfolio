@@ -39,9 +39,9 @@ function Navigation({ onLogoClick }) {
         <span /><span /><span />
       </button>
       <div className={`nav-links${menuOpen ? ' is-open' : ''}`}>
-        <a href="#projects">projects</a>
-        <a href="#about">about me</a>
-        <a href="#contact">contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About me</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   )
