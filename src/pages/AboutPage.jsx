@@ -15,7 +15,7 @@ function AboutPage() {
       <section className="about-reference" id="about">
         <div className="about-reference-intro">
           <div className="about-reference-copy">
-            <h1>more about me</h1>
+            <h1>More about me</h1>
             <p>I&apos;m a Multimedia Design student from Bulgaria, currently based in Aarhus, Denmark. I&apos;m fascinated by the way design can shape the way we experience and understand the world.</p>
             <p>I&apos;m curious, empathetic, and always looking for new ways to communicate ideas through thoughtful digital experiences.</p>
             <p>Through both individual and collaborative projects, I&apos;ve gained experience following the design process from research and ideation to prototyping and development.</p>
@@ -25,7 +25,7 @@ function AboutPage() {
         </div>
 
         <section className="interests-reference">
-          <h2>interests that shape me</h2>
+          <h2>Interests that shape me</h2>
           <div className="interests-reference-grid">
             <article className="interest-card" tabIndex={0}><span className="interest-icon"><SwimmingIcon /></span><h3>swimming</h3><p>Swimming has been a big part of my life and has shaped the way I approach challenges. Years of training taught me discipline, consistency, and the importance of being organised to achieve long-term goals. It strengthened my ability to plan, track progress, and continuously improve.</p></article>
             <article className="interest-card" tabIndex={0}><span className="interest-icon"><CameraIcon /></span><h3>photography</h3><p>Photography is a hobby I enjoy mainly while travelling and exploring new places. I like capturing everyday moments, especially how people interact with their surroundings and experience different environments. Through photography, I have learned to slow down, notice details that are often overlooked, and explore different perspectives.</p></article>
@@ -34,7 +34,7 @@ function AboutPage() {
         </section>
 
         <section className="toolkit-reference">
-          <h2>my creative toolkit</h2>
+          <h2>My creative toolkit</h2>
           <div className="toolkit-reference-list">
             <span><img src={shopifyIcon} alt="" /><small>Shopify</small></span>
             <span><img src={afterEffectsIcon} alt="" /><small>After Effects</small></span>
