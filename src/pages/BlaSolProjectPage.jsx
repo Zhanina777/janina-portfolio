@@ -12,6 +12,7 @@ import lofi4 from '../assets/lofi4.png'
 import moodboard from '../assets/moodboard.png'
 import festivalPersona from '../assets/persona 1.png'
 import valuesList from '../assets/values.png'
+import hmw from '../assets/hmw.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -180,7 +181,7 @@ function BlaSolProjectPage() {
 
             <h3 id="how-might-we">How Might We</h3>
             <p>After going through our research, we turned some of the main problems into How Might We questions. This helped us look at the problems from a different perspective and start thinking about possible solutions.</p>
-            <CaseStudyImagePlaceholder label="How Might We questions" className="case-study-image-banner" />
+            <CaseStudyImagePlaceholder src={hmw} alt="How Might We questions" label="How Might We questions" className="case-study-image-banner case-study-image-full" />
 
             <h3 id="value-proposition-canvas">Value Proposition Canvas</h3>
             <p>We used the Value Proposition Canvas to connect what we learned from our research with what our solution could offer. We looked at what festival-goers are trying to do, what frustrates them, and what would make their experience easier and more enjoyable.</p>
