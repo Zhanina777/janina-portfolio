@@ -20,6 +20,32 @@ import StickySectionTitle from '../components/StickySectionTitle'
 import CaseStudyImagePlaceholder from '../components/CaseStudyImagePlaceholder'
 import ContactFooter from '../components/ContactFooter'
 
+const INTERVIEW_INSIGHTS = {
+  heard: [
+    '“We texted each other and set meeting points”',
+    '“Using Messenger if we split up”',
+    '“Apps are messy / not necessary”',
+    '“Difficult to find each other”',
+    '“Go with the flow”',
+  ],
+  means: [
+    'People rely on external tools to coordinate',
+    'Social connection is more important than planning',
+    'Festival apps are not trusted or used',
+    'Users want low effort solutions',
+  ],
+  conclusion: 'Festival visitors don’t need more information: they need better ways to stay connected',
+}
+
+const PATTERN_FREQUENCY = [
+  { label: 'Lost friends', value: 10 },
+  { label: 'Used Messenger/SMS', value: 11 },
+  { label: "Doesn't use festival apps", value: 10 },
+  { label: 'Go with the flow', value: 9 },
+]
+const PATTERN_FREQUENCY_MAX = 15
+const PATTERN_FREQUENCY_TICKS = [0, 5, 10, 15]
+
 const DETAILS = [
   { label: 'Client', value: 'BLÅ SOL' },
   { label: 'Product', value: 'Additional features in an established app' },
@@ -163,7 +189,46 @@ function BlaSolProjectPage() {
             <h3 id="interviews">Interviews</h3>
             <p>After gathering our initial findings, we developed an interview guide to help us explore the topics in more depth. The questions focused on how people plan, communicate, and stay connected with friends during festivals.</p>
             <p>We conducted 18 interviews with people aged 18–34 who regularly attend festivals with friends. The interviews allowed us to hear about their experiences in their own words and helped us uncover behaviours and challenges that were not visible through our previous research methods.</p>
-            <CaseStudyImagePlaceholder label="Interview main insights" className="case-study-image-banner" />
+            <div className="interview-insights">
+              <span className="interview-insights-title">Interview main insights</span>
+              <div className="interview-insights-flow">
+                <div className="interview-insights-card">
+                  <span className="interview-insights-label">What we heard</span>
+                  <ul>{INTERVIEW_INSIGHTS.heard.map((item, i) => <li key={i}>{item}</li>)}</ul>
+                </div>
+                <span className="interview-insights-arrow" aria-hidden="true">&rarr;</span>
+                <div className="interview-insights-card">
+                  <span className="interview-insights-label">What it means</span>
+                  <ul>{INTERVIEW_INSIGHTS.means.map((item, i) => <li key={i}>{item}</li>)}</ul>
+                </div>
+                <span className="interview-insights-arrow" aria-hidden="true">&rarr;</span>
+                <div className="interview-insights-card interview-insights-conclusion">
+                  <p>{INTERVIEW_INSIGHTS.conclusion}</p>
+                </div>
+              </div>
+
+              <div className="interview-chart">
+                <span className="interview-chart-title">Pattern frequency</span>
+                {PATTERN_FREQUENCY.map(row => (
+                  <div className="interview-chart-row" key={row.label}>
+                    <span className="interview-chart-label">{row.label}</span>
+                    <span className="interview-chart-track">
+                      <span className="interview-chart-bar" style={{ width: `${(row.value / PATTERN_FREQUENCY_MAX) * 100}%` }} />
+                    </span>
+                    <span className="interview-chart-value">{row.value}</span>
+                  </div>
+                ))}
+                <div className="interview-chart-axis">
+                  <span />
+                  <span className="interview-chart-axis-ticks">
+                    {PATTERN_FREQUENCY_TICKS.map(tick => (
+                      <span className="interview-chart-tick" key={tick} style={{ left: `${(tick / PATTERN_FREQUENCY_MAX) * 100}%` }}>{tick}</span>
+                    ))}
+                  </span>
+                  <span />
+                </div>
+              </div>
+            </div>
 
             <h3>The Problem</h3>
             <p>Young adults attending the Blå Sol festival experience difficulties staying connected with their friends during the event. While festivals are highly social environments, the crowded and dynamic setting makes it easy to lose track of one another.</p>
@@ -177,7 +242,7 @@ function BlaSolProjectPage() {
 
             <h3 id="values">Values</h3>
             <p>To guide the direction of our solution, we defined four core values that reflect the identity and atmosphere of BLÅ SOL.</p>
-            <CaseStudyImagePlaceholder src={valuesList} alt="List of values: Connecting, Youthful, Community-driven, Dazzling" label="List of values" className="case-study-image-banner case-study-image-full" />
+            <CaseStudyImagePlaceholder src={valuesList} alt="List of values: Connecting, Youthful, Community-driven, Dazzling" label="List of values" className="case-study-image-banner case-study-image-full case-study-image-cap-md" />
 
             <h3 id="how-might-we">How Might We</h3>
             <p>After going through our research, we turned some of the main problems into How Might We questions. This helped us look at the problems from a different perspective and start thinking about possible solutions.</p>

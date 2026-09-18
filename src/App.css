@@ -255,6 +255,7 @@ h2, h3, p { font-weight: normal; }
 .case-study-image-full { aspect-ratio: auto; object-fit: contain; }
 .case-study-image-portrait { width: min(400px, 100%); margin: 36px auto; aspect-ratio: .67; }
 .case-study-image-natural { width: 100%; margin: 36px 0; aspect-ratio: auto; }
+.case-study-image-cap-md { max-width: 700px; margin-left: auto; margin-right: auto; }
 .case-study-image-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 14px; margin: 36px 0; }
 .case-study-image-grid .case-study-image, .case-study-image-grid .case-study-image-placeholder { aspect-ratio: 1; font-size: 12px; padding: 8px; }
 .case-study-image-grid-phones { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); }
@@ -284,6 +285,26 @@ h2, h3, p { font-weight: normal; }
 .feedback-grid-table .feedback-grid-user { font-weight: 700; color: var(--ink); text-align: center; font-size: 18px; }
 .feedback-grid-table ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
 .feedback-grid-table li { font-size: 14px; line-height: 1.5; color: var(--muted); }
+
+.interview-insights { margin: 36px 0; padding: clamp(20px, 4vw, 36px); border-radius: 16px; background: rgba(82, 24, 44, .04); border: 1px solid rgba(82, 24, 44, .12); }
+.interview-insights-title { display: block; margin-bottom: 24px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--ink); }
+.interview-insights-flow { display: flex; align-items: stretch; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+.interview-insights-card { flex: 1 1 200px; min-width: 200px; padding: 18px 20px; border-radius: 12px; background: var(--paper); border: 1px solid rgba(82, 24, 44, .14); }
+.interview-insights-label { display: block; margin-bottom: 10px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--ink); }
+.interview-insights-card ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+.interview-insights-card li { font-size: 14px; line-height: 1.45; color: var(--muted); }
+.interview-insights-conclusion { display: flex; align-items: center; flex: 1 1 220px; background: var(--ink); border-color: var(--ink); }
+.interview-insights-conclusion p { margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4; color: var(--light-ink); }
+.interview-insights-arrow { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 28px; font-size: 20px; color: rgba(82, 24, 44, .35); }
+.interview-chart-title { display: block; margin-bottom: 20px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--ink); }
+.interview-chart-row { display: grid; grid-template-columns: 150px 1fr 28px; align-items: center; gap: 14px; margin-bottom: 14px; }
+.interview-chart-label { font-size: 13px; color: var(--muted); text-align: right; }
+.interview-chart-track { position: relative; height: 10px; border-radius: 5px; background: rgba(82, 24, 44, .1); }
+.interview-chart-bar { position: absolute; inset: 0; border-radius: 5px; background: var(--ink); }
+.interview-chart-value { font-size: 13px; font-weight: 700; color: var(--ink); }
+.interview-chart-axis { display: grid; grid-template-columns: 150px 1fr 28px; gap: 14px; }
+.interview-chart-axis-ticks { position: relative; height: 16px; }
+.interview-chart-tick { position: absolute; top: 0; transform: translateX(-50%); font-size: 11px; color: var(--muted); }
 
 @media (max-width: 560px) {
   .portfolio { padding-top: 52px; }
@@ -379,4 +400,9 @@ h2, h3, p { font-weight: normal; }
   .feedback-grid-table th, .feedback-grid-table td { padding: 12px 14px; }
   .feedback-grid-table th { font-size: 11px; }
   .feedback-grid-table li { font-size: 13px; }
+  .interview-insights { margin: 26px 0; }
+  .interview-insights-flow { flex-direction: column; }
+  .interview-insights-arrow { width: auto; height: 20px; transform: rotate(90deg); }
+  .interview-chart-row, .interview-chart-axis { grid-template-columns: 92px 1fr 24px; gap: 8px; }
+  .interview-chart-label { font-size: 12px; }
 }
