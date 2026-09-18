@@ -168,6 +168,15 @@ function BlaSolProjectPage() {
         </div>
 
         <section className="case-study-section">
+          <StickySectionTitle>Overview</StickySectionTitle>
+          <div className="case-study-section-body">
+            <p>BLÅ SOL is a real music festival, and this project asked how its official app could help visitors stay connected with the friends they came with. Festivals are crowded, unpredictable environments, and the people we spoke to described the same problem over and over: they lose track of each other, fall back on messaging apps that were never built for that kind of chaos, and end up spending more energy coordinating than actually enjoying the event.</p>
+            <p>Over four weeks, working through research, definition, ideation, and testing, we designed a set of additional features for BLÅ SOL&apos;s app: a live map for finding friends, quick group coordination, and shared meeting points, shaped around four values we set for the experience &mdash; connecting, youthful, community-driven, and dazzling. Eighteen interviews, a persona, and usability testing with six participants guided every decision, from the earliest sketches to the final interface.</p>
+            <p>The result is a lightweight, festival-native way to stay in touch that fits naturally into BLÅ SOL&apos;s existing identity &mdash; reducing the friction of finding friends so people can spend less time coordinating and more time enjoying the festival together.</p>
+          </div>
+        </section>
+
+        <section className="case-study-section">
           <StickySectionTitle>Planning</StickySectionTitle>
           <div className="case-study-section-body">
             <p>Before starting the design process, we organized our workflow as a team by creating a clear timeline with milestones and internal deadlines. This helped us stay on track and leave enough time for testing, iterations, and final refinements.</p>
