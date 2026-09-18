@@ -161,10 +161,10 @@ function HiddenWorkshopsProjectPage() {
             <h3 id="lofi-wireframes">Lo-fi wireframes and Usability testing</h3>
             <p>Once I had a clear user flow, I moved on to low-fidelity wireframes to quickly visualise the layout of each page before focusing on visual identity.</p>
             <div className="case-study-image-grid case-study-image-grid-phones case-study-image-grid-4">
-              <CaseStudyImagePlaceholder src={lofiw1} alt="Lo-fi wireframe: front page" label="Layout 1" />
-              <CaseStudyImagePlaceholder src={lofiw2} alt="Lo-fi wireframe: workshops list" label="Layout 2" />
-              <CaseStudyImagePlaceholder src={lofiw3} alt="Lo-fi wireframe: gallery" label="Layout 3" />
-              <CaseStudyImagePlaceholder src={lofiw4} alt="Lo-fi wireframe: workshop detail" label="Layout 4" />
+              <CaseStudyImagePlaceholder src={lofiw1} alt="Lo-fi wireframe: front page" label="Layout 1" className="case-study-image-mockup" />
+              <CaseStudyImagePlaceholder src={lofiw2} alt="Lo-fi wireframe: workshops list" label="Layout 2" className="case-study-image-mockup" />
+              <CaseStudyImagePlaceholder src={lofiw3} alt="Lo-fi wireframe: gallery" label="Layout 3" className="case-study-image-mockup" />
+              <CaseStudyImagePlaceholder src={lofiw4} alt="Lo-fi wireframe: workshop detail" label="Layout 4" className="case-study-image-mockup" />
             </div>
             <p>After finishing the low-fidelity wireframes, I conducted usability testing to see if people could easily find and book a workshop. I ran think-aloud sessions with 6 participants and sorted their feedback into a feedback capture grid.</p>
             <CaseStudyImagePlaceholder src={feedbackTable} alt="Feedback capture grid from usability testing" label="Feedback capture grid" className="case-study-image-banner case-study-image-full" />

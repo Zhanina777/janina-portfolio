@@ -268,6 +268,7 @@ h2, h3, p { font-weight: normal; }
 .case-study-image-grid-phones { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); }
 .case-study-image-grid-phones .case-study-image, .case-study-image-grid-phones .case-study-image-placeholder { aspect-ratio: .5; }
 .case-study-image-grid-4 { grid-template-columns: repeat(4, 1fr); }
+.case-study-image-mockup { box-sizing: border-box; object-fit: contain; background: #fff; border: 10px solid #1c1d1b; border-radius: 26px; }
 .case-study-image-grid-sketches .case-study-image, .case-study-image-grid-sketches .case-study-image-placeholder { aspect-ratio: .73; }
 .case-study-cta { margin-top: 32px; }
 .case-study-cta .button { margin-top: 0; padding: 14px 30px; font-size: 18px; }
@@ -398,6 +399,7 @@ h2, h3, p { font-weight: normal; }
   .case-study-content p { font-size: 14px; }
   .case-study-list { font-size: 14px; padding-left: 18px; }
   .case-study-image-row-5 { grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 26px 0; }
+  .case-study-image-mockup { border-width: 5px; border-radius: 14px; }
   .vpc-canvas { grid-template-columns: 1fr; gap: 20px; margin: 26px 0; }
   .vpc-card { padding: 16px; }
   .case-study-content .vpc-card p { font-size: 14px; }
