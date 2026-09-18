@@ -1,3 +1,7 @@
+import persona1 from '../assets/persona1.png'
+import values3 from '../assets/values3.png'
+import hmww from '../assets/hmww.png'
+import vpc3 from '../assets/vpc3.png'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
 import StickySectionTitle from '../components/StickySectionTitle'
@@ -102,51 +106,20 @@ function HiddenWorkshopsProjectPage() {
             <h3 id="persona">Persona</h3>
             <p>To turn our research into a more relatable user perspective, we created a persona based on patterns identified across our interviews.</p>
             <p>The persona represents our target visitor and highlights their goals, motivations, and frustrations when looking for something new to try in their hometown. This helped us keep their perspective at the centre of our design decisions.</p>
-            <CaseStudyImagePlaceholder label="Workshop seeker persona" className="case-study-image-portrait" />
+            <CaseStudyImagePlaceholder src={persona1} alt="Workshop seeker persona: Anna Ivanova, The Explorer" label="Workshop seeker persona" className="case-study-image-portrait case-study-image-full" />
 
             <h3 id="values">Values</h3>
             <p>To guide the direction of our solution, we defined a set of core values that reflect what makes discovering and booking a workshop feel effortless and inviting.</p>
-            <CaseStudyImagePlaceholder label="List of values" className="case-study-image-banner" />
+            <CaseStudyImagePlaceholder src={values3} alt="List of values: Authentic, Cozy, Warm, Traditional" label="List of values" className="case-study-image-banner case-study-image-full" />
 
             <h3 id="how-might-we">How Might We</h3>
             <p>After going through our research, we turned the main problems into How Might We questions, helping us look at them from different angles and start thinking about possible solutions.</p>
-            <CaseStudyImagePlaceholder label="How Might We questions" className="case-study-image-banner" />
+            <CaseStudyImagePlaceholder src={hmww} alt="How Might We questions and parts of the solution" label="How Might We questions" className="case-study-image-banner case-study-image-full case-study-image-cap-md" />
 
             <h3 id="value-proposition-canvas">Value Proposition Canvas</h3>
-            <p>We used the Value Proposition Canvas to connect what we learned from our research with what our platform could offer, focusing on what people are trying to do, what gets in their way, and what would make booking a workshop easier.</p>
+            <p>We used the Value Proposition Canvas to connect what we learned from our research with what the website could offer, focusing on what visitors are trying to do, what gets in their way, and what would make planning a visit to the Old Town workshops easier.</p>
 
-            <div className="vpc-canvas">
-              <div className="vpc-panel vpc-panel-profile">
-                <h4 className="vpc-panel-title">Customer Profile</h4>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Customer Jobs</span>
-                  <p>People want to discover workshops happening near them, see when they&apos;re on, and book a spot without back-and-forth messaging.</p>
-                </div>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Pains</span>
-                  <p>Workshop listings are scattered across different platforms, availability isn&apos;t always clear, and booking often means waiting on a reply from the host.</p>
-                </div>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Gains</span>
-                  <p>People want a simple way to browse upcoming workshops, see real availability, and confirm a spot instantly.</p>
-                </div>
-              </div>
-              <div className="vpc-panel vpc-panel-map">
-                <h4 className="vpc-panel-title">Value Map</h4>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Products and Services</span>
-                  <p>We designed a website where local hosts can list their workshops with schedules, and visitors can browse, filter, and book a class directly.</p>
-                </div>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Pain Relievers</span>
-                  <p>A single place to browse local workshops with live availability removes the need to search multiple sources or wait on replies.</p>
-                </div>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Gain Creators</span>
-                  <p>Instant booking and clear schedules make it easy to try something new on a whim, and give hosts a simple way to fill their classes.</p>
-                </div>
-              </div>
-            </div>
+            <CaseStudyImagePlaceholder src={vpc3} alt="Value Proposition Canvas: customer jobs, pains, gains, products and services, pain relievers, and gain creators" label="Value Proposition Canvas" className="case-study-image-natural case-study-image-cap-md" />
 
             <h3 id="sketches">Sketches</h3>
             <p>We started with quick sketches to explore different layouts for browsing and booking workshops, without focusing too much on detail early on.</p>
