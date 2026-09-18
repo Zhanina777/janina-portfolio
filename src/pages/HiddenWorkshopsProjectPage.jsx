@@ -55,10 +55,10 @@ function HiddenWorkshopsProjectPage() {
         <section className="case-study-section">
           <StickySectionTitle>Overview</StickySectionTitle>
           <div className="case-study-section-body">
-            <p><strong>Hidden Workshops</strong> is a personal project exploring how a simple website could help people discover local workshops and book a spot without the usual back-and-forth. Information about these workshops is often scattered across social media, flyers, and word of mouth, and even once someone finds one, checking availability usually means messaging the host directly and waiting for a reply.</p>
-            <p>I worked through the process end-to-end, contributing to <strong>user research, persona development, ideation, UX design, and usability testing</strong>, and was also responsible for the <strong>visual identity and refining the interface based on feedback from usability testing</strong>.</p>
-            <p>The final solution is a website where local hosts can list their workshops with clear schedules, and visitors can browse, filter, and book a class instantly. Interviews and usability testing with people who&apos;d never used a booking platform for local classes shaped decisions from the earliest wireframes through to the final screens.</p>
-            <p>This project demonstrates my ability to <strong>design an end-to-end booking experience from scratch, turn scattered user needs into a clear product, and validate decisions through usability testing</strong>.</p>
+            <p><strong>Hidden Workshops</strong> is a website concept created to promote traditional workshops and local crafts in the Old Town of Dobrich, Bulgaria. The goal was to make the workshops easier to discover while giving visitors a simple way to see what is happening and plan their visit.</p>
+            <p>I worked on the project from <strong>research and concept development through to the website design</strong>. I focused on structuring the content, creating the visual direction, and designing the user interface to make the information clear and easy to navigate.</p>
+            <p>The final website allows visitors to explore the different workshops, learn about the crafts and people behind them, and check the programme to see when workshops and activities are taking place.</p>
+            <p>This project demonstrates my skills in <strong>UX research and planning, content organisation, UI design, and creating clear navigation for information-rich websites</strong>.</p>
           </div>
         </section>
 
