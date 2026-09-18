@@ -53,6 +53,7 @@ const PATTERN_FREQUENCY_TICKS = [0, 5, 10, 15]
 const DETAILS = [
   { label: 'Client', value: 'BLÅ SOL' },
   { label: 'Product', value: 'Additional features in an established app' },
+  { label: 'Role', value: 'UX Researcher & UI Designer' },
   { label: 'Duration', value: '4 weeks' },
   { label: 'Tools', value: 'Figma, Figjam, VS Code' },
   { label: 'Methodology', value: 'Double Diamond' },
