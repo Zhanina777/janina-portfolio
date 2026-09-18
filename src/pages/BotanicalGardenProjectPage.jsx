@@ -71,15 +71,6 @@ function BotanicalGardenProjectPage() {
           </div>
         </section>
 
-        <section className="case-study-section">
-          <StickySectionTitle>Planning</StickySectionTitle>
-          <div className="case-study-section-body">
-            <p>Before starting the design process, we mapped out our workflow as a team, setting clear milestones and internal deadlines. This kept us on track and left enough room for testing, iteration, and final polish.</p>
-            <CaseStudyImagePlaceholder label="Weekly deadlines overview" className="case-study-image-banner" />
-            <p>Planning our time and setting deadlines early gave us space for feedback, testing, and iteration, so we could refine the experience without rushing the final stretch.</p>
-          </div>
-        </section>
-
         <div className="case-study-process">
           <CaseStudyToc groups={TOC_GROUPS} />
           <div className="case-study-content">
