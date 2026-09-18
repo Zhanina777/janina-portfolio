@@ -42,14 +42,15 @@ function HiddenWorkshopsProjectPage() {
     <>
       <section className="case-study">
         <div className="case-study-hero">
-          <div className="case-study-hero-copy">
-            <h1>HIDDEN WORKSHOPS</h1>
-            <p>Helping people discover local workshops in their hometown and book a class in just a few clicks.</p>
+          <div className="case-study-hero-row">
+            <div className="case-study-hero-copy">
+              <h1>HIDDEN WORKSHOPS</h1>
+              <p>Helping people discover local workshops in their hometown and book a class in just a few clicks.</p>
+              <CaseStudyDetails items={DETAILS} className="case-study-details-inline" />
+            </div>
+            <CaseStudyImagePlaceholder label="Website mockups" className="case-study-hero-placeholder" />
           </div>
-          <CaseStudyImagePlaceholder label="Website mockups" className="case-study-hero-placeholder" />
         </div>
-
-        <CaseStudyDetails items={DETAILS} />
 
         <section className="case-study-section">
           <StickySectionTitle>Planning</StickySectionTitle>

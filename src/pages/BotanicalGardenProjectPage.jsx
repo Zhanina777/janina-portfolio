@@ -51,14 +51,15 @@ function BotanicalGardenProjectPage() {
     <>
       <section className="case-study">
         <div className="case-study-hero">
-          <div className="case-study-hero-copy">
-            <h1>BOTANICAL GARDEN DIGITAL EXPERIENCE</h1>
-            <p>Helping visitors discover, identify, and connect with the plants around them.</p>
+          <div className="case-study-hero-row">
+            <div className="case-study-hero-copy">
+              <h1>BOTANICAL GARDEN DIGITAL EXPERIENCE</h1>
+              <p>Helping visitors discover, identify, and connect with the plants around them.</p>
+              <CaseStudyDetails items={DETAILS} className="case-study-details-inline" />
+            </div>
+            <CaseStudyPhoneCollage images={[garden1, garden2, garden3]} layout="row" />
           </div>
-          <CaseStudyPhoneCollage images={[garden1, garden2, garden3]} />
         </div>
-
-        <CaseStudyDetails items={DETAILS} />
 
         <section className="case-study-section">
           <StickySectionTitle>Planning</StickySectionTitle>
