@@ -187,8 +187,8 @@ h2, h3, p { font-weight: normal; }
 .toolkit-reference-list img { width: 72px; height: 72px; padding: 10px; object-fit: contain; background: #fff; border-radius: 18px; box-shadow: 0 4px 14px rgba(82, 24, 44, .14); transition: transform .25s ease, box-shadow .25s ease; }
 .toolkit-reference-list span:hover img { transform: translateY(-4px); box-shadow: 0 8px 18px rgba(82, 24, 44, .2); }
 
-.case-study { padding-top: 100px; background: var(--paper); }
-.case-study-hero { display: flex; align-items: flex-start; justify-content: space-between; gap: clamp(30px, 5vw, 70px); flex-wrap: wrap; padding: 70px clamp(30px, 8vw, 100px) 60px; }
+.case-study { background: var(--paper); }
+.case-study-hero { display: flex; align-items: flex-start; justify-content: space-between; gap: clamp(30px, 5vw, 70px); flex-wrap: wrap; padding: 32px clamp(30px, 8vw, 100px) 60px; }
 .case-study-hero-copy { max-width: 480px; }
 .case-study-hero-copy h1 { margin: 0 0 22px; font-size: 50px; line-height: 1.05; font-weight: 700; }
 .case-study-hero-copy p { margin: 0; color: var(--muted); font-size: 30px; line-height: 1.4; }
@@ -356,8 +356,7 @@ h2, h3, p { font-weight: normal; }
   .toolkit-reference-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px 12px; }
   .toolkit-reference-list span { width: 76px; min-height: 102px; font-size: 10px; }
   .toolkit-reference-list img { width: 64px; height: 64px; padding: 12px; }
-  .case-study { padding-top: 52px; }
-  .case-study-hero { flex-direction: column; align-items: center; text-align: center; padding: 40px 24px 30px; gap: 30px; }
+  .case-study-hero { flex-direction: column; align-items: center; text-align: center; padding: 20px 24px 30px; gap: 30px; }
   .case-study-hero-copy h1 { font-size: 30px; }
   .case-study-hero-copy p { font-size: 15px; }
   .case-study-phones { width: min(280px, 80vw); height: 320px; }
