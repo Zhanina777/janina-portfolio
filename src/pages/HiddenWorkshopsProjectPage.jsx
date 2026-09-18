@@ -1,3 +1,4 @@
+import feedbackTable from '../assets/Table.png'
 import persona1 from '../assets/persona1.png'
 import values3 from '../assets/values3.png'
 import hmww from '../assets/hmww.png'
@@ -166,7 +167,7 @@ function HiddenWorkshopsProjectPage() {
               <CaseStudyImagePlaceholder src={lofiw4} alt="Lo-fi wireframe: workshop detail" label="Layout 4" />
             </div>
             <p>After finishing the low-fidelity wireframes, I conducted usability testing to see if people could easily find and book a workshop. I ran think-aloud sessions with 6 participants and sorted their feedback into a feedback capture grid.</p>
-            <CaseStudyImagePlaceholder label="Feedback capture grid" className="case-study-image-portrait" />
+            <CaseStudyImagePlaceholder src={feedbackTable} alt="Feedback capture grid from usability testing" label="Feedback capture grid" className="case-study-image-banner case-study-image-full" />
 
             <h3 id="final-product">Final product</h3>
             <div className="case-study-image-grid">
