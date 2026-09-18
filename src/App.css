@@ -256,13 +256,12 @@ h2, h3, p { font-weight: normal; }
 .case-study-image-portrait { width: min(400px, 100%); margin: 36px auto; aspect-ratio: .67; }
 .case-study-image-natural { width: 100%; margin: 36px 0; aspect-ratio: auto; }
 .case-study-image-cap-md { max-width: 700px; margin-left: auto; margin-right: auto; }
-.case-study-image-scroll { margin: 36px 0; overflow-x: auto; border-radius: 8px; }
-.case-study-image-scroll img { display: block; width: auto; max-width: none; height: clamp(260px, 34vw, 420px); border-radius: 8px; }
 .case-study-image-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 14px; margin: 36px 0; }
 .case-study-image-grid .case-study-image, .case-study-image-grid .case-study-image-placeholder { aspect-ratio: 1; font-size: 12px; padding: 8px; }
 .case-study-image-grid-phones { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); }
 .case-study-image-grid-phones .case-study-image, .case-study-image-grid-phones .case-study-image-placeholder { aspect-ratio: .5; }
 .case-study-image-grid-4 { grid-template-columns: repeat(4, 1fr); }
+.case-study-image-grid-sketches .case-study-image, .case-study-image-grid-sketches .case-study-image-placeholder { aspect-ratio: .73; }
 .case-study-cta { margin-top: 32px; }
 .case-study-cta .button { margin-top: 0; padding: 14px 30px; font-size: 18px; }
 

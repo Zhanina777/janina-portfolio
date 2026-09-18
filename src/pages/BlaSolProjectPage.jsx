@@ -13,7 +13,10 @@ import moodboard from '../assets/moodboard.png'
 import festivalPersona from '../assets/persona 1.png'
 import valuesList from '../assets/values.png'
 import hmw from '../assets/hmw.png'
-import sketches from '../assets/scetches.png'
+import sketch1 from '../assets/s.png'
+import sketch2 from '../assets/s1.png'
+import sketch3 from '../assets/s2.png'
+import sketch4 from '../assets/s3.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -287,8 +290,11 @@ function BlaSolProjectPage() {
 
             <h3 id="sketches">Sketches</h3>
             <p>We started with quick sketches to explore different ideas and layouts. This helped us try out different solutions without focusing too much on the details.</p>
-            <div className="case-study-image-scroll">
-              <img src={sketches} alt="Early sketches exploring layout ideas" />
+            <div className="case-study-image-grid case-study-image-grid-sketches case-study-image-grid-4">
+              <CaseStudyImagePlaceholder src={sketch1} alt="Sketch 1" label="Sketch 1" />
+              <CaseStudyImagePlaceholder src={sketch2} alt="Sketch 2" label="Sketch 2" />
+              <CaseStudyImagePlaceholder src={sketch3} alt="Sketch 3" label="Sketch 3" />
+              <CaseStudyImagePlaceholder src={sketch4} alt="Sketch 4" label="Sketch 4" />
             </div>
 
             <h3 id="user-flow">User Flow</h3>
