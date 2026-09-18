@@ -9,6 +9,7 @@ import lofi1 from '../assets/lofi1.png'
 import lofi2 from '../assets/lofi2.png'
 import lofi3 from '../assets/lofi3.png'
 import lofi4 from '../assets/lofi4.png'
+import moodboard from '../assets/moodboard.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -230,11 +231,7 @@ function BlaSolProjectPage() {
 
             <h3 id="moodboard">Moodboard</h3>
             <p>We made a moodboard to explore the overall look and feel we wanted for the app. We collected colours, typography, images, and other visual references that matched the energy and atmosphere of BLÅ SOL.</p>
-            <div className="case-study-image-grid">
-              <CaseStudyImagePlaceholder label="Moodboard 1" />
-              <CaseStudyImagePlaceholder label="Moodboard 2" />
-              <CaseStudyImagePlaceholder label="Moodboard 3" />
-            </div>
+            <CaseStudyImagePlaceholder src={moodboard} alt="BLÅ SOL moodboard" label="Moodboard" className="case-study-image-portrait case-study-image-full" />
 
             <h3 id="style-tile">Styletile</h3>
             <p>For the visual identity of our project, we build on the already existing design of the festival rather than creating a completely new style. We kept the primary and secondary color palettes which reflect the vibrant and youthful atmosphere of the festival. We also followed the existing typography for heading and body text and reused the logo variations.</p>
