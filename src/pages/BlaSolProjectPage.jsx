@@ -234,7 +234,7 @@ function BlaSolProjectPage() {
 
             <h3 id="style-tile">Styletile</h3>
             <p>For the visual identity of our project, we build on the already existing design of the festival rather than creating a completely new style. We kept the primary and secondary color palettes which reflect the vibrant and youthful atmosphere of the festival. We also followed the existing typography for heading and body text and reused the logo variations.</p>
-            <CaseStudyImagePlaceholder src={styleTile} alt="BLÅ SOL style tile" label="Style tile" className="case-study-image-banner" />
+            <CaseStudyImagePlaceholder src={styleTile} alt="BLÅ SOL style tile" label="Style tile" className="case-study-image-banner case-study-image-full" />
 
             <h3 id="lofi-wireframes">Lo-fi wireframes and Usability testing</h3>
             <p>Once we established the user flow and after understanding how users would navigate through the app we moved on to low-fidelity wireframes. This allowed us to quickly visualise the layout of each screen before focusing on visual identity.</p>
