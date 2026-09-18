@@ -273,6 +273,16 @@ h2, h3, p { font-weight: normal; }
 .vpc-panel-map .vpc-card-label { color: #a85a1f; }
 .case-study-content .vpc-card p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); }
 
+.feedback-grid-wrap { margin: 26px 0; overflow-x: auto; border-radius: 14px; box-shadow: 0 10px 24px rgba(82, 24, 44, .15); }
+.feedback-grid-table { width: 100%; min-width: 760px; border-collapse: collapse; background: var(--paper); }
+.feedback-grid-table th { padding: 16px 22px; background: var(--ink); color: var(--light-ink); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; text-align: left; }
+.feedback-grid-table th:first-child { width: 56px; text-align: center; }
+.feedback-grid-table td { padding: 18px 22px; border-bottom: 1px solid rgba(82, 24, 44, .12); vertical-align: top; }
+.feedback-grid-table tr:last-child td { border-bottom: none; }
+.feedback-grid-table .feedback-grid-user { font-weight: 700; color: var(--ink); text-align: center; font-size: 18px; }
+.feedback-grid-table ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+.feedback-grid-table li { font-size: 14px; line-height: 1.5; color: var(--muted); }
+
 @media (max-width: 560px) {
   .portfolio { padding-top: 52px; }
   .navigation { height: 52px; padding: 0 20px; }
@@ -362,4 +372,9 @@ h2, h3, p { font-weight: normal; }
   .case-study-image-wide, .case-study-image-tall { flex: none; width: 100%; aspect-ratio: 1.3; }
   .case-study-image-banner, .case-study-image-portrait { margin: 26px auto; }
   .case-study-image-grid { grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 10px; margin: 26px 0; }
+  .feedback-grid-wrap { margin: 20px 0; }
+  .feedback-grid-table { min-width: 620px; }
+  .feedback-grid-table th, .feedback-grid-table td { padding: 12px 14px; }
+  .feedback-grid-table th { font-size: 11px; }
+  .feedback-grid-table li { font-size: 13px; }
 }

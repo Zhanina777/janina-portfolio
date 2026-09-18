@@ -4,7 +4,6 @@ import bsm2 from '../assets/bsm2-recomposed.png'
 import bsm3 from '../assets/bsm3-trimmed.png'
 import competitorAnalysis from '../assets/r.png'
 import culturalIdentity from '../assets/r1.png'
-import feedbackCaptureGrid from '../assets/feedback.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -18,6 +17,74 @@ const DETAILS = [
   { label: 'Duration', value: '4 weeks' },
   { label: 'Tools', value: 'Figma, Figjam, VS Code' },
   { label: 'Methodology', value: 'Double Diamond' },
+]
+
+const FEEDBACK_GRID = [
+  {
+    user: 1,
+    likes: [
+      'Easy to find which artists your friends like',
+      'Nice with invitation to meet',
+      'Nice buttons to invite to meet and send location',
+      'Group icon is understandable',
+    ],
+    dislikes: [
+      "He ignored most of the pop ups and then he was confused because he can't read",
+      "Didn't know you can click on friends in the map to make their info bigger and get more options",
+    ],
+    questions: [
+      'Lots of questions because this tester is crazy and I should have tested on someone who can read',
+    ],
+    ideas: [
+      'Add friend to group icon is weird and confusing',
+      'Make lines between friends on the map / friends list so it looks more like you can click on them',
+    ],
+  },
+  {
+    user: 2,
+    likes: [
+      'Easy navigation and overall easy understanding of each task',
+      "The app is similar to other apps so it's easy to know or find out what to do",
+    ],
+    dislikes: [
+      'Didn’t know she can click on friends on the map list',
+      "Sending the location was not that clear because she didn't know where to find it, but when she got to that part it was easy",
+    ],
+    questions: [
+      'Not much questions, just why the location sending is on the map and not in the group page',
+    ],
+    ideas: [
+      'Add sending location to the group as well',
+    ],
+  },
+  {
+    user: 3,
+    likes: ['The map page'],
+    dislikes: ['The account page was hard to find'],
+    questions: ['Was confused about the button for the group'],
+    ideas: ['Switch the account and group page'],
+  },
+  {
+    user: 4,
+    likes: ['Clear program and map page'],
+    dislikes: ['Confusing group page', 'Account page is hidden'],
+    questions: ['Could not find how to send location to friends'],
+    ideas: ['Fix / set meeting page'],
+  },
+  {
+    user: 5,
+    likes: ['Nice app and the map page is great'],
+    dislikes: ['Account was not easy to find'],
+    questions: ['Just questioning where the profile is'],
+    ideas: ['Make the profile more visible'],
+  },
+  {
+    user: 6,
+    likes: ["App is easy to use because it's similar to other apps and makes sense"],
+    dislikes: ['Friends list was not very clickable-like'],
+    questions: ['Not many questions'],
+    ideas: ['Make friends more clickable'],
+  },
 ]
 
 const TOC_GROUPS = [
@@ -179,7 +246,30 @@ function BlaSolProjectPage() {
               <CaseStudyImagePlaceholder label="Wireframe 6" />
             </div>
             <p>After finishing the low-fidelity wireframes we conducted usability testing to see if users could easily navigate and complete tasks. We conducted think aloud testing on 6 users, giving them 7 scenarios and see how they would complete them. We sorted the feedback in a feedback capture grid.</p>
-            <CaseStudyImagePlaceholder src={feedbackCaptureGrid} alt="Feedback capture grid from usability testing" label="Feedback capture grid" className="case-study-image-portrait" />
+            <div className="feedback-grid-wrap">
+              <table className="feedback-grid-table">
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Likes</th>
+                    <th>Dislikes</th>
+                    <th>Questions</th>
+                    <th>Ideas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {FEEDBACK_GRID.map(row => (
+                    <tr key={row.user}>
+                      <td className="feedback-grid-user">{row.user}</td>
+                      <td><ul>{row.likes.map((item, i) => <li key={i}>{item}</li>)}</ul></td>
+                      <td><ul>{row.dislikes.map((item, i) => <li key={i}>{item}</li>)}</ul></td>
+                      <td><ul>{row.questions.map((item, i) => <li key={i}>{item}</li>)}</ul></td>
+                      <td><ul>{row.ideas.map((item, i) => <li key={i}>{item}</li>)}</ul></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
 
             <h3 id="final-product">Final product</h3>
             <div className="case-study-image-grid case-study-image-grid-phones">
