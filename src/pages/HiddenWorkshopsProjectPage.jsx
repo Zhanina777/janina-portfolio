@@ -2,6 +2,11 @@ import persona1 from '../assets/persona1.png'
 import values3 from '../assets/values3.png'
 import hmww from '../assets/hmww.png'
 import vpc3 from '../assets/vpc3.png'
+import crazy8 from '../assets/crazy8.png'
+import ss1 from '../assets/ss1.png'
+import ss2 from '../assets/ss2.png'
+import ss3 from '../assets/ss3.png'
+import ss4 from '../assets/ss4.png'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
 import StickySectionTitle from '../components/StickySectionTitle'
@@ -122,12 +127,14 @@ function HiddenWorkshopsProjectPage() {
             <CaseStudyImagePlaceholder src={vpc3} alt="Value Proposition Canvas: customer jobs, pains, gains, products and services, pain relievers, and gain creators" label="Value Proposition Canvas" className="case-study-image-natural case-study-image-cap-md" />
 
             <h3 id="sketches">Sketches</h3>
-            <p>We started with quick sketches to explore different layouts for browsing and booking workshops, without focusing too much on detail early on.</p>
+            <p>We started with the Crazy 8s technique, sketching eight quick ideas in eight minutes to explore as many directions as possible before narrowing in on what worked best.</p>
+            <CaseStudyImagePlaceholder src={crazy8} alt="Crazy 8s ideation sketches" label="Crazy 8s" className="case-study-image-natural" />
+            <p>From there, we developed more detailed sketches for the desktop and mobile layouts of both the front page and the workshop sub-pages.</p>
             <div className="case-study-image-grid">
-              <CaseStudyImagePlaceholder label="Sketch 1" />
-              <CaseStudyImagePlaceholder label="Sketch 2" />
-              <CaseStudyImagePlaceholder label="Sketch 3" />
-              <CaseStudyImagePlaceholder label="Sketch 4" />
+              <CaseStudyImagePlaceholder src={ss1} alt="Frontpage mobile sketch" label="Sketch 1" />
+              <CaseStudyImagePlaceholder src={ss2} alt="Front page desktop sketch" label="Sketch 2" />
+              <CaseStudyImagePlaceholder src={ss3} alt="Sub-page desktop sketch" label="Sketch 3" />
+              <CaseStudyImagePlaceholder src={ss4} alt="Subpage mobile sketch" label="Sketch 4" />
             </div>
 
             <h3 id="user-flow">User Flow</h3>
