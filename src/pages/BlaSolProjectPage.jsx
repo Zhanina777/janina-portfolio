@@ -13,6 +13,7 @@ import moodboard from '../assets/moodboard.png'
 import festivalPersona from '../assets/persona 1.png'
 import valuesList from '../assets/values.png'
 import hmw from '../assets/hmw.png'
+import sketches from '../assets/scetches.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -246,7 +247,7 @@ function BlaSolProjectPage() {
 
             <h3 id="how-might-we">How Might We</h3>
             <p>After going through our research, we turned some of the main problems into How Might We questions. This helped us look at the problems from a different perspective and start thinking about possible solutions.</p>
-            <CaseStudyImagePlaceholder src={hmw} alt="How Might We questions" label="How Might We questions" className="case-study-image-banner case-study-image-full" />
+            <CaseStudyImagePlaceholder src={hmw} alt="How Might We questions" label="How Might We questions" className="case-study-image-banner case-study-image-full case-study-image-cap-md" />
 
             <h3 id="value-proposition-canvas">Value Proposition Canvas</h3>
             <p>We used the Value Proposition Canvas to connect what we learned from our research with what our solution could offer. We looked at what festival-goers are trying to do, what frustrates them, and what would make their experience easier and more enjoyable.</p>
@@ -286,12 +287,7 @@ function BlaSolProjectPage() {
 
             <h3 id="sketches">Sketches</h3>
             <p>We started with quick sketches to explore different ideas and layouts. This helped us try out different solutions without focusing too much on the details.</p>
-            <div className="case-study-image-grid">
-              <CaseStudyImagePlaceholder label="Sketch 1" />
-              <CaseStudyImagePlaceholder label="Sketch 2" />
-              <CaseStudyImagePlaceholder label="Sketch 3" />
-              <CaseStudyImagePlaceholder label="Sketch 4" />
-            </div>
+            <CaseStudyImagePlaceholder src={sketches} alt="Early sketches exploring layout ideas" label="Sketches" className="case-study-image-banner case-study-image-full" />
 
             <h3 id="user-flow">User Flow</h3>
             <p>We created a user flow to map out how users would move through the app and interact with its main features. This helped us understand the steps users would take to complete key tasks and make sure the experience felt simple and logical.</p>
