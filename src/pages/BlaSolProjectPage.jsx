@@ -4,6 +4,7 @@ import bsm2 from '../assets/bsm2-recomposed.png'
 import bsm3 from '../assets/bsm3-trimmed.png'
 import competitorAnalysis from '../assets/r.png'
 import culturalIdentity from '../assets/r1.png'
+import feedbackCaptureGrid from '../assets/feedback.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -178,7 +179,7 @@ function BlaSolProjectPage() {
               <CaseStudyImagePlaceholder label="Wireframe 6" />
             </div>
             <p>After finishing the low-fidelity wireframes we conducted usability testing to see if users could easily navigate and complete tasks. We conducted think aloud testing on 6 users, giving them 7 scenarios and see how they would complete them. We sorted the feedback in a feedback capture grid.</p>
-            <CaseStudyImagePlaceholder label="Feedback capture grid" className="case-study-image-portrait" />
+            <CaseStudyImagePlaceholder src={feedbackCaptureGrid} alt="Feedback capture grid from usability testing" label="Feedback capture grid" className="case-study-image-portrait" />
 
             <h3 id="final-product">Final product</h3>
             <div className="case-study-image-grid case-study-image-grid-phones">
