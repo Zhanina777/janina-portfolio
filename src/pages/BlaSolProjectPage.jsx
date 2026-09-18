@@ -363,7 +363,7 @@ function BlaSolProjectPage() {
               <CaseStudyImagePlaceholder label="Final product screen 4" />
             </div>
             <div className="case-study-cta">
-              <a className="button" href="https://eaa25.github.io/" target="_blank" rel="noopener noreferrer">See final prototype</a>
+              <a className="button" href="https://eaa25.github.io/blaasol/" target="_blank" rel="noopener noreferrer">See final prototype</a>
             </div>
           </div>
         </div>
