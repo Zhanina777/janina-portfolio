@@ -5,6 +5,10 @@ import bsm3 from '../assets/bsm3-trimmed.png'
 import competitorAnalysis from '../assets/r.png'
 import culturalIdentity from '../assets/r1.png'
 import styleTile from '../assets/styletile.png'
+import lofi1 from '../assets/lofi1.png'
+import lofi2 from '../assets/lofi2.png'
+import lofi3 from '../assets/lofi3.png'
+import lofi4 from '../assets/lofi4.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -239,10 +243,10 @@ function BlaSolProjectPage() {
             <h3 id="lofi-wireframes">Lo-fi wireframes and Usability testing</h3>
             <p>Once we established the user flow and after understanding how users would navigate through the app we moved on to low-fidelity wireframes. This allowed us to quickly visualise the layout of each screen before focusing on visual identity.</p>
             <div className="case-study-image-grid case-study-image-grid-phones">
-              <CaseStudyImagePlaceholder label="Wireframe 1" />
-              <CaseStudyImagePlaceholder label="Wireframe 2" />
-              <CaseStudyImagePlaceholder label="Wireframe 3" />
-              <CaseStudyImagePlaceholder label="Wireframe 4" />
+              <CaseStudyImagePlaceholder src={lofi1} alt="Lo-fi wireframe 1" label="Wireframe 1" />
+              <CaseStudyImagePlaceholder src={lofi2} alt="Lo-fi wireframe 2" label="Wireframe 2" />
+              <CaseStudyImagePlaceholder src={lofi3} alt="Lo-fi wireframe 3" label="Wireframe 3" />
+              <CaseStudyImagePlaceholder src={lofi4} alt="Lo-fi wireframe 4" label="Wireframe 4" />
               <CaseStudyImagePlaceholder label="Wireframe 5" />
               <CaseStudyImagePlaceholder label="Wireframe 6" />
             </div>
