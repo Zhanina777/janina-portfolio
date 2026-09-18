@@ -7,6 +7,10 @@ import ss1 from '../assets/ss1.png'
 import ss2 from '../assets/ss2.png'
 import ss3 from '../assets/ss3.png'
 import ss4 from '../assets/ss4.png'
+import lofiw1 from '../assets/lofiw1.png'
+import lofiw2 from '../assets/lofiw2.png'
+import lofiw3 from '../assets/lofiw3.png'
+import lofiw4 from '../assets/lofiw4.png'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
 import StickySectionTitle from '../components/StickySectionTitle'
@@ -155,13 +159,11 @@ function HiddenWorkshopsProjectPage() {
 
             <h3 id="lofi-wireframes">Lo-fi wireframes and Usability testing</h3>
             <p>Once we had a clear user flow, we moved on to low-fidelity wireframes to quickly visualise the layout of each page before focusing on visual identity.</p>
-            <div className="case-study-image-grid">
-              <CaseStudyImagePlaceholder label="Layout 1" />
-              <CaseStudyImagePlaceholder label="Layout 2" />
-              <CaseStudyImagePlaceholder label="Layout 3" />
-              <CaseStudyImagePlaceholder label="Layout 4" />
-              <CaseStudyImagePlaceholder label="Layout 5" />
-              <CaseStudyImagePlaceholder label="Layout 6" />
+            <div className="case-study-image-grid case-study-image-grid-phones case-study-image-grid-4">
+              <CaseStudyImagePlaceholder src={lofiw1} alt="Lo-fi wireframe: front page" label="Layout 1" />
+              <CaseStudyImagePlaceholder src={lofiw2} alt="Lo-fi wireframe: workshops list" label="Layout 2" />
+              <CaseStudyImagePlaceholder src={lofiw3} alt="Lo-fi wireframe: gallery" label="Layout 3" />
+              <CaseStudyImagePlaceholder src={lofiw4} alt="Lo-fi wireframe: workshop detail" label="Layout 4" />
             </div>
             <p>After finishing the low-fidelity wireframes, we conducted usability testing to see if people could easily find and book a workshop. We ran think-aloud sessions with 6 participants and sorted their feedback into a feedback capture grid.</p>
             <CaseStudyImagePlaceholder label="Feedback capture grid" className="case-study-image-portrait" />
