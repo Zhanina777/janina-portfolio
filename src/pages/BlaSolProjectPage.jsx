@@ -170,9 +170,10 @@ function BlaSolProjectPage() {
         <section className="case-study-section">
           <StickySectionTitle>Overview</StickySectionTitle>
           <div className="case-study-section-body">
-            <p>BLÅ SOL is a real music festival, and this project asked how its official app could help visitors stay connected with the friends they came with. Festivals are crowded, unpredictable environments, and the people we spoke to described the same problem over and over: they lose track of each other, fall back on messaging apps that were never built for that kind of chaos, and end up spending more energy coordinating than actually enjoying the event.</p>
-            <p>Over four weeks, working through research, definition, ideation, and testing, we designed a set of additional features for BLÅ SOL&apos;s app: a live map for finding friends, quick group coordination, and shared meeting points, shaped around four values we set for the experience &mdash; connecting, youthful, community-driven, and dazzling. Eighteen interviews, a persona, and usability testing with six participants guided every decision, from the earliest sketches to the final interface.</p>
-            <p>The result is a lightweight, festival-native way to stay in touch that fits naturally into BLÅ SOL&apos;s existing identity &mdash; reducing the friction of finding friends so people can spend less time coordinating and more time enjoying the festival together.</p>
+            <p>Blå Sol is a festival app concept designed to help young festival-goers stay connected with their friends in crowded festival environments. The project focused on improving an existing festival app by introducing new features that make finding friends and coordinating meetups simpler and less overwhelming.</p>
+            <p>Working as part of a team, I contributed to user research, persona development, ideation, UX design, and usability testing. I was also involved in developing the app&apos;s visual direction and refining the interface based on user feedback.</p>
+            <p>The final solution introduced features such as a social map for finding friends, quick location sharing, and easier group coordination. During the iteration process, we also explored ideas such as a live map and latest notifications to make staying connected even easier.</p>
+            <p>This project demonstrates my ability to <strong>turn user research into practical features, iterate on designs based on testing, and simplify interactions within an existing app</strong>.</p>
           </div>
         </section>
 
