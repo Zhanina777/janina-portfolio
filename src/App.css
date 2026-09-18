@@ -188,8 +188,8 @@ h2, h3, p { font-weight: normal; }
 .toolkit-reference-list span:hover img { transform: translateY(-4px); box-shadow: 0 8px 18px rgba(82, 24, 44, .2); }
 
 .case-study { background: var(--paper); }
-.case-study-hero { display: flex; align-items: flex-start; justify-content: space-between; gap: clamp(30px, 5vw, 70px); flex-wrap: wrap; padding: 32px clamp(30px, 8vw, 100px) 60px; }
-.case-study-hero-copy { max-width: 480px; }
+.case-study-hero { display: flex; align-items: center; justify-content: space-between; gap: clamp(30px, 5vw, 70px); flex-wrap: wrap; min-height: calc(100vh - 100px); padding: 32px clamp(30px, 8vw, 100px) 60px; }
+.case-study-hero-copy { max-width: 520px; }
 .case-study-hero-copy h1 { margin: 0 0 22px; font-size: 50px; line-height: 1.05; font-weight: 700; }
 .case-study-hero-copy p { margin: 0; color: var(--muted); font-size: 30px; line-height: 1.4; }
 .case-study-phones { position: relative; width: min(440px, 90vw); height: 520px; }
@@ -210,12 +210,14 @@ h2, h3, p { font-weight: normal; }
 .case-study-phones:hover .case-phone-img-right { transform: translateX(108px) rotate(0deg) scale(.92); opacity: 1; }
 .case-study-phones:hover .case-phone-img-center { transform: translateX(-50%) scale(1); }
 
-.case-study-phones-row { display: flex; align-items: flex-start; justify-content: flex-start; gap: 24px; }
-.case-phone-img-row { width: 190px; height: 400px; object-fit: contain; object-position: top; display: block; filter: drop-shadow(0 10px 20px rgba(0, 0, 0, .18)); }
+.case-study-phones-row { display: flex; align-items: flex-start; justify-content: flex-start; gap: 20px; }
+.case-phone-img-row { width: 250px; height: 526px; object-fit: contain; object-position: top; display: block; filter: drop-shadow(0 14px 28px rgba(0, 0, 0, .2)); }
 .case-study-details { display: grid; gap: 0; max-width: 760px; margin: 0 auto; padding: 40px clamp(30px, 8vw, 100px) 10px; border-top: 1px solid rgba(82, 24, 44, .15); }
 .detail-row { display: grid; grid-template-columns: 160px 1fr; gap: 24px; padding: 20px 0; border-bottom: 1px solid rgba(82, 24, 44, .12); }
 .detail-row dt { margin: 0; font-weight: 700; }
 .detail-row dd { margin: 0; color: var(--muted); line-height: 1.4; }
+.case-study-details-inline { max-width: none; margin: 32px 0 0; padding: 24px 0 0; }
+.case-study-details-inline .detail-row { grid-template-columns: 130px 1fr; gap: 16px; padding: 14px 0; font-size: 15px; }
 .case-study-section { display: flex; gap: 60px; flex-wrap: wrap; padding: 60px clamp(30px, 8vw, 100px); position: relative; }
 .sticky-section-title-wrap { flex: 0 0 340px; }
 .case-study-section h2 { margin: 0; font-size: 36px; font-weight: normal; }
@@ -356,7 +358,8 @@ h2, h3, p { font-weight: normal; }
   .toolkit-reference-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px 12px; }
   .toolkit-reference-list span { width: 76px; min-height: 102px; font-size: 10px; }
   .toolkit-reference-list img { width: 64px; height: 64px; padding: 12px; }
-  .case-study-hero { flex-direction: column; align-items: center; text-align: center; padding: 20px 24px 30px; gap: 30px; }
+  .case-study-hero { flex-direction: column; align-items: center; text-align: center; min-height: auto; padding: 20px 24px 30px; gap: 30px; }
+  .case-study-details-inline { text-align: left; }
   .case-study-hero-copy h1 { font-size: 30px; }
   .case-study-hero-copy p { font-size: 15px; }
   .case-study-phones { width: min(280px, 80vw); height: 320px; }

@@ -1,6 +1,6 @@
-function CaseStudyDetails({ items }) {
+function CaseStudyDetails({ items, className = '' }) {
   return (
-    <dl className="case-study-details">
+    <dl className={`case-study-details ${className}`.trim()}>
       {items.map(({ label, value }) => (
         <div className="detail-row" key={label}>
           <dt>{label}</dt>
