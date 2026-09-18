@@ -159,7 +159,7 @@ function BlaSolProjectPage() {
         <div className="case-study-hero">
           <div className="case-study-hero-row">
             <div className="case-study-hero-copy">
-              <h1>BLÅ SOL FESTIVAL MOBILE APP</h1>
+              <h1>BLÅ SOL FESTIVAL<br />MOBILE APP</h1>
               <p>Helping festival-goers stay connected with their friends throughout the event.</p>
               <CaseStudyDetails items={DETAILS} className="case-study-details-inline" />
             </div>
