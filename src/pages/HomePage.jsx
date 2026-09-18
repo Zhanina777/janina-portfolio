@@ -1,4 +1,5 @@
 import userPhoto from '../assets/user.png'
+import bsm2 from '../assets/bsm2-recomposed.png'
 import PhonePreview from '../components/PhonePreview'
 import ContactFooter from '../components/ContactFooter'
 
@@ -33,7 +34,7 @@ function HomePage() {
             <p>Mobile app focused on improving the festival experience by supporting seamless communication and enriching between friends.</p>
             <a className="button" href="#project-bla-sol">see more</a>
           </div>
-          <PhonePreview />
+          <img className="project-phone-img" src={bsm2} alt="BLÅ SOL app preview" />
         </article>
         <article className="project project-second">
           <PhonePreview variant="garden" />
