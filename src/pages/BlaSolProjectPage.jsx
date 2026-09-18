@@ -287,7 +287,9 @@ function BlaSolProjectPage() {
 
             <h3 id="sketches">Sketches</h3>
             <p>We started with quick sketches to explore different ideas and layouts. This helped us try out different solutions without focusing too much on the details.</p>
-            <CaseStudyImagePlaceholder src={sketches} alt="Early sketches exploring layout ideas" label="Sketches" className="case-study-image-banner case-study-image-full" />
+            <div className="case-study-image-scroll">
+              <img src={sketches} alt="Early sketches exploring layout ideas" />
+            </div>
 
             <h3 id="user-flow">User Flow</h3>
             <p>We created a user flow to map out how users would move through the app and interact with its main features. This helped us understand the steps users would take to complete key tasks and make sure the experience felt simple and logical.</p>
