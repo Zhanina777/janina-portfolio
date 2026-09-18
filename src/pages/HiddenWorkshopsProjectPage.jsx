@@ -78,9 +78,9 @@ function HiddenWorkshopsProjectPage() {
         <section className="case-study-section">
           <StickySectionTitle>Planning</StickySectionTitle>
           <div className="case-study-section-body">
-            <p>Before starting the design process, we mapped out our workflow, setting clear milestones and internal deadlines. This kept us on track and left enough room for testing, iteration, and final polish.</p>
+            <p>Before starting the design process, I mapped out my workflow, setting clear milestones and internal deadlines. This kept me on track and left enough room for testing, iteration, and final polish.</p>
             <CaseStudyImagePlaceholder label="Weekly deadlines overview" className="case-study-image-banner" />
-            <p>Planning our time and setting deadlines early gave us space for feedback, testing, and iteration, so we could refine the experience without rushing the final stretch.</p>
+            <p>Planning my time and setting deadlines early gave me space for feedback, testing, and iteration, so I could refine the experience without rushing the final stretch.</p>
           </div>
         </section>
 
@@ -88,10 +88,10 @@ function HiddenWorkshopsProjectPage() {
           <CaseStudyToc groups={TOC_GROUPS} />
           <div className="case-study-content">
             <h3 id="research">Foundational research</h3>
-            <p>We started with foundational research to understand how people currently discover and sign up for local workshops and classes. We combined desk research, competitor analysis, and interviews to build a clearer picture of our target users and their habits.</p>
-            <p>This helped us uncover common behaviours, motivations, and frustrations that shape how people find and book workshops in their area, giving us a foundation for the rest of the project.</p>
-            <p>We looked into existing booking platforms and local event listings to understand what already works well and where there is room to improve.</p>
-            <p>We also looked into how small workshop hosts, such as independent artists and craftspeople, currently promote and manage their sessions.</p>
+            <p>I started with foundational research to understand how people currently discover and sign up for local workshops and classes. I combined desk research, competitor analysis, and interviews to build a clearer picture of my target users and their habits.</p>
+            <p>This helped me uncover common behaviours, motivations, and frustrations that shape how people find and book workshops in their area, giving me a foundation for the rest of the project.</p>
+            <p>I looked into existing booking platforms and local event listings to understand what already works well and where there is room to improve.</p>
+            <p>I also looked into how small workshop hosts, such as independent artists and craftspeople, currently promote and manage their sessions.</p>
 
             <div className="case-study-image-row">
               <CaseStudyImagePlaceholder label="Competitor analysis" className="case-study-image-wide" />
@@ -100,11 +100,11 @@ function HiddenWorkshopsProjectPage() {
             <CaseStudyImagePlaceholder label="Local workshop landscape overview" className="case-study-image-banner" />
 
             <h3 id="observations">Observations</h3>
-            <p>We browsed existing local listings and social media groups to see how workshops are currently being shared, and how people react to and engage with these posts.</p>
+            <p>I browsed existing local listings and social media groups to see how workshops are currently being shared, and how people react to and engage with these posts.</p>
 
             <h3 id="interviews">Interviews</h3>
-            <p>After gathering our initial findings, we developed an interview guide to explore how people discover and decide to join local workshops.</p>
-            <p>We spoke with 12 people from our hometown with different levels of interest in crafts, cooking, and creative classes. These conversations helped us understand what makes someone commit to booking a workshop.</p>
+            <p>After gathering my initial findings, I developed an interview guide to explore how people discover and decide to join local workshops.</p>
+            <p>I spoke with 12 people from my hometown with different levels of interest in crafts, cooking, and creative classes. These conversations helped me understand what makes someone commit to booking a workshop.</p>
             <CaseStudyImagePlaceholder label="Interview main insights" className="case-study-image-banner" />
 
             <h3>The Problem</h3>
@@ -113,27 +113,27 @@ function HiddenWorkshopsProjectPage() {
             <p>This creates friction that stops people from discovering and joining workshops they would genuinely enjoy.</p>
 
             <h3 id="persona">Persona</h3>
-            <p>To turn our research into a more relatable user perspective, we created a persona based on patterns identified across our interviews.</p>
-            <p>The persona represents our target visitor and highlights their goals, motivations, and frustrations when looking for something new to try in their hometown. This helped us keep their perspective at the centre of our design decisions.</p>
+            <p>To turn my research into a more relatable user perspective, I created a persona based on patterns identified across my interviews.</p>
+            <p>The persona represents my target visitor and highlights their goals, motivations, and frustrations when looking for something new to try in their hometown. This helped me keep their perspective at the centre of my design decisions.</p>
             <CaseStudyImagePlaceholder src={persona1} alt="Workshop seeker persona: Anna Ivanova, The Explorer" label="Workshop seeker persona" className="case-study-image-portrait case-study-image-full" />
 
             <h3 id="values">Values</h3>
-            <p>To guide the direction of our solution, we defined a set of core values that reflect what makes discovering and booking a workshop feel effortless and inviting.</p>
+            <p>To guide the direction of my solution, I defined a set of core values that reflect what makes discovering and booking a workshop feel effortless and inviting.</p>
             <CaseStudyImagePlaceholder src={values3} alt="List of values: Authentic, Cozy, Warm, Traditional" label="List of values" className="case-study-image-banner case-study-image-full" />
 
             <h3 id="how-might-we">How Might We</h3>
-            <p>After going through our research, we turned the main problems into How Might We questions, helping us look at them from different angles and start thinking about possible solutions.</p>
+            <p>After going through my research, I turned the main problems into How Might We questions, helping me look at them from different angles and start thinking about possible solutions.</p>
             <CaseStudyImagePlaceholder src={hmww} alt="How Might We questions and parts of the solution" label="How Might We questions" className="case-study-image-banner case-study-image-full case-study-image-cap-md" />
 
             <h3 id="value-proposition-canvas">Value Proposition Canvas</h3>
-            <p>We used the Value Proposition Canvas to connect what we learned from our research with what the website could offer, focusing on what visitors are trying to do, what gets in their way, and what would make planning a visit to the Old Town workshops easier.</p>
+            <p>I used the Value Proposition Canvas to connect what I learned from my research with what the website could offer, focusing on what visitors are trying to do, what gets in their way, and what would make planning a visit to the Old Town workshops easier.</p>
 
             <CaseStudyImagePlaceholder src={vpc3} alt="Value Proposition Canvas: customer jobs, pains, gains, products and services, pain relievers, and gain creators" label="Value Proposition Canvas" className="case-study-image-natural case-study-image-cap-md" />
 
             <h3 id="sketches">Sketches</h3>
-            <p>We started with the Crazy 8s technique, sketching eight quick ideas in eight minutes to explore as many directions as possible before narrowing in on what worked best.</p>
+            <p>I started with the Crazy 8s technique, sketching eight quick ideas in eight minutes to explore as many directions as possible before narrowing in on what worked best.</p>
             <CaseStudyImagePlaceholder src={crazy8} alt="Crazy 8s ideation sketches" label="Crazy 8s" className="case-study-image-natural" />
-            <p>From there, we developed more detailed sketches for the desktop and mobile layouts of both the front page and the workshop sub-pages.</p>
+            <p>From there, I developed more detailed sketches for the desktop and mobile layouts of both the front page and the workshop sub-pages.</p>
             <div className="case-study-image-grid">
               <CaseStudyImagePlaceholder src={ss1} alt="Frontpage mobile sketch" label="Sketch 1" />
               <CaseStudyImagePlaceholder src={ss2} alt="Front page desktop sketch" label="Sketch 2" />
@@ -142,11 +142,11 @@ function HiddenWorkshopsProjectPage() {
             </div>
 
             <h3 id="user-flow">User Flow</h3>
-            <p>We mapped out a user flow to understand how someone would go from browsing workshops to booking a spot, and how hosts would manage their listings.</p>
-            <p>This helped us spot unnecessary steps and simplify the booking process before moving into wireframes.</p>
+            <p>I mapped out a user flow to understand how someone would go from browsing workshops to booking a spot, and how hosts would manage their listings.</p>
+            <p>This helped me spot unnecessary steps and simplify the booking process before moving into wireframes.</p>
 
             <h3 id="moodboard">Moodboard</h3>
-            <p>We put together a moodboard to explore the look and feel of the platform, gathering colours, typography, and imagery that felt warm, local, and inviting.</p>
+            <p>I put together a moodboard to explore the look and feel of the platform, gathering colours, typography, and imagery that felt warm, local, and inviting.</p>
             <div className="case-study-image-grid">
               <CaseStudyImagePlaceholder label="Moodboard 1" />
               <CaseStudyImagePlaceholder label="Moodboard 2" />
@@ -154,18 +154,18 @@ function HiddenWorkshopsProjectPage() {
             </div>
 
             <h3 id="style-tile">Styletile</h3>
-            <p>For the visual identity, we chose a warm, approachable colour palette and friendly typography to reflect the community feel of discovering local workshops.</p>
+            <p>For the visual identity, I chose a warm, approachable colour palette and friendly typography to reflect the community feel of discovering local workshops.</p>
             <CaseStudyImagePlaceholder label="Style tile" className="case-study-image-banner" />
 
             <h3 id="lofi-wireframes">Lo-fi wireframes and Usability testing</h3>
-            <p>Once we had a clear user flow, we moved on to low-fidelity wireframes to quickly visualise the layout of each page before focusing on visual identity.</p>
+            <p>Once I had a clear user flow, I moved on to low-fidelity wireframes to quickly visualise the layout of each page before focusing on visual identity.</p>
             <div className="case-study-image-grid case-study-image-grid-phones case-study-image-grid-4">
               <CaseStudyImagePlaceholder src={lofiw1} alt="Lo-fi wireframe: front page" label="Layout 1" />
               <CaseStudyImagePlaceholder src={lofiw2} alt="Lo-fi wireframe: workshops list" label="Layout 2" />
               <CaseStudyImagePlaceholder src={lofiw3} alt="Lo-fi wireframe: gallery" label="Layout 3" />
               <CaseStudyImagePlaceholder src={lofiw4} alt="Lo-fi wireframe: workshop detail" label="Layout 4" />
             </div>
-            <p>After finishing the low-fidelity wireframes, we conducted usability testing to see if people could easily find and book a workshop. We ran think-aloud sessions with 6 participants and sorted their feedback into a feedback capture grid.</p>
+            <p>After finishing the low-fidelity wireframes, I conducted usability testing to see if people could easily find and book a workshop. I ran think-aloud sessions with 6 participants and sorted their feedback into a feedback capture grid.</p>
             <CaseStudyImagePlaceholder label="Feedback capture grid" className="case-study-image-portrait" />
 
             <h3 id="final-product">Final product</h3>
