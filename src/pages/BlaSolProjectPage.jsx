@@ -10,6 +10,8 @@ import lofi2 from '../assets/lofi2.png'
 import lofi3 from '../assets/lofi3.png'
 import lofi4 from '../assets/lofi4.png'
 import moodboard from '../assets/moodboard.png'
+import festivalPersona from '../assets/persona 1.png'
+import valuesList from '../assets/values.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -170,11 +172,11 @@ function BlaSolProjectPage() {
             <h3 id="persona">Persona</h3>
             <p>To turn our research findings into a more relatable user perspective, we created a persona based on patterns and behaviours identified across our interviews.</p>
             <p>The persona represents our target user and highlights their goals, motivations, frustrations, and behavior when attending festivals with friends. This helped us keep the user&apos;s perspective at the centre of the project throughout the design decisions.</p>
-            <CaseStudyImagePlaceholder label="Festival-goer persona" className="case-study-image-portrait" />
+            <CaseStudyImagePlaceholder src={festivalPersona} alt="Festival-goer persona: Ella Karberg" label="Festival-goer persona" className="case-study-image-portrait case-study-image-full" />
 
             <h3 id="values">Values</h3>
             <p>To guide the direction of our solution, we defined four core values that reflect the identity and atmosphere of BLÅ SOL.</p>
-            <CaseStudyImagePlaceholder label="List of values" className="case-study-image-banner" />
+            <CaseStudyImagePlaceholder src={valuesList} alt="List of values: Connecting, Youthful, Community-driven, Dazzling" label="List of values" className="case-study-image-banner case-study-image-full" />
 
             <h3 id="how-might-we">How Might We</h3>
             <p>After going through our research, we turned some of the main problems into How Might We questions. This helped us look at the problems from a different perspective and start thinking about possible solutions.</p>
