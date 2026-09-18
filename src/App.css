@@ -192,6 +192,7 @@ h2, h3, p { font-weight: normal; }
 .case-study-hero-row { display: flex; align-items: flex-start; justify-content: space-between; gap: clamp(40px, 6vw, 100px); flex-wrap: wrap; }
 .case-study-hero-copy { max-width: 480px; flex: 0 1 400px; }
 .case-study-hero-copy h1 { margin: 0 0 18px; font-size: 44px; line-height: 1.08; font-weight: 700; }
+.hero-title-line { white-space: nowrap; }
 .case-study-hero-copy p { margin: 0; color: var(--muted); font-size: 22px; line-height: 1.5; }
 .case-study-phones { position: relative; width: min(440px, 90vw); height: 520px; }
 .case-study-hero .case-study-hero-placeholder { width: min(440px, 90vw); height: 520px; }
@@ -211,7 +212,7 @@ h2, h3, p { font-weight: normal; }
 .case-study-phones:hover .case-phone-img-right { transform: translateX(108px) rotate(0deg) scale(.92); opacity: 1; }
 .case-study-phones:hover .case-phone-img-center { transform: translateX(-50%) scale(1); }
 
-.case-study-phones-row { display: flex; align-items: flex-start; justify-content: flex-start; flex: 0 0 auto; gap: 1.2vw; height: min(62vh, 600px); }
+.case-study-phones-row { display: flex; align-items: flex-start; justify-content: flex-start; flex: 0 0 auto; gap: 1.2vw; height: min(65vh, 630px); }
 .case-phone-img-row { height: 100%; width: auto; object-fit: contain; object-position: top; display: block; filter: drop-shadow(0 14px 28px rgba(0, 0, 0, .2)); }
 .case-study-details { display: grid; gap: 0; max-width: 760px; margin: 0 auto; padding: 40px clamp(30px, 8vw, 100px) 10px; border-top: 1px solid rgba(82, 24, 44, .15); }
 .detail-row { display: grid; grid-template-columns: 160px 1fr; gap: 24px; padding: 20px 0; border-bottom: 1px solid rgba(82, 24, 44, .12); }
@@ -363,6 +364,7 @@ h2, h3, p { font-weight: normal; }
   .case-study-hero-row { flex-direction: column; align-items: center; text-align: center; gap: 30px; }
   .case-study-details-inline { text-align: left; }
   .case-study-hero-copy h1 { font-size: 30px; }
+  .hero-title-line { white-space: normal; }
   .case-study-hero-copy p { font-size: 15px; }
   .case-study-phones { width: min(280px, 80vw); height: 320px; }
   .case-study-hero .case-study-hero-placeholder { width: min(280px, 80vw); height: 320px; }
