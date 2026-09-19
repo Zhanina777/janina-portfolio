@@ -1,4 +1,5 @@
 import feedbackTable from '../assets/Table.png'
+import table22 from '../assets/Table22.png'
 import persona1 from '../assets/persona1.png'
 import values3 from '../assets/values3.png'
 import hmww from '../assets/hmww.png'
@@ -44,10 +45,10 @@ const TOC_GROUPS = [
     { label: '03.3 moodboard', id: 'moodboard' },
     { label: '03.4 style tile', id: 'style-tile' },
     { label: '03.5 low fidelity wireframes and testing', id: 'lofi-wireframes' },
-    { label: '03.6 final product', id: 'final-product' },
   ] },
   { phase: '04 deliver', items: [
-    { label: '04.1 coded solution', id: 'final-product' },
+    { label: '04.1 high fidelity wireframes and testing', id: 'hifi-wireframes' },
+    { label: '04.2 coded solution', id: 'coded-solution' },
   ] },
 ]
 
@@ -169,13 +170,19 @@ function HiddenWorkshopsProjectPage() {
             <p>After finishing the low-fidelity wireframes, I conducted usability testing to see if people could easily find and book a workshop. I ran think-aloud sessions with 6 participants and sorted their feedback into a feedback capture grid.</p>
             <CaseStudyImagePlaceholder src={feedbackTable} alt="Feedback capture grid from usability testing" label="Feedback capture grid" className="case-study-image-banner case-study-image-full" />
 
-            <h3 id="final-product">Final product</h3>
+            <h3 id="hifi-wireframes">High fidelity wireframes and testing</h3>
+            <p>After incorporating feedback from the lo-fi usability testing, I moved on to high-fidelity wireframes, applying the visual identity to every screen.</p>
             <div className="case-study-image-grid">
-              <CaseStudyImagePlaceholder label="Final website screen 1" />
-              <CaseStudyImagePlaceholder label="Final website screen 2" />
-              <CaseStudyImagePlaceholder label="Final website screen 3" />
-              <CaseStudyImagePlaceholder label="Final website screen 4" />
+              <CaseStudyImagePlaceholder label="High fidelity screen 1" />
+              <CaseStudyImagePlaceholder label="High fidelity screen 2" />
+              <CaseStudyImagePlaceholder label="High fidelity screen 3" />
+              <CaseStudyImagePlaceholder label="High fidelity screen 4" />
             </div>
+            <p>Once the high-fidelity screens were ready, I ran a second round of usability testing to check whether the visual design and navigation felt just as clear as the lo-fi version had tested. I ran think-aloud sessions with 5 participants and sorted their feedback into a feedback capture grid.</p>
+            <CaseStudyImagePlaceholder src={table22} alt="Testing results from high-fidelity usability testing" label="Testing results" className="case-study-image-banner case-study-image-full" />
+
+            <h3 id="coded-solution">Coded solution</h3>
+            <p>The final designs were then translated into a working website, focusing on clean, accessible markup and a layout that stays true to the high-fidelity screens.</p>
           </div>
         </div>
       </section>
