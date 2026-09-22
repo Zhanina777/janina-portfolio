@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 
 const TOP_OFFSET = 120
 const RELEASE_MARGIN = 24
-const MOBILE_BREAKPOINT = 560
+const MOBILE_BREAKPOINT = 1024
 const SCROLL_PADDING = 20
 
 function scrollToSection(id) {

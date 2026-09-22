@@ -1,5 +1,6 @@
 import userPhoto from '../assets/user.png'
 import bsm2 from '../assets/bsm2-recomposed.png'
+import wlofi1 from '../assets/wlofi1.png'
 import PhonePreview from '../components/PhonePreview'
 import ContactFooter from '../components/ContactFooter'
 
@@ -50,7 +51,7 @@ function HomePage() {
             <p>A website that helps people discover local workshops in their hometown and book a class in just a few clicks.</p>
             <a className="button" href="#project-hidden-workshops">see more</a>
           </div>
-          <PhonePreview />
+          <img className="project-phone-img" src={wlofi1} alt="Hidden Workshops app preview" />
         </article>
       </section>
 
