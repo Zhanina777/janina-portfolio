@@ -55,8 +55,9 @@ const TOC_GROUPS = [
     { label: '01.3 Interviews', id: 'interviews' },
   ] },
   { phase: '02 define', items: [
-    { label: '02.1 user persona', id: 'persona' },
-    { label: '02.2 list of objects', id: 'list-of-objects' },
+    { label: '02.1 problem statement', id: 'problem' },
+    { label: '02.2 user persona', id: 'persona' },
+    { label: '02.3 list of objects', id: 'list-of-objects' },
   ] },
   { phase: '03 develop', items: [
     { label: '03.1 sketches', id: 'sketches' },
@@ -126,7 +127,7 @@ function BotanicalGardenProjectPage() {
             <p>We spoke with 15 people of different ages and backgrounds who visit gardens and green spaces regularly. These conversations helped us understand the small frustrations and delights that shape a garden visit.</p>
             <CaseStudyImagePlaceholder label="Interview main insights" className="case-study-image-banner" />
 
-            <h3>The Problem</h3>
+            <h3 id="problem">The Problem</h3>
             <p>Many young students on field trips to the botanical garden quickly lose interest, which negatively impacts their engagement and learning. Walking around, looking at plants, and reading signs does not always keep their attention.</p>
 
             <h3>The Solution</h3>
