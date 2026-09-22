@@ -57,8 +57,6 @@ const TOC_GROUPS = [
   { phase: '02 define', items: [
     { label: '02.1 user persona', id: 'persona' },
     { label: '02.2 list of objects', id: 'list-of-objects' },
-    { label: '02.3 how might we', id: 'how-might-we' },
-    { label: '02.4 value proposition canvas', id: 'value-proposition-canvas' },
   ] },
   { phase: '03 develop', items: [
     { label: '03.1 sketches', id: 'sketches' },
@@ -167,46 +165,6 @@ function BotanicalGardenProjectPage() {
                   </table>
                 </div>
               ))}
-            </div>
-
-            <h3 id="how-might-we">How Might We</h3>
-            <p>After going through our research, we turned the main problems into How Might We questions, helping us look at them from different angles and start thinking about possible solutions.</p>
-            <CaseStudyImagePlaceholder label="How Might We questions" className="case-study-image-banner" />
-
-            <h3 id="value-proposition-canvas">Value Proposition Canvas</h3>
-            <p>We used the Value Proposition Canvas to connect what we learned from our research with what our solution could offer, focusing on what visitors are trying to do, what gets in their way, and what would make their visit more enjoyable.</p>
-
-            <div className="vpc-canvas">
-              <div className="vpc-panel vpc-panel-profile">
-                <h4 className="vpc-panel-title">Customer Profile</h4>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Customer Jobs</span>
-                  <p>Visitors want to identify the plants they see, learn interesting facts about them, and make the most of their time in the garden without feeling lost.</p>
-                </div>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Pains</span>
-                  <p>Limited signage makes it hard to identify plants on the spot, and searching online pulls visitors out of the moment and away from the experience.</p>
-                </div>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Gains</span>
-                  <p>Visitors want a simple way to learn as they go, discover recommended routes, and feel more connected to the garden and its collections.</p>
-                </div>
-              </div>
-              <div className="vpc-panel vpc-panel-map">
-                <h4 className="vpc-panel-title">Value Map</h4>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Products and Services</span>
-                  <p>We designed a companion app with plant identification, curated routes, and bite-sized information cards visitors can browse as they walk.</p>
-                </div>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Pain Relievers</span>
-                  <p>Instant plant identification and on-the-spot information reduce the need to search elsewhere, keeping visitors present and engaged.</p>
-                </div>
-                <div className="vpc-card">
-                  <span className="vpc-card-label">Gain Creators</span>
-                  <p>Curated routes and short, engaging facts make each visit feel more personal and give visitors a reason to come back and explore further.</p>
-                </div>
-              </div>
             </div>
 
             <h3 id="sketches">Sketches</h3>
