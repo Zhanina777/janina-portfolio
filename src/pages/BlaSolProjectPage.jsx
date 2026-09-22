@@ -367,6 +367,7 @@ function BlaSolProjectPage() {
               <CaseStudyImagePlaceholder src={final4} alt="Final product: map view" label="Final product screen 4" />
             </div>
             <div className="case-study-cta">
+              <a className="button" href="https://www.figma.com/design/tGT7ePOfaHcQrgAtFzRVKN/bl%25C3%25A5-sol?node-id=122-983&p=f&t=uwWMw0qiGWXoNeY6-0" target="_blank" rel="noopener noreferrer">See Figma prototype</a>
               <a className="button" href="https://eaa25.github.io/blaasol/" target="_blank" rel="noopener noreferrer">See coded solution</a>
             </div>
           </div>

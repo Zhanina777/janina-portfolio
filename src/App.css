@@ -269,7 +269,7 @@ h2, h3, p { font-weight: normal; }
 .case-study-image-grid-phones .case-study-image, .case-study-image-grid-phones .case-study-image-placeholder { aspect-ratio: .5; }
 .case-study-image-grid-4 { grid-template-columns: repeat(4, 1fr); }
 .case-study-image-grid-sketches .case-study-image, .case-study-image-grid-sketches .case-study-image-placeholder { aspect-ratio: .73; }
-.case-study-cta { margin-top: 32px; }
+.case-study-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; margin-top: 32px; }
 .case-study-cta .button { margin-top: 0; padding: 14px 30px; font-size: 18px; }
 
 .vpc-canvas { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin: 36px 0; }
