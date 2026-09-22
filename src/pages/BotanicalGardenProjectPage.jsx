@@ -129,8 +129,11 @@ function BotanicalGardenProjectPage() {
             <CaseStudyImagePlaceholder label="Interview main insights" className="case-study-image-banner" />
 
             <h3>The Problem</h3>
-            <p>Visitors to the botanical garden often struggle to identify plants and access relevant information while walking through the space. Signage is limited, and looking things up online means stepping away from the experience itself.</p>
-            <p>This creates a disconnect between curiosity and discovery, and makes it harder for visitors, especially newcomers, to feel engaged with what they are seeing.</p>
+            <p>Many young students on field trips to the botanical garden quickly lose interest, which negatively impacts their engagement and learning. Walking around, looking at plants, and reading signs does not always keep their attention.</p>
+
+            <h3>The Solution</h3>
+            <p>But how do we solve that problem, and how can we make sure that children actually learn something while looking at the plants?</p>
+            <p>We designed an interactive mini-game experience that increases student engagement and curiosity during botanical garden visits. By combining exploration with gameplay, we make the botanical garden experience more engaging, educational, and memorable for children.</p>
 
             <h3 id="persona">Persona</h3>
             <p>To turn our research into a more relatable user perspective, we created a persona based on patterns identified across our interviews and observations.</p>
