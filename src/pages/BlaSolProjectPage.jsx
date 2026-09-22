@@ -17,6 +17,10 @@ import sketch1 from '../assets/s.png'
 import sketch2 from '../assets/s1.png'
 import sketch3 from '../assets/s2.png'
 import sketch4 from '../assets/s3.png'
+import final1 from '../assets/final1.png'
+import final2 from '../assets/final2.png'
+import final3 from '../assets/final3.png'
+import final4 from '../assets/final4.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -356,11 +360,11 @@ function BlaSolProjectPage() {
             </div>
 
             <h3 id="final-product">Final product</h3>
-            <div className="case-study-image-grid case-study-image-grid-phones">
-              <CaseStudyImagePlaceholder label="Final product screen 1" />
-              <CaseStudyImagePlaceholder label="Final product screen 2" />
-              <CaseStudyImagePlaceholder label="Final product screen 3" />
-              <CaseStudyImagePlaceholder label="Final product screen 4" />
+            <div className="case-study-image-grid case-study-image-grid-phones case-study-image-grid-4">
+              <CaseStudyImagePlaceholder src={final1} alt="Final product: group page" label="Final product screen 1" />
+              <CaseStudyImagePlaceholder src={final2} alt="Final product: friends list" label="Final product screen 2" />
+              <CaseStudyImagePlaceholder src={final3} alt="Final product: send my location" label="Final product screen 3" />
+              <CaseStudyImagePlaceholder src={final4} alt="Final product: map view" label="Final product screen 4" />
             </div>
             <div className="case-study-cta">
               <a className="button" href="https://eaa25.github.io/blaasol/" target="_blank" rel="noopener noreferrer">See coded solution</a>
