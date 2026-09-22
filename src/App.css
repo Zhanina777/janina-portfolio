@@ -294,6 +294,15 @@ h2, h3, p { font-weight: normal; }
 .feedback-grid-table ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
 .feedback-grid-table li { font-size: 14px; line-height: 1.5; color: var(--muted); }
 
+.objects-list-row { display: flex; gap: 20px; flex-wrap: wrap; margin: 26px 0; }
+.objects-table-wrap { flex: 1 1 320px; min-width: 280px; overflow-x: auto; border-radius: 10px; box-shadow: 0 6px 16px rgba(82, 24, 44, .12); }
+.objects-table { width: 100%; min-width: 320px; border-collapse: collapse; background: var(--paper); }
+.objects-table th { padding: 8px 10px; background: var(--ink); color: var(--light-ink); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; text-align: left; }
+.objects-table td { padding: 8px 10px; border-bottom: 1px solid rgba(82, 24, 44, .12); vertical-align: top; font-size: 13px; line-height: 1.45; color: var(--muted); }
+.objects-table tr:last-child td { border-bottom: none; }
+.objects-table td:first-child { width: 34px; font-weight: 700; color: var(--ink); }
+.objects-table td:nth-child(2) { font-weight: 700; color: var(--ink); }
+
 .interview-insights { margin: 36px 0; padding: clamp(20px, 4vw, 36px); border-radius: 16px; background: rgba(82, 24, 44, .04); border: 1px solid rgba(82, 24, 44, .12); }
 .interview-insights-title { display: block; margin-bottom: 24px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--ink); }
 .interview-insights-flow { display: flex; align-items: stretch; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
@@ -410,6 +419,8 @@ h2, h3, p { font-weight: normal; }
   .feedback-grid-table th, .feedback-grid-table td { padding: 12px 14px; }
   .feedback-grid-table th { font-size: 11px; }
   .feedback-grid-table li { font-size: 13px; }
+  .objects-list-row { gap: 14px; margin: 20px 0; }
+  .objects-table th, .objects-table td { padding: 6px 8px; font-size: 12px; }
   .interview-insights { margin: 26px 0; }
   .interview-insights-flow { flex-direction: column; }
   .interview-insights-arrow { width: auto; height: 20px; transform: rotate(90deg); }

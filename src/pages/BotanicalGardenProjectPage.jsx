@@ -6,13 +6,38 @@ import sc1 from '../assets/sc1.png'
 import sc2 from '../assets/sc2.png'
 import sc3 from '../assets/sc3.png'
 import sc4 from '../assets/sc4.png'
-import listOfObjects from '../assets/Table23.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
 import StickySectionTitle from '../components/StickySectionTitle'
 import CaseStudyImagePlaceholder from '../components/CaseStudyImagePlaceholder'
 import ContactFooter from '../components/ContactFooter'
+
+const OBJECTS_LIST = [
+  { id: '001', name: 'Olive / Oliven', section: '11 - Mediterranean house', fact: 'Olive oil was once used as fuel for lamps' },
+  { id: '002', name: 'Canary islands candle plant / Kanarieklokke', section: '11 - Mediterranean house', fact: "Looks like a cactus, but it isn't at all — its white juice can burn your skin" },
+  { id: '003', name: 'Jerusalem sage / Almindelig løvehale', section: '11 - Mediterranean house', fact: 'Even when it dies, it still looks cool and decorative' },
+  { id: '004', name: 'Narrow-leaved bottlebrush / Hvid barberkost', section: '11 - Mediterranean house', fact: 'Some people actually use it to clean bottles' },
+  { id: '005', name: 'Arum lily / Arumslilje', section: '11 - Mediterranean house', fact: 'Not actually a true lily — it can trap insects inside and it is poisonous' },
+  { id: '006', name: 'Century plant / Agave', section: '12 - The desert house', fact: 'It dies immediately after flowering' },
+  { id: '007', name: 'Cactaceae / Cactus family', section: '12 - The desert house', fact: 'Stores tons of water and can live over 200 years' },
+  { id: '008', name: 'Upland cotton / Amerikansk bomuld', section: '12 - The desert house', fact: 'The fluffy cotton actually protects the seeds and can "explode" open when ready' },
+  { id: '009', name: 'Pebble plants / Levende sten', section: '12 - The desert house', fact: 'Hides from animals by blending in — also called "living stones"' },
+  { id: '010', name: 'Golden barrel cactus / Guldkugle', section: '12 - The desert house', fact: 'It stores so much water it can survive years without rain' },
+  { id: '011', name: 'Coffee / Kaffe', section: '13 - Montane forest house', fact: 'Legend says goats discovered coffee' },
+  { id: '012', name: 'Lemon / Citron', section: '13 - Montane forest house', fact: 'So sour it can clean things' },
+  { id: '013', name: 'Kumquat', section: '13 - Montane forest house', fact: 'One of the smallest citrus fruits — you eat it with the peel' },
+  { id: '014', name: 'Indian clock vine / Indisk slangeblomst', section: '13 - Montane forest house', fact: 'Looks like hanging flower chains and can grow very tall, like a plant waterfall' },
+  { id: '015', name: 'Tea plant / Te', section: '13 - Montane forest house', fact: 'The most drunk drink in the world after water, with special ceremonies in some cultures' },
+  { id: '016', name: 'Vanilla', section: '14 - The tropical house', fact: 'Comes from an orchid, not a tree, and each flower must be pollinated by hand' },
+  { id: '017', name: 'Cacao tree / Kakao', section: '14 - The tropical house', fact: 'Its name means "food of the gods"' },
+  { id: '018', name: 'Vegetable ivory palm / Vegetabilsk elfenbenspalme', section: '14 - The tropical house', fact: 'Seeds are as hard as animal ivory and are used to make buttons and art' },
+  { id: '019', name: 'Pavonia multiflora / Dronningens balkjole', section: '14 - The tropical house', fact: 'Flowers look like tiny glowing lanterns' },
+  { id: '020', name: 'Water hyacinth / Vandhyacint', section: '14 - The tropical house', fact: 'Can clean polluted water like a natural filter — one plant can turn into thousands in weeks' },
+  { id: '021', name: 'Blackburn red bell tree / Mauritansk rødklokketræ', section: '14 - The tropical house', fact: 'Its flowers look like dozens of red bells hanging down' },
+  { id: '022', name: 'Baobab', section: '14 - The tropical house', fact: 'Some trees are so big you can fit people inside of the trunk' },
+  { id: '023', name: 'Rice / Ris', section: '14 - The tropical house', fact: 'Feeds more than half of all the people on Earth every single day' },
+]
 
 const DETAILS = [
   { label: 'Client', value: 'City Botanical Garden' },
@@ -114,7 +139,32 @@ function BotanicalGardenProjectPage() {
 
             <h3 id="list-of-objects">List of Objects</h3>
             <p>As part of the content work, I put together a list of the plants featured across the garden and the app, organised by section, with a fun fact for each one to make learning about them more engaging.</p>
-            <CaseStudyImagePlaceholder src={listOfObjects} alt="List of plant objects with section and fact for each" label="List of objects" className="case-study-image-natural case-study-image-cap-md" />
+            <div className="objects-list-row">
+              {[OBJECTS_LIST.slice(0, 12), OBJECTS_LIST.slice(12)].map((half, col) => (
+                <div className="objects-table-wrap" key={col}>
+                  <table className="objects-table">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Section</th>
+                        <th>Fact</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {half.map(row => (
+                        <tr key={row.id}>
+                          <td>{row.id}</td>
+                          <td>{row.name}</td>
+                          <td>{row.section}</td>
+                          <td>{row.fact}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ))}
+            </div>
 
             <h3 id="how-might-we">How Might We</h3>
             <p>After going through our research, we turned the main problems into How Might We questions, helping us look at them from different angles and start thinking about possible solutions.</p>
