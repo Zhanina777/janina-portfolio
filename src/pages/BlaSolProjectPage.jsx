@@ -182,6 +182,15 @@ function BlaSolProjectPage() {
         </section>
 
         <section className="case-study-section">
+          <StickySectionTitle>The Problem</StickySectionTitle>
+          <div className="case-study-section-body">
+            <p>Young adults attending the Blå Sol festival experience difficulties staying connected with their friends during the event. While festivals are highly social environments, the crowded and dynamic setting makes it easy to lose track of one another.</p>
+            <p>Visitors currently rely on fragmented communication tools such as messaging apps, which are not designed for real-time coordination in a festival context.</p>
+            <p>As a result, this creates stress, reduces spontaneity, and negatively impacts the overall festival experience.</p>
+          </div>
+        </section>
+
+        <section className="case-study-section">
           <StickySectionTitle>Planning</StickySectionTitle>
           <div className="case-study-section-body">
             <p>Before starting the design process, we organized our workflow as a team by creating a clear timeline with milestones and internal deadlines. This helped us stay on track and leave enough time for testing, iterations, and final refinements.</p>
@@ -249,11 +258,6 @@ function BlaSolProjectPage() {
                 </div>
               </div>
             </div>
-
-            <h3>The Problem</h3>
-            <p>Young adults attending the Blå Sol festival experience difficulties staying connected with their friends during the event. While festivals are highly social environments, the crowded and dynamic setting makes it easy to lose track of one another.</p>
-            <p>Visitors currently rely on fragmented communication tools such as messaging apps, which are not designed for real-time coordination in a festival context.</p>
-            <p>As a result, this creates stress, reduces spontaneity, and negatively impacts the overall festival experience.</p>
 
             <h3 id="persona">Persona</h3>
             <p>To turn our research findings into a more relatable user perspective, we created a persona based on patterns and behaviours identified across our interviews.</p>
