@@ -55,9 +55,8 @@ const TOC_GROUPS = [
     { label: '01.3 Interviews', id: 'interviews' },
   ] },
   { phase: '02 define', items: [
-    { label: '02.1 problem statement', id: 'problem' },
-    { label: '02.2 user persona', id: 'persona' },
-    { label: '02.3 list of objects', id: 'list-of-objects' },
+    { label: '02.1 user persona', id: 'persona' },
+    { label: '02.2 list of objects', id: 'list-of-objects' },
   ] },
   { phase: '03 develop', items: [
     { label: '03.1 sketches', id: 'sketches' },
@@ -97,6 +96,21 @@ function BotanicalGardenProjectPage() {
           </div>
         </section>
 
+        <section className="case-study-section">
+          <StickySectionTitle>The Problem</StickySectionTitle>
+          <div className="case-study-section-body">
+            <p>Many young students on field trips to the botanical garden quickly lose interest, which negatively impacts their engagement and learning. Walking around, looking at plants, and reading signs does not always keep their attention.</p>
+          </div>
+        </section>
+
+        <section className="case-study-section">
+          <StickySectionTitle>The Solution</StickySectionTitle>
+          <div className="case-study-section-body">
+            <p>But how do we solve that problem, and how can we make sure that children actually learn something while looking at the plants?</p>
+            <p>We designed an interactive mini-game experience that increases student engagement and curiosity during botanical garden visits. By combining exploration with gameplay, we make the botanical garden experience more engaging, educational, and memorable for children.</p>
+          </div>
+        </section>
+
         <div className="case-study-process">
           <CaseStudyToc groups={TOC_GROUPS} />
           <div className="case-study-content">
@@ -126,13 +140,6 @@ function BotanicalGardenProjectPage() {
             <p>After gathering our initial findings, we developed an interview guide to explore visitor habits and expectations in more depth.</p>
             <p>We spoke with 15 people of different ages and backgrounds who visit gardens and green spaces regularly. These conversations helped us understand the small frustrations and delights that shape a garden visit.</p>
             <CaseStudyImagePlaceholder label="Interview main insights" className="case-study-image-banner" />
-
-            <h3 id="problem">The Problem</h3>
-            <p>Many young students on field trips to the botanical garden quickly lose interest, which negatively impacts their engagement and learning. Walking around, looking at plants, and reading signs does not always keep their attention.</p>
-
-            <h3>The Solution</h3>
-            <p>But how do we solve that problem, and how can we make sure that children actually learn something while looking at the plants?</p>
-            <p>We designed an interactive mini-game experience that increases student engagement and curiosity during botanical garden visits. By combining exploration with gameplay, we make the botanical garden experience more engaging, educational, and memorable for children.</p>
 
             <h3 id="persona">Persona</h3>
             <p>To turn our research into a more relatable user perspective, we created a persona based on patterns identified across our interviews and observations.</p>
