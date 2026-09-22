@@ -6,6 +6,7 @@ import sc1 from '../assets/sc1.png'
 import sc2 from '../assets/sc2.png'
 import sc3 from '../assets/sc3.png'
 import sc4 from '../assets/sc4.png'
+import listOfObjects from '../assets/Table23.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -30,7 +31,7 @@ const TOC_GROUPS = [
   ] },
   { phase: '02 define', items: [
     { label: '02.1 user persona', id: 'persona' },
-    { label: '02.2 values', id: 'values' },
+    { label: '02.2 list of objects', id: 'list-of-objects' },
     { label: '02.3 how might we', id: 'how-might-we' },
     { label: '02.4 value proposition canvas', id: 'value-proposition-canvas' },
   ] },
@@ -111,9 +112,9 @@ function BotanicalGardenProjectPage() {
             <p>The persona represents our target visitor and highlights their goals, motivations, and frustrations when exploring the garden. This helped us keep their perspective at the centre of our design decisions.</p>
             <CaseStudyImagePlaceholder src={gardenPersona} alt="Garden visitor persona: Victor, 13 years old" label="Garden visitor persona" className="case-study-image-natural" />
 
-            <h3 id="values">Values</h3>
-            <p>To guide the direction of our solution, we defined a set of core values that reflect the spirit of the botanical garden experience.</p>
-            <CaseStudyImagePlaceholder label="List of values" className="case-study-image-banner" />
+            <h3 id="list-of-objects">List of Objects</h3>
+            <p>As part of the content work, I put together a list of the plants featured across the garden and the app, organised by section, with a fun fact for each one to make learning about them more engaging.</p>
+            <CaseStudyImagePlaceholder src={listOfObjects} alt="List of plant objects with section and fact for each" label="List of objects" className="case-study-image-natural case-study-image-cap-md" />
 
             <h3 id="how-might-we">How Might We</h3>
             <p>After going through our research, we turned the main problems into How Might We questions, helping us look at them from different angles and start thinking about possible solutions.</p>
