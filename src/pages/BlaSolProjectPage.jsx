@@ -174,7 +174,7 @@ function BlaSolProjectPage() {
         <section className="case-study-section">
           <StickySectionTitle>Overview</StickySectionTitle>
           <div className="case-study-section-body">
-            <p><strong>Blå Sol</strong> is a festival app concept designed to help young festival-goers stay connected with their friends in crowded festival environments. The project focused on improving an existing festival app by introducing new features that make finding friends and coordinating meetups simpler and less overwhelming.</p>
+            <p><strong>Blå Sol</strong> is a non-profit music festival, and this project is an app concept designed to help young festival-goers stay connected with their friends in crowded festival environments. The project focused on improving the festival&apos;s existing app by introducing new features that make finding friends and coordinating meetups simpler and less overwhelming.</p>
             <p>Working as part of a team, I contributed to <strong>user research, persona development, ideation, UX design, usability testing, and front-end coding</strong>. I was also involved in developing the <strong>app&apos;s visual direction and refining the interface based on user feedback</strong>.</p>
             <p>The final solution introduced features such as a social map for finding friends, quick location sharing, and easier group coordination. During the <strong>iteration process</strong>, we also explored ideas such as a live map and latest notifications to make staying connected even easier.</p>
             <p>This project demonstrates my ability to <strong>turn user research into practical features, iterate on designs based on testing, and simplify interactions within an existing app</strong>.</p>
