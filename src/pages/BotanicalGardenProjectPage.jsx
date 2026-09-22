@@ -16,6 +16,7 @@ import ContactFooter from '../components/ContactFooter'
 const DETAILS = [
   { label: 'Client', value: 'City Botanical Garden' },
   { label: 'Product', value: 'Companion app for garden visitors' },
+  { label: 'Role', value: 'UX Designer & Content Creator' },
   { label: 'Duration', value: '4 weeks' },
   { label: 'Tools', value: 'Figma, Figjam, VS Code' },
   { label: 'Methodology', value: 'Design Thinking & Iterative Design' },
