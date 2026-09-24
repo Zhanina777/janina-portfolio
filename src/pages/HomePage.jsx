@@ -1,7 +1,7 @@
 import userPhoto from '../assets/user.png'
 import bsm2 from '../assets/bsm2-recomposed.png'
 import wlofi1 from '../assets/wlofi1.png'
-import PhonePreview from '../components/PhonePreview'
+import garden4 from '../assets/garden4.png'
 import ContactFooter from '../components/ContactFooter'
 
 function HomePage() {
@@ -38,7 +38,7 @@ function HomePage() {
           <img className="project-phone-img" src={bsm2} alt="BLÅ SOL app preview" />
         </article>
         <article className="project project-second">
-          <PhonePreview variant="garden" />
+          <img className="project-phone-img" src={garden4} alt="Botanical Garden app preview" />
           <div className="project-copy">
             <h3>BOTANICAL GARDEN<br />DIGITAL EXPERIENCE</h3>
             <p>Digital experience designed to engage botanical garden visitors with plant identification, stories, and easy access to the garden.</p>
