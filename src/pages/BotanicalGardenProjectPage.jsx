@@ -92,7 +92,7 @@ function BotanicalGardenProjectPage() {
           <StickySectionTitle>Overview</StickySectionTitle>
           <div className="case-study-section-body">
             <p><strong>Botanical Garden Digital Experience</strong> is a companion app concept designed to help garden visitors identify plants and feel more connected to what they&apos;re seeing as they walk through the space. The project focused on solving a common frustration: limited signage and no easy way to learn more without stepping away from the moment to search online.</p>
-            <p>Working as part of a team, I contributed to <strong>user research, persona development, ideation, UX design, and usability testing</strong>. I was also involved in developing the <strong>visual identity and refining the interface based on feedback from usability testing</strong>.</p>
+            <p>Working as part of a team, we contributed to <strong>user research, persona development, ideation, UX design, and usability testing</strong>. We were also involved in developing the <strong>visual identity and refining the interface based on feedback from usability testing</strong>.</p>
             <p>The final solution introduced features such as instant plant identification, curated routes, and bite-sized information cards visitors can browse as they walk. During the iteration process, we also explored ideas like personalised route recommendations to make each visit feel more tailored.</p>
             <p>This project demonstrates my ability to <strong>turn visitor research into practical features, design for a calm, in-context experience, and iterate based on usability testing</strong>.</p>
           </div>
@@ -157,7 +157,7 @@ function BotanicalGardenProjectPage() {
             <CaseStudyImagePlaceholder src={gardenPersona} alt="Garden visitor persona: Victor, 13 years old" label="Garden visitor persona" className="case-study-image-natural" />
 
             <h3 id="list-of-objects">List of Objects</h3>
-            <p>As part of the content work, I put together a list of the plants featured across the garden and the app, organised by section, with a fun fact for each one to make learning about them more engaging.</p>
+            <p>As part of the content work, we put together a list of the plants featured across the garden and the app, organised by section, with a fun fact for each one to make learning about them more engaging.</p>
             <div className="objects-list-row">
               {[OBJECTS_LIST.slice(0, 12), OBJECTS_LIST.slice(12)].map((half, col) => (
                 <div className="objects-table-wrap" key={col}>
@@ -186,7 +186,7 @@ function BotanicalGardenProjectPage() {
             </div>
 
             <h3 id="storytelling">Storytelling</h3>
-            <p>To make the experience more engaging for children, I explored how storytelling and visual direction could work together to bring the mini-game to life.</p>
+            <p>To make the experience more engaging for children, we explored how storytelling and visual direction could work together to bring the mini-game to life.</p>
             <div className="storytelling-columns">
               <div>
                 <h4 className="storytelling-col-title">Story</h4>
