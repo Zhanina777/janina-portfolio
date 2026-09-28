@@ -7,6 +7,9 @@ import sc2 from '../assets/sc2.png'
 import sc3 from '../assets/sc3.png'
 import sc4 from '../assets/sc4.png'
 import styleTile from '../assets/tile.png'
+import img1 from '../assets/img1.png'
+import img2 from '../assets/img2.jpg'
+import img3 from '../assets/img3.jpg'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -138,6 +141,14 @@ function BotanicalGardenProjectPage() {
               <CaseStudyImagePlaceholder label="Observation photo 3" />
               <CaseStudyImagePlaceholder label="Observation photo 4" />
               <CaseStudyImagePlaceholder label="Observation photo 5" />
+            </div>
+
+            <p>Some plants had small identification signs, while others included QR codes leading to additional plant information. The QR-code experience was mainly text-based, with limited interaction.</p>
+            <p>We saw potential in the QR codes as a bridge between the physical garden and a digital experience, so we adopted this existing element in our concept. Instead of using QR codes only to provide information, we incorporated them into our interactive games, allowing children to scan plants around the garden and turn exploration into a more engaging learning experience.</p>
+            <div className="case-study-image-grid">
+              <CaseStudyImagePlaceholder src={img1} alt="Plant identification sign with a QR code" label="QR code sign" />
+              <CaseStudyImagePlaceholder src={img2} alt="Plant sign for the olive tree with a QR code" label="Olive plant sign" />
+              <CaseStudyImagePlaceholder src={img3} alt="Plant sign for Jerusalem sage with a QR code" label="Jerusalem sage sign" />
             </div>
 
             <h3 id="persona">Persona</h3>
