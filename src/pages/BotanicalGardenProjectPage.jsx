@@ -59,12 +59,13 @@ const TOC_GROUPS = [
     { label: '02.2 list of objects', id: 'list-of-objects' },
   ] },
   { phase: '03 develop', items: [
-    { label: '03.1 sketches', id: 'sketches' },
-    { label: '03.2 user flow', id: 'user-flow' },
-    { label: '03.3 moodboard', id: 'moodboard' },
-    { label: '03.4 style tile', id: 'style-tile' },
-    { label: '03.5 low fidelity wireframes', id: 'lofi-wireframes' },
-    { label: '03.6 final product', id: 'final-product' },
+    { label: '03.1 storytelling', id: 'storytelling' },
+    { label: '03.2 sketches', id: 'sketches' },
+    { label: '03.3 user flow', id: 'user-flow' },
+    { label: '03.4 moodboard', id: 'moodboard' },
+    { label: '03.5 style tile', id: 'style-tile' },
+    { label: '03.6 low fidelity wireframes', id: 'lofi-wireframes' },
+    { label: '03.7 final product', id: 'final-product' },
   ] },
   { phase: '04 deliver', items: [
     { label: '04.1 coded solution', id: 'final-product' },
@@ -173,6 +174,21 @@ function BotanicalGardenProjectPage() {
                   </table>
                 </div>
               ))}
+            </div>
+
+            <h3 id="storytelling">Storytelling</h3>
+            <p>To make the experience more engaging for children, I explored how storytelling and visual direction could work together to bring the mini-game to life.</p>
+            <div className="storytelling-columns">
+              <div>
+                <h4 className="storytelling-col-title">Story</h4>
+                <div className="storytelling-note"><p>Add a storyline by giving kids a mission to complete. A character tells the storyline and asks for their help.</p></div>
+                <div className="storytelling-note"><p>Complete the mission through 5&ndash;6 tasks, like scanning QR codes and finding specific places or plants.</p></div>
+              </div>
+              <div>
+                <h4 className="storytelling-col-title">Layout</h4>
+                <div className="storytelling-note"><p>Use green and the colours the botanical garden&apos;s own site already has, with plenty of white space and green details.</p></div>
+                <div className="storytelling-note"><p>Keep the design simple so it stays coherent with the garden&apos;s existing site and clearly feels part of the same brand.</p></div>
+              </div>
             </div>
 
             <h3 id="sketches">Sketches</h3>
