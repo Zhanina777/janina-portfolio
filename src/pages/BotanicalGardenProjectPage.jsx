@@ -46,13 +46,12 @@ const DETAILS = [
   { label: 'Role', value: 'UX Designer & Content Creator' },
   { label: 'Duration', value: '4 weeks' },
   { label: 'Tools', value: 'Figma, Figjam, VS Code' },
-  { label: 'Methodology', value: 'Design Thinking & Iterative Design' },
+  { label: 'Methodology', value: 'Double Diamond' },
 ]
 
 const TOC_GROUPS = [
   { phase: '01 discover', items: [
     { label: '01.1 Research & Observations', id: 'research' },
-    { label: '01.2 Interviews', id: 'interviews' },
   ] },
   { phase: '02 define', items: [
     { label: '02.1 user persona', id: 'persona' },
@@ -140,11 +139,6 @@ function BotanicalGardenProjectPage() {
               <CaseStudyImagePlaceholder label="Observation photo 4" />
               <CaseStudyImagePlaceholder label="Observation photo 5" />
             </div>
-
-            <h3 id="interviews">Interviews</h3>
-            <p>After gathering our initial findings, we developed an interview guide to explore visitor habits and expectations in more depth.</p>
-            <p>We spoke with 15 people of different ages and backgrounds who visit gardens and green spaces regularly. These conversations helped us understand the small frustrations and delights that shape a garden visit.</p>
-            <CaseStudyImagePlaceholder label="Interview main insights" className="case-study-image-banner" />
 
             <h3 id="persona">Persona</h3>
             <p>To turn our research into a more relatable user perspective, we created a persona based on patterns identified across our interviews and observations.</p>
