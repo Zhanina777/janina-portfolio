@@ -6,6 +6,7 @@ import sc1 from '../assets/sc1.png'
 import sc2 from '../assets/sc2.png'
 import sc3 from '../assets/sc3.png'
 import sc4 from '../assets/sc4.png'
+import styleTile from '../assets/tile.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -62,10 +63,9 @@ const TOC_GROUPS = [
     { label: '03.1 storytelling', id: 'storytelling' },
     { label: '03.2 sketches', id: 'sketches' },
     { label: '03.3 user flow', id: 'user-flow' },
-    { label: '03.4 moodboard', id: 'moodboard' },
-    { label: '03.5 style tile', id: 'style-tile' },
-    { label: '03.6 low fidelity wireframes', id: 'lofi-wireframes' },
-    { label: '03.7 final product', id: 'final-product' },
+    { label: '03.4 style tile', id: 'style-tile' },
+    { label: '03.5 low fidelity wireframes', id: 'lofi-wireframes' },
+    { label: '03.6 final product', id: 'final-product' },
   ] },
   { phase: '04 deliver', items: [
     { label: '04.1 coded solution', id: 'final-product' },
@@ -204,17 +204,9 @@ function BotanicalGardenProjectPage() {
             <p>We mapped out a user flow to understand how visitors would move through the app, from identifying a plant to exploring a suggested route.</p>
             <p>This helped us spot unnecessary steps and simplify the overall navigation before moving into wireframes.</p>
 
-            <h3 id="moodboard">Moodboard</h3>
-            <p>We put together a moodboard to explore the look and feel of the experience, gathering colours, typography, and imagery that reflected the calm, natural atmosphere of the garden.</p>
-            <div className="case-study-image-grid">
-              <CaseStudyImagePlaceholder label="Moodboard 1" />
-              <CaseStudyImagePlaceholder label="Moodboard 2" />
-              <CaseStudyImagePlaceholder label="Moodboard 3" />
-            </div>
-
             <h3 id="style-tile">Styletile</h3>
             <p>For the visual identity, we leaned into natural tones and organic shapes to reflect the garden&apos;s atmosphere, pairing an earthy colour palette with a clean, legible typeface.</p>
-            <CaseStudyImagePlaceholder label="Style tile" className="case-study-image-banner" />
+            <CaseStudyImagePlaceholder src={styleTile} alt="Botanical Garden style tile: colours, typography, and reference screenshot" label="Style tile" className="case-study-image-natural case-study-image-cap-md" />
 
             <h3 id="lofi-wireframes">Lo-fi wireframes</h3>
             <p>Once we had a clear user flow, we moved on to low-fidelity wireframes to quickly visualise the layout of each screen before focusing on visual identity.</p>
