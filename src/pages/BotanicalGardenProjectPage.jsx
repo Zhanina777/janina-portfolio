@@ -119,12 +119,6 @@ function BotanicalGardenProjectPage() {
             <h3 id="research">Research &amp; Observations</h3>
             <p>To understand the existing visitor experience, we conducted research and observations at the Botanical Garden. We explored how information is currently presented and how visitors can access it throughout the garden.</p>
 
-            <div className="case-study-image-row">
-              <CaseStudyImagePlaceholder label="Competitor analysis" className="case-study-image-wide" />
-              <CaseStudyImagePlaceholder label="Relevant articles" className="case-study-image-tall" />
-            </div>
-            <CaseStudyImagePlaceholder label="Garden layout and visitor flow" className="case-study-image-banner" />
-
             <p>During our visit, we observed:</p>
             <ul className="case-study-list">
               <li>Plant identification signs were placed next to some plants, but not consistently throughout the garden.</li>
@@ -135,13 +129,6 @@ function BotanicalGardenProjectPage() {
               <li>An informational table near the entrance introduced visitors to different types of flowers and plants.</li>
               <li>The Botanical Garden&apos;s website provides broader information about plants in addition to information about the garden itself.</li>
             </ul>
-            <div className="case-study-image-row-5">
-              <CaseStudyImagePlaceholder label="Observation photo 1" />
-              <CaseStudyImagePlaceholder label="Observation photo 2" />
-              <CaseStudyImagePlaceholder label="Observation photo 3" />
-              <CaseStudyImagePlaceholder label="Observation photo 4" />
-              <CaseStudyImagePlaceholder label="Observation photo 5" />
-            </div>
 
             <p>Some plants had small identification signs, while others included QR codes leading to additional plant information. The QR-code experience was mainly text-based, with limited interaction.</p>
             <p>We saw potential in the QR codes as a bridge between the physical garden and a digital experience, so we adopted this existing element in our concept. Instead of using QR codes only to provide information, we incorporated them into our interactive games, allowing children to scan plants around the garden and turn exploration into a more engaging learning experience.</p>
