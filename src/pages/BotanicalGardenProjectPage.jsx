@@ -63,10 +63,9 @@ const TOC_GROUPS = [
   { phase: '03 develop', items: [
     { label: '03.1 storytelling', id: 'storytelling' },
     { label: '03.2 sketches', id: 'sketches' },
-    { label: '03.3 user flow', id: 'user-flow' },
-    { label: '03.4 style tile', id: 'style-tile' },
-    { label: '03.5 low fidelity wireframes', id: 'lofi-wireframes' },
-    { label: '03.6 final product', id: 'final-product' },
+    { label: '03.3 style tile', id: 'style-tile' },
+    { label: '03.4 low fidelity wireframes', id: 'lofi-wireframes' },
+    { label: '03.5 final product', id: 'final-product' },
   ] },
   { phase: '04 deliver', items: [
     { label: '04.1 coded solution', id: 'final-product' },
@@ -195,10 +194,6 @@ function BotanicalGardenProjectPage() {
               <CaseStudyImagePlaceholder src={sc3} label="Sketch 3" />
               <CaseStudyImagePlaceholder src={sc4} label="Sketch 4" />
             </div>
-
-            <h3 id="user-flow">User Flow</h3>
-            <p>We mapped out a user flow to understand how visitors would move through the app, from identifying a plant to exploring a suggested route.</p>
-            <p>This helped us spot unnecessary steps and simplify the overall navigation before moving into wireframes.</p>
 
             <h3 id="style-tile">Styletile</h3>
             <p>For the visual identity, we leaned into natural tones and organic shapes to reflect the garden&apos;s atmosphere, pairing an earthy colour palette with a clean, legible typeface.</p>
