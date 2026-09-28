@@ -63,7 +63,7 @@ const TOC_GROUPS = [
     { label: '03.2 user flow', id: 'user-flow' },
     { label: '03.3 moodboard', id: 'moodboard' },
     { label: '03.4 style tile', id: 'style-tile' },
-    { label: '03.5 low fidelity wireframes and testing', id: 'lofi-wireframes' },
+    { label: '03.5 low fidelity wireframes', id: 'lofi-wireframes' },
     { label: '03.6 final product', id: 'final-product' },
   ] },
   { phase: '04 deliver', items: [
@@ -200,7 +200,7 @@ function BotanicalGardenProjectPage() {
             <p>For the visual identity, we leaned into natural tones and organic shapes to reflect the garden&apos;s atmosphere, pairing an earthy colour palette with a clean, legible typeface.</p>
             <CaseStudyImagePlaceholder label="Style tile" className="case-study-image-banner" />
 
-            <h3 id="lofi-wireframes">Lo-fi wireframes and Usability testing</h3>
+            <h3 id="lofi-wireframes">Lo-fi wireframes</h3>
             <p>Once we had a clear user flow, we moved on to low-fidelity wireframes to quickly visualise the layout of each screen before focusing on visual identity.</p>
             <div className="case-study-image-grid case-study-image-grid-phones">
               <CaseStudyImagePlaceholder label="Wireframe 1" />
@@ -210,8 +210,6 @@ function BotanicalGardenProjectPage() {
               <CaseStudyImagePlaceholder label="Wireframe 5" />
               <CaseStudyImagePlaceholder label="Wireframe 6" />
             </div>
-            <p>After finishing the low-fidelity wireframes, we conducted usability testing to see if visitors could easily identify plants and navigate the app. We ran think-aloud sessions with 6 participants and sorted their feedback into a feedback capture grid.</p>
-            <CaseStudyImagePlaceholder label="Feedback capture grid" className="case-study-image-portrait" />
 
             <h3 id="final-product">Final product</h3>
             <div className="case-study-image-grid case-study-image-grid-phones">
