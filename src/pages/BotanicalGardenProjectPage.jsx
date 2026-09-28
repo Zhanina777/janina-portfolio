@@ -51,9 +51,8 @@ const DETAILS = [
 
 const TOC_GROUPS = [
   { phase: '01 discover', items: [
-    { label: '01.1 Research', id: 'research' },
-    { label: '01.2 Observations', id: 'observations' },
-    { label: '01.3 Interviews', id: 'interviews' },
+    { label: '01.1 Research & Observations', id: 'research' },
+    { label: '01.2 Interviews', id: 'interviews' },
   ] },
   { phase: '02 define', items: [
     { label: '02.1 user persona', id: 'persona' },
@@ -115,11 +114,8 @@ function BotanicalGardenProjectPage() {
         <div className="case-study-process">
           <CaseStudyToc groups={TOC_GROUPS} />
           <div className="case-study-content">
-            <h3 id="research">Foundational research</h3>
-            <p>We started with foundational research to understand how people currently explore and engage with botanical gardens. We combined desk research, observation, and interviews to build a clearer picture of our target visitors and their needs.</p>
-            <p>This helped us uncover common behaviours, motivations, and frustrations that shape how people move through and interact with a garden, giving us a foundation for the rest of the project.</p>
-            <p>We looked into existing garden apps, plant identification tools, and other visitor-facing digital experiences to understand what already works well and where there is room to improve.</p>
-            <p>We also researched the botanical garden itself, its layout, collections, and the audiences it typically attracts, from casual visitors to plant enthusiasts and families.</p>
+            <h3 id="research">Research &amp; Observations</h3>
+            <p>To understand the existing visitor experience, we conducted research and observations at the Botanical Garden. We explored how information is currently presented and how visitors can access it throughout the garden.</p>
 
             <div className="case-study-image-row">
               <CaseStudyImagePlaceholder label="Competitor analysis" className="case-study-image-wide" />
@@ -127,8 +123,16 @@ function BotanicalGardenProjectPage() {
             </div>
             <CaseStudyImagePlaceholder label="Garden layout and visitor flow" className="case-study-image-banner" />
 
-            <h3 id="observations">Observations</h3>
-            <p>Working with volunteers. Little name boards at multiple plants, but not all of them → some even have a QR-code. The QR-code leads to a page where they give information about the plants on a boring page (name and information). There is a table with a flower before entering that tells you what a flower is. There was a brochure available with a map of the place. Site shows a lot more than just things about the Botanical Garden, such as things about plants.</p>
+            <p>During our visit, we observed:</p>
+            <ul className="case-study-list">
+              <li>Plant identification signs were placed next to some plants, but not consistently throughout the garden.</li>
+              <li>Some plants had QR codes linking to individual information pages with the plant&apos;s name and description.</li>
+              <li>The QR-code pages were mainly text-based, with limited visual or interactive content.</li>
+              <li>Staff and volunteers were available to assist visitors and provide information.</li>
+              <li>A printed brochure with a map was available at the entrance to support navigation.</li>
+              <li>An informational table near the entrance introduced visitors to different types of flowers and plants.</li>
+              <li>The Botanical Garden&apos;s website provides broader information about plants in addition to information about the garden itself.</li>
+            </ul>
             <div className="case-study-image-row-5">
               <CaseStudyImagePlaceholder label="Observation photo 1" />
               <CaseStudyImagePlaceholder label="Observation photo 2" />
