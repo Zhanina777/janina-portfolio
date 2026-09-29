@@ -1,8 +1,8 @@
 import userPhoto from '../assets/user.png'
 import bsm2 from '../assets/bsm2-recomposed.png'
-import wlofi1 from '../assets/wlofi1.png'
 import garden4 from '../assets/garden4.png'
 import ContactFooter from '../components/ContactFooter'
+import CaseStudyImagePlaceholder from '../components/CaseStudyImagePlaceholder'
 
 function HomePage() {
   return (
@@ -48,10 +48,10 @@ function HomePage() {
         <article className="project project-third">
           <div className="project-copy">
             <h3>HIDDEN WORKSHOPS <span className="project-badge">Work in progress</span></h3>
-            <p>A website that helps people discover local workshops in their hometown and book a class in just a few clicks.</p>
+            <p>A web app concept that guides people through making their own crystals at home.</p>
             <a className="button" href="#project-hidden-workshops">see more</a>
           </div>
-          <img className="project-phone-img" src={wlofi1} alt="Hidden Workshops app preview" />
+          <CaseStudyImagePlaceholder label="Coming soon" className="project-phone-img" />
         </article>
       </section>
 
