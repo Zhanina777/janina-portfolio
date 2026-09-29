@@ -8,7 +8,7 @@ function ContactPage() {
             <a href="tel:+4552681177"><span className="contact-icon" aria-hidden="true">☎</span>+45 52 68 11 77</a>
             <a href="mailto:zhaninasabeva8@gmail.com"><span className="contact-icon" aria-hidden="true">✉</span>zhaninasabeva8@gmail.com</a>
             <a href="https://www.linkedin.com/in/janina-sabeva-1b666a339" target="_blank" rel="noreferrer"><span className="contact-icon linkedin-icon" aria-hidden="true">in</span>Janina Sabeva</a>
-            <a href="/resume.pdf" target="_blank" rel="noreferrer"><span className="contact-icon" aria-hidden="true">⤓</span>Resume</a>
+            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:e301c8a7-d7c1-4c2d-93b6-53c641e42bff" target="_blank" rel="noreferrer"><span className="contact-icon" aria-hidden="true">⤓</span>Resume</a>
           </div>
         </div>
         <a className="quick-chat-button" href="mailto:zhaninasabeva8@gmail.com?subject=Quick%20chat">
