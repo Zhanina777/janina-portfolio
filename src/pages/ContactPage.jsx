@@ -11,15 +11,6 @@ function ContactPage() {
             <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:e301c8a7-d7c1-4c2d-93b6-53c641e42bff" target="_blank" rel="noreferrer"><span className="contact-icon" aria-hidden="true">⤓</span>Resume</a>
           </div>
         </div>
-        <a className="quick-chat-button" href="mailto:zhaninasabeva8@gmail.com?subject=Quick%20chat">
-          <span className="quick-chat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <rect x="2.5" y="5" width="19" height="14" rx="2.5" />
-              <path d="M3 6.5 12 13 21 6.5" />
-            </svg>
-          </span>
-          Quick chat
-        </a>
       </div>
       <p className="copyright">2026 Janina Sabeva. All rights reserved.</p>
     </section>
