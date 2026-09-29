@@ -16,10 +16,10 @@ function AboutPage() {
         <div className="about-reference-intro">
           <div className="about-reference-copy">
             <h1>More about me</h1>
-            <p>I&apos;m a Multimedia Design student from Bulgaria, currently based in Aarhus, Denmark. I&apos;m fascinated by the way design can shape the way we experience and understand the world.</p>
-            <p>I&apos;m curious, empathetic, and always looking for new ways to communicate ideas through thoughtful digital experiences.</p>
-            <p>Through both individual and collaborative projects, I&apos;ve gained experience following the design process from research and ideation to prototyping and development.</p>
-            <p>I&apos;m passionate about creating digital experiences that are intuitive, accessible, and user-centred.</p>
+            <p>I&apos;m a Multimedia Design student from Bulgaria, currently based in Aarhus, Denmark. I&apos;m interested in how digital products can make everyday experiences feel simpler, clearer, and more enjoyable.</p>
+            <p>I especially enjoy the process of taking something that feels confusing or complicated and figuring out how to make it work better for people. I like exploring ideas, testing different solutions, and seeing how small design decisions can change the way someone interacts with a product.</p>
+            <p>Through both individual and collaborative projects, I&apos;ve worked across research, ideation, prototyping, UX/UI design, and development. I&apos;m also interested in the technical side of digital products and enjoy understanding how design and code come together.</p>
+            <p>I&apos;m always looking to learn, experiment, and create digital experiences that feel useful, intuitive, and genuinely made for the people using them.</p>
           </div>
           <AboutPortraitStack />
         </div>
