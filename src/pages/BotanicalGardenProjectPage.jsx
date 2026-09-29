@@ -10,6 +10,10 @@ import styleTile from '../assets/tile.png'
 import img1 from '../assets/img1.png'
 import img2 from '../assets/img2.jpg'
 import img3 from '../assets/img3.jpg'
+import lofi1 from '../assets/11.png'
+import lofi2 from '../assets/12.png'
+import lofi3 from '../assets/13.png'
+import lofi4 from '../assets/14.png'
 import CaseStudyPhoneCollage from '../components/CaseStudyPhoneCollage'
 import CaseStudyDetails from '../components/CaseStudyDetails'
 import CaseStudyToc from '../components/CaseStudyToc'
@@ -146,12 +150,10 @@ function BotanicalGardenProjectPage() {
             <h3 id="lofi-wireframes">Lo-fi wireframes</h3>
             <p>We moved on to low-fidelity wireframes to quickly visualise the layout of each screen before focusing on visual identity.</p>
             <div className="case-study-image-grid case-study-image-grid-phones">
-              <CaseStudyImagePlaceholder label="Wireframe 1" />
-              <CaseStudyImagePlaceholder label="Wireframe 2" />
-              <CaseStudyImagePlaceholder label="Wireframe 3" />
-              <CaseStudyImagePlaceholder label="Wireframe 4" />
-              <CaseStudyImagePlaceholder label="Wireframe 5" />
-              <CaseStudyImagePlaceholder label="Wireframe 6" />
+              <CaseStudyImagePlaceholder src={lofi1} alt="Lo-fi wireframe 1" label="Wireframe 1" />
+              <CaseStudyImagePlaceholder src={lofi2} alt="Lo-fi wireframe 2" label="Wireframe 2" />
+              <CaseStudyImagePlaceholder src={lofi3} alt="Lo-fi wireframe 3" label="Wireframe 3" />
+              <CaseStudyImagePlaceholder src={lofi4} alt="Lo-fi wireframe 4" label="Wireframe 4" />
             </div>
 
             <h3 id="final-product">Final product</h3>
