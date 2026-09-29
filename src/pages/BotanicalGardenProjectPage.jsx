@@ -200,7 +200,7 @@ function BotanicalGardenProjectPage() {
             <CaseStudyImagePlaceholder src={styleTile} alt="Botanical Garden style tile: colours, typography, and reference screenshot" label="Style tile" className="case-study-image-natural case-study-image-cap-md" />
 
             <h3 id="lofi-wireframes">Lo-fi wireframes</h3>
-            <p>Once we had a clear user flow, we moved on to low-fidelity wireframes to quickly visualise the layout of each screen before focusing on visual identity.</p>
+            <p>We moved on to low-fidelity wireframes to quickly visualise the layout of each screen before focusing on visual identity.</p>
             <div className="case-study-image-grid case-study-image-grid-phones">
               <CaseStudyImagePlaceholder label="Wireframe 1" />
               <CaseStudyImagePlaceholder label="Wireframe 2" />

@@ -145,11 +145,10 @@ const TOC_GROUPS = [
   ] },
   { phase: '03 develop', items: [
     { label: '03.1 sketches', id: 'sketches' },
-    { label: '03.2 user flow', id: 'user-flow' },
-    { label: '03.3 moodboard', id: 'moodboard' },
-    { label: '03.4 style tile', id: 'style-tile' },
-    { label: '03.5 low fidelity wireframes and testing', id: 'lofi-wireframes' },
-    { label: '03.6 final product', id: 'final-product' },
+    { label: '03.2 moodboard', id: 'moodboard' },
+    { label: '03.3 style tile', id: 'style-tile' },
+    { label: '03.4 low fidelity wireframes and testing', id: 'lofi-wireframes' },
+    { label: '03.5 final product', id: 'final-product' },
   ] },
   { phase: '04 deliver', items: [
     { label: '04.1 coded solution', id: 'final-product' },
@@ -317,10 +316,6 @@ function BlaSolProjectPage() {
               <CaseStudyImagePlaceholder src={sketch4} alt="Sketch 4" label="Sketch 4" />
             </div>
 
-            <h3 id="user-flow">User Flow</h3>
-            <p>We created a user flow to map out how users would move through the app and interact with its main features. This helped us understand the steps users would take to complete key tasks and make sure the experience felt simple and logical.</p>
-            <p>It also helped us identify unnecessary steps and improve the overall navigation before developing the final design.</p>
-
             <h3 id="moodboard">Moodboard</h3>
             <p>We made a moodboard to explore the overall look and feel we wanted for the app. We collected colours, typography, images, and other visual references that matched the energy and atmosphere of BLÅ SOL.</p>
             <CaseStudyImagePlaceholder src={moodboard} alt="BLÅ SOL moodboard" label="Moodboard" className="case-study-image-portrait case-study-image-full" />
@@ -330,7 +325,7 @@ function BlaSolProjectPage() {
             <CaseStudyImagePlaceholder src={styleTile} alt="BLÅ SOL style tile" label="Style tile" className="case-study-image-banner case-study-image-full" />
 
             <h3 id="lofi-wireframes">Lo-fi wireframes and Usability testing</h3>
-            <p>Once we established the user flow and after understanding how users would navigate through the app we moved on to low-fidelity wireframes. This allowed us to quickly visualise the layout of each screen before focusing on visual identity.</p>
+            <p>Once we understood how users would navigate through the app, we moved on to low-fidelity wireframes. This allowed us to quickly visualise the layout of each screen before focusing on visual identity.</p>
             <div className="case-study-image-grid case-study-image-grid-phones case-study-image-grid-4">
               <CaseStudyImagePlaceholder src={lofi1} alt="Lo-fi wireframe 1" label="Wireframe 1" />
               <CaseStudyImagePlaceholder src={lofi2} alt="Lo-fi wireframe 2" label="Wireframe 2" />
