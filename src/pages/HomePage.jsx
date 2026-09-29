@@ -47,7 +47,7 @@ function HomePage() {
         </article>
         <article className="project project-third">
           <div className="project-copy">
-            <h3>HIDDEN WORKSHOPS <span className="project-badge">Work in progress</span></h3>
+            <h3>HOME CRYSTALS <span className="project-badge">Work in progress</span></h3>
             <p>A web app concept that guides people through making their own crystals at home.</p>
             <a className="button" href="#project-hidden-workshops">see more</a>
           </div>

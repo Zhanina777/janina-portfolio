@@ -19,7 +19,7 @@ function HiddenWorkshopsProjectPage() {
         <div className="case-study-hero">
           <div className="case-study-hero-row">
             <div className="case-study-hero-copy">
-              <h1>HIDDEN WORKSHOPS</h1>
+              <h1>HOME CRYSTALS</h1>
               <p>A web app concept that guides people through making their own crystals at home.</p>
               <CaseStudyDetails items={DETAILS} className="case-study-details-inline" />
             </div>
@@ -30,7 +30,7 @@ function HiddenWorkshopsProjectPage() {
         <section className="case-study-section">
           <StickySectionTitle>Overview</StickySectionTitle>
           <div className="case-study-section-body">
-            <p><strong>Hidden Workshops</strong> is a web app concept designed to guide people through making their own crystals at home, covering the process, materials, and techniques needed to get started.</p>
+            <p><strong>Home Crystals</strong> is a web app concept designed to guide people through making their own crystals at home, covering the process, materials, and techniques needed to get started.</p>
             <p>I&apos;m working on this project solo, as <strong>UX/UI Designer</strong>, using the Double Diamond methodology over a 4-week timeline.</p>
             <p>This project is still in progress &mdash; check back soon for the full case study, including research, design process, and final designs.</p>
           </div>
