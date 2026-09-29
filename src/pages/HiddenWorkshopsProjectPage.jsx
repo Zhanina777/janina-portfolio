@@ -31,7 +31,7 @@ function HiddenWorkshopsProjectPage() {
           <StickySectionTitle>Overview</StickySectionTitle>
           <div className="case-study-section-body">
             <p><strong>Home Crystals</strong> is a web app concept designed to guide people through making their own crystals at home, covering the process, materials, and techniques needed to get started.</p>
-            <p>I&apos;m working on this project solo, as <strong>UX/UI Designer</strong>, using the Double Diamond methodology over a 4-week timeline.</p>
+            <p>I&apos;m working on this project as part of a team, as <strong>UX/UI Designer</strong>, using the Double Diamond methodology over a 4-week timeline.</p>
             <p>This project is still in progress &mdash; check back soon for the full case study, including research, design process, and final designs.</p>
           </div>
         </section>
