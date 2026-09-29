@@ -4,7 +4,7 @@ import CaseStudyImagePlaceholder from '../components/CaseStudyImagePlaceholder'
 import ContactFooter from '../components/ContactFooter'
 
 const DETAILS = [
-  { label: 'Client', value: 'Personal project' },
+  { label: 'Client', value: 'Group project' },
   { label: 'Product', value: 'Web app for learning to make crystals at home' },
   { label: 'Role', value: 'UX/UI Designer' },
   { label: 'Duration', value: '4 weeks' },
