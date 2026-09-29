@@ -328,9 +328,9 @@ h2, h3, p { font-weight: normal; }
 .interview-chart-tick { position: absolute; top: 0; transform: translateX(-50%); font-size: 11px; color: var(--muted); }
 
 @media (max-width: 1024px) {
-  .case-study-process { display: flex; flex-direction: column; gap: 30px; padding: 10px 24px 50px; }
+  .case-study-process { display: flex; flex-direction: column; align-items: stretch; gap: 30px; padding: 10px 24px 50px; }
   .case-study-toc-wrap { height: auto !important; width: 100%; }
-  .case-study-content { min-height: 0; }
+  .case-study-content { min-height: 0; min-width: 0; }
   .case-study-toc { width: 100%; padding-right: 0; border: 1px solid rgba(82, 24, 44, .15); border-radius: 10px; background: rgba(82, 24, 44, .03); }
   .case-study-toc-toggle { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 14px 18px; border: none; background: none; font-family: inherit; font-size: 15px; font-weight: 700; color: var(--ink); cursor: pointer; }
   .case-study-toc-chevron { display: inline-block; flex: none; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); transition: transform .25s ease; }
@@ -409,9 +409,9 @@ h2, h3, p { font-weight: normal; }
   .case-study-section h2 { font-size: 24px; }
   .case-study-section-body p { font-size: 15px; }
   .case-study-planning-image { margin: 18px 0; }
-  .case-study-process { display: flex; flex-direction: column; gap: 30px; padding: 10px 24px 50px; }
+  .case-study-process { display: flex; flex-direction: column; align-items: stretch; gap: 30px; padding: 10px 24px 50px; }
   .case-study-toc-wrap { height: auto !important; width: 100%; }
-  .case-study-content { min-height: 0; }
+  .case-study-content { min-height: 0; min-width: 0; }
   .case-study-toc { width: 100%; padding-right: 0; border: 1px solid rgba(82, 24, 44, .15); border-radius: 10px; background: rgba(82, 24, 44, .03); }
   .case-study-toc-toggle { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 14px 18px; border: none; background: none; font-family: inherit; font-size: 15px; font-weight: 700; color: var(--ink); cursor: pointer; }
   .case-study-toc-chevron { display: inline-block; flex: none; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); transition: transform .25s ease; }
