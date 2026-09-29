@@ -402,6 +402,7 @@ h2, h3, p { font-weight: normal; }
   .detail-row { grid-template-columns: 1fr; gap: 4px; padding: 14px 0; }
   .case-study-section { flex-direction: column; gap: 14px; padding: 36px 24px; }
   .sticky-section-title-wrap { flex: none; }
+  .case-study-section-body { flex: none; }
   .case-study-section h2 { font-size: 24px; }
   .case-study-section-body p { font-size: 15px; }
   .case-study-planning-image { margin: 18px 0; }
