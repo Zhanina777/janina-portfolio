@@ -1,6 +1,7 @@
 import garden1 from '../assets/garden1.png'
 import garden2 from '../assets/garden2.png'
 import garden3 from '../assets/garden3.png'
+import garden4 from '../assets/garden4.png'
 import gardenPersona from '../assets/gardenpersona.png'
 import sc1 from '../assets/sc1.png'
 import sc2 from '../assets/sc2.png'
@@ -155,10 +156,9 @@ function BotanicalGardenProjectPage() {
 
             <h3 id="final-product">Final product</h3>
             <div className="case-study-image-grid case-study-image-grid-phones">
-              <CaseStudyImagePlaceholder label="Final product screen 1" />
-              <CaseStudyImagePlaceholder label="Final product screen 2" />
-              <CaseStudyImagePlaceholder label="Final product screen 3" />
-              <CaseStudyImagePlaceholder label="Final product screen 4" />
+              <CaseStudyImagePlaceholder src={garden1} alt="Final product screen 1" label="Final product screen 1" />
+              <CaseStudyImagePlaceholder src={garden2} alt="Final product screen 2" label="Final product screen 2" />
+              <CaseStudyImagePlaceholder src={garden4} alt="Final product screen 3" label="Final product screen 3" />
             </div>
             <div className="case-study-cta">
               <a className="button" href="https://www.figma.com/design/G8eaYyjBBwMxW0DtSVNo0b/landingpage--Copy-?node-id=31-113&t=2IwBIWaY6KZGyLrm-1" target="_blank" rel="noopener noreferrer">See Figma prototype</a>
