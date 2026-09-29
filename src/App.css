@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Inter:wght@400;500&display=swap');
 
 :root {
   --paper: #f7f1e9;
   --ink: #52182c;
   --muted: #756c69;
   --light-ink: #f7f1e9;
+  --body-font: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -105,7 +106,7 @@ a { color: inherit; }
 h2, h3, p { font-weight: normal; }
 .about h2 { margin: 0 0 14px; font-size: clamp(24px, 5vw, 50px); line-height: .95; }
 .body-copy { margin: 20px 0 0; color: var(--muted); font-size: clamp(15px, 2.6vw, 32px); line-height: 1.2; }
-.project p { margin: 0; color: var(--muted); font-size: 18px; line-height: 1.4; }
+.project p { margin: 0; color: var(--muted); font-family: var(--body-font); font-size: 18px; line-height: 1.4; }
 .portrait { width: min(440px, 34vw); height: min(560px, 43vw); flex: 0 0 min(440px, 34vw); object-fit: cover; object-position: center; transform: translateX(24px); transition: transform .35s ease, box-shadow .35s ease; }
 .portrait:hover { transform: translateX(24px) translateY(-10px) rotate(-2deg); box-shadow: 10px 14px 0 rgba(82, 24, 44, .14); }
 .button { display: inline-block; margin-top: 22px; padding: 8px 19px; border-radius: 20px; background: var(--ink); color: var(--light-ink); font-size: 12px; text-decoration: none; transition: background .25s ease, transform .25s ease, box-shadow .25s ease; }
@@ -200,7 +201,7 @@ h2, h3, p { font-weight: normal; }
 .case-study-hero-copy { max-width: 480px; flex: 0 1 400px; }
 .case-study-hero-copy h1 { margin: 0 0 18px; font-size: 44px; line-height: 1.08; font-weight: 700; }
 .hero-title-line { white-space: nowrap; }
-.case-study-hero-copy p { margin: 0; color: var(--muted); font-size: 22px; line-height: 1.5; }
+.case-study-hero-copy p { margin: 0; color: var(--muted); font-family: var(--body-font); font-size: 22px; line-height: 1.5; }
 .case-study-phones { position: relative; width: min(440px, 90vw); height: 520px; }
 .case-study-hero .case-study-hero-placeholder { width: min(560px, 90vw); height: min(65vh, 630px); }
 .phone-preview.case-phone { position: absolute; }
@@ -231,7 +232,7 @@ h2, h3, p { font-weight: normal; }
 .sticky-section-title-wrap { flex: 0 0 340px; }
 .case-study-section h2 { margin: 0; font-size: 36px; font-weight: normal; }
 .case-study-section-body { flex: 1 1 320px; min-width: 0; max-width: 960px; }
-.case-study-section-body p { margin: 0 0 18px; color: var(--muted); font-size: 26px; line-height: 1.55; }
+.case-study-section-body p { margin: 0 0 18px; color: var(--muted); font-family: var(--body-font); font-size: 26px; line-height: 1.55; }
 .case-study-section-body p:last-child { margin-bottom: 0; }
 .case-study-planning-image { display: block; width: 100%; max-width: 600px; margin: 26px auto; border-radius: 12px; box-shadow: 0 10px 24px rgba(82, 24, 44, .15); }
 
@@ -250,9 +251,9 @@ h2, h3, p { font-weight: normal; }
 .case-study-content h3 { margin: 56px 0 18px; font-size: 36px; font-weight: normal; }
 .case-study-content h3:first-child { margin-top: 0; }
 .case-study-content h4 { margin: 28px 0 8px; font-size: 17px; font-weight: 700; }
-.case-study-content p { margin: 0 0 16px; color: var(--muted); font-size: 26px; line-height: 1.6; }
+.case-study-content p { margin: 0 0 16px; color: var(--muted); font-family: var(--body-font); font-size: 26px; line-height: 1.6; }
 .case-study-content p:last-child { margin-bottom: 0; }
-.case-study-list { margin: 0 0 16px; padding-left: 22px; color: var(--muted); font-size: 26px; line-height: 1.6; }
+.case-study-list { margin: 0 0 16px; padding-left: 22px; color: var(--muted); font-family: var(--body-font); font-size: 26px; line-height: 1.6; }
 .case-study-list li { margin-bottom: 8px; }
 .case-study-list li:last-child { margin-bottom: 0; }
 .case-study-image-row { display: flex; gap: 20px; align-items: stretch; margin: 36px 0; }
@@ -286,7 +287,7 @@ h2, h3, p { font-weight: normal; }
 .vpc-panel-map .vpc-card:hover { box-shadow: 0 10px 20px rgba(199, 122, 58, .16); }
 .vpc-card-label { display: block; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--ink); }
 .vpc-panel-map .vpc-card-label { color: #a85a1f; }
-.case-study-content .vpc-card p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); }
+.case-study-content .vpc-card p { margin: 0; font-family: var(--body-font); font-size: 15px; line-height: 1.55; color: var(--muted); }
 
 .feedback-grid-wrap { margin: 26px 0; overflow-x: auto; border-radius: 14px; box-shadow: 0 10px 24px rgba(82, 24, 44, .15); }
 .feedback-grid-table { width: 100%; min-width: 760px; border-collapse: collapse; background: var(--paper); }
