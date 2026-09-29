@@ -6,17 +6,24 @@ import aboutPhoto4 from '../assets/pic5.jpeg'
 import aboutPhoto5 from '../assets/tr.JPG'
 
 const ABOUT_PHOTOS = [aboutPhoto, aboutPhoto2, aboutPhoto3, aboutPhoto4, aboutPhoto5]
+const MOBILE_BREAKPOINT = 560
 
 function AboutPortraitStack() {
   const [index, setIndex] = useState(0)
 
   const advance = () => setIndex(i => (i + 1) % ABOUT_PHOTOS.length)
+  const isMobile = () => window.innerWidth <= MOBILE_BREAKPOINT
+
+  const handleMouseEnter = () => { if (!isMobile()) advance() }
+  const handleFocus = () => { if (!isMobile()) advance() }
+  const handleClick = () => { if (isMobile()) advance() }
 
   return (
     <div
       className="about-portrait-stack"
-      onMouseEnter={advance}
-      onFocus={advance}
+      onMouseEnter={handleMouseEnter}
+      onFocus={handleFocus}
+      onClick={handleClick}
       tabIndex={0}
     >
       {ABOUT_PHOTOS.map((src, i) => {
