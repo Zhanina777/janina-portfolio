@@ -67,10 +67,7 @@ function BotanicalGardenProjectPage() {
         <section className="case-study-section">
           <StickySectionTitle>Overview</StickySectionTitle>
           <div className="case-study-section-body">
-            <p><strong>Botanical Garden Digital Experience</strong> is a companion app concept designed to help garden visitors identify plants and feel more connected to what they&apos;re seeing as they walk through the space. The project focused on solving a common frustration: limited signage and no easy way to learn more without stepping away from the moment to search online.</p>
-            <p>Working as part of a team, we contributed to <strong>user research, persona development, ideation, UX design, and usability testing</strong>. We were also involved in developing the <strong>visual identity and refining the interface based on feedback from usability testing</strong>.</p>
-            <p>The final solution introduced features such as instant plant identification, curated routes, and bite-sized information cards visitors can browse as they walk. During the iteration process, we also explored ideas like personalised route recommendations to make each visit feel more tailored.</p>
-            <p>This project demonstrates my ability to <strong>turn visitor research into practical features, design for a calm, in-context experience, and iterate based on usability testing</strong>.</p>
+            <p>A companion app for the Botanical Garden, designed to make exploring the garden more interactive and engaging for children. The app combines the physical environment with digital activities, allowing children to discover plants, learn about different climate zones, and complete interactive games as they move through the garden. QR codes placed around the garden connect the physical plants to the digital experience, turning exploration into a playful learning journey.</p>
           </div>
         </section>
 
