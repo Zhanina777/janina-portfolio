@@ -150,10 +150,10 @@ function BotanicalGardenProjectPage() {
             <h3 id="lofi-wireframes">Lo-fi wireframes</h3>
             <p>We moved on to low-fidelity wireframes to quickly visualise the layout of each screen before focusing on visual identity.</p>
             <div className="case-study-image-grid case-study-image-grid-phones">
-              <CaseStudyImagePlaceholder src={lofi1} alt="Lo-fi wireframe 1" label="Wireframe 1" />
-              <CaseStudyImagePlaceholder src={lofi2} alt="Lo-fi wireframe 2" label="Wireframe 2" />
-              <CaseStudyImagePlaceholder src={lofi3} alt="Lo-fi wireframe 3" label="Wireframe 3" />
-              <CaseStudyImagePlaceholder src={lofi4} alt="Lo-fi wireframe 4" label="Wireframe 4" />
+              <CaseStudyImagePlaceholder src={lofi1} alt="Lo-fi wireframe 1" label="Wireframe 1" className="case-study-image-top" />
+              <CaseStudyImagePlaceholder src={lofi2} alt="Lo-fi wireframe 2" label="Wireframe 2" className="case-study-image-top" />
+              <CaseStudyImagePlaceholder src={lofi3} alt="Lo-fi wireframe 3" label="Wireframe 3" className="case-study-image-top" />
+              <CaseStudyImagePlaceholder src={lofi4} alt="Lo-fi wireframe 4" label="Wireframe 4" className="case-study-image-top" />
             </div>
 
             <h3 id="final-product">Final product</h3>
