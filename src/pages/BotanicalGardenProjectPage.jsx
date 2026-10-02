@@ -161,7 +161,7 @@ function BotanicalGardenProjectPage() {
               <CaseStudyImagePlaceholder src={garden4} alt="Final product screen 3" label="Final product screen 3" />
             </div>
             <div className="case-study-cta">
-              <a className="button" href="https://www.figma.com/design/G8eaYyjBBwMxW0DtSVNo0b/landingpage--Copy-?node-id=31-113&t=2IwBIWaY6KZGyLrm-1" target="_blank" rel="noopener noreferrer">See Figma prototype</a>
+              <a className="button" href="https://www.figma.com/proto/G8eaYyjBBwMxW0DtSVNo0b/landingpage--Copy-?node-id=26-53&t=2IwBIWaY6KZGyLrm-1" target="_blank" rel="noopener noreferrer">See Figma prototype</a>
             </div>
           </div>
         </div>
